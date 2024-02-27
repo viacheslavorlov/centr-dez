@@ -1,0 +1,65 @@
+---
+type Props = {
+	words: string[];
+	interval?: number;
+	className?: string;
+	withEmptyString?: boolean;
+};
+
+const { words, className, withEmptyString, interval = 2500 }: Props = Astro.props;
+let i: number = 0;
+const styleInterval = interval + 'ms';
+---
+
+<div class={'w-full max-w-fit text-4xl min-w-1 min-h-10 typewriter ' + className}>
+	<span>{words[i]}?</span>
+</div>
+<script define:vars={{ words, interval, withEmptyString }}>
+	let i = 0;
+	const typewriter = document.querySelector('.typewriter');
+	if (withEmptyString) {
+		words.push(' ');
+	}
+	setInterval(() => {
+		console.log(words, i);
+		if (i === words.length - 1) {
+			i = 0;
+			typewriter.textContent = words[0] + '?';
+		} else {
+			i = i + 1;
+			typewriter.textContent = words[i].length > 1 ? words[i] + '?' : ' ';
+		}
+	}, interval); /* устанавливаем интервал*/
+</script>
+
+<style define:vars={{ styleInterval }}>
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		90% {
+			width: 100%;
+		}
+		to {
+			width: 0%;
+		}
+	}
+
+	@keyframes blink-caret {
+		50% {
+			border-color: transparent;
+		}
+	}
+
+	.typewriter {
+		overflow: hidden;
+		border-right: 0.15em solid #2bbc69;
+		white-space: nowrap;
+		margin: 0 auto;
+		letter-spacing: 0.15em;
+		animation:
+			/* устанавливаем интервал и шаг анимации*/
+			typing var(--styleInterval) steps(18, end) infinite,
+			blink-caret 0.75s step-end infinite;
+	}
+</style>

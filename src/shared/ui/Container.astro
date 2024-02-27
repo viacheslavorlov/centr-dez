@@ -1,9 +1,13 @@
 ---
-const { className } = Astro.props;
+type Props = {
+	className?: string;
+	children?: any;
+};
+
+const { className, children } = Astro.props;
 ---
 
-<div
-  class={`mx-auto flex justify-center p-4 items-center w-full max-w-[1400px] ${className}`}
->
-  <slot />
+<!-- Переписать классы если нужно -->
+<div class={`mx-auto flex justify-center p-4 items-center w-full max-w-[1400px] ${className}`}>
+	<slot />
 </div>

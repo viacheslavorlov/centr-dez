@@ -1,7 +1,16 @@
 ---
-const { className, id } = Astro.props;
+type Props = {
+	id?: string;
+	className?: string;
+	children?: any | any[];
+};
+
+const { className, id }: Props = Astro.props;
 ---
 
-<section id={id} class={`width-screen relative py-4 md:py-6 lg:py-8 bg-primary-bg ${className}`}>
-  <slot />
+<!-- Переписать классы если нужно -->
+<section
+	id={id}
+	class={`width-screen relative py-4 md:py-6 lg:py-8 bg-primary-bg ${className}`}>
+	<slot />
 </section>

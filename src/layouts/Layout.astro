@@ -4,28 +4,35 @@ import Header from '../widgets/Header.astro'
 
 export interface Props {
 	title: string;
-	phone: string;
+	phone?: string;
+	description?: string;
+	icon?: string;
+	keywords?: string[]
 }
 
-const { title, phone } = Astro.props;
+const { title, phone, description, icon, keywords }: Props = Astro.props;
 ---
 
 <!doctype html>
-<html lang='en'>
+<html lang='ru'>
 	<head>
 		<meta charset='UTF-8' />
 		<meta
 			name='description'
-			content='Astro description'
+			content={description}
 		/>
 		<meta
 			name='viewport'
 			content='width=device-width'
 		/>
+		<meta 
+			name="keywords"
+			content={keywords?.join(', ')}
+		/>
 		<link
 			rel='icon'
 			type='image/svg+xml'
-			href='/favicon.svg'
+			href={icon}
 		/>
 		<meta
 			name='generator'
@@ -34,7 +41,7 @@ const { title, phone } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body
-		class='h-full overflow-x-hidden bg-default text-base text-primary-text bg-primary-bg '>
+		class='h-full overflow-x-hidden text-base text-primary-text bg-primary-bg '>
 		<Header phone={phone}/>
 
 		<slot />
