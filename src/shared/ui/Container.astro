@@ -1,0 +1,9 @@
+---
+const { className } = Astro.props;
+---
+
+<div
+  class={`mx-auto flex justify-center p-4 items-center w-full max-w-[1400px] ${className}`}
+>
+  <slot />
+</div>

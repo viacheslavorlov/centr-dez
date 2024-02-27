@@ -1,0 +1,42 @@
+---
+import '../styles.css';
+import Header from '../widgets/Header.astro'
+
+export interface Props {
+	title: string;
+	phone: string;
+}
+
+const { title, phone } = Astro.props;
+---
+
+<!doctype html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta
+			name='description'
+			content='Astro description'
+		/>
+		<meta
+			name='viewport'
+			content='width=device-width'
+		/>
+		<link
+			rel='icon'
+			type='image/svg+xml'
+			href='/favicon.svg'
+		/>
+		<meta
+			name='generator'
+			content={Astro.generator}
+		/>
+		<title>{title}</title>
+	</head>
+	<body
+		class='h-full overflow-x-hidden bg-default text-base text-primary-text bg-primary-bg '>
+		<Header phone={phone}/>
+
+		<slot />
+	</body>
+</html>

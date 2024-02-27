@@ -1,0 +1,29 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Button from '../shared/ui/Button.astro';
+import Container from '../shared/ui/Container.astro';
+import Section from '../shared/ui/Section.astro';
+
+const heroData = await getCollection('hero');
+const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
+console.log('🚀 ~ hero:', hero);
+---
+
+<Section>
+	<Image
+		src={hero.smokeImg}
+		alt={''}
+		class={'absolute object-cover w-full md:w-3/5'}
+		width={1280}
+		height={768}
+	/>
+	<Container>
+		<h1 class='text-4xl md:w-full md:text-left'>
+			{hero.title}
+		</h1>
+
+		<Button />
+	</Container>
+</Section>

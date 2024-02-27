@@ -1,0 +1,7 @@
+---
+const { className, id } = Astro.props;
+---
+
+<section id={id} class={`width-screen relative py-4 md:py-6 lg:py-8 bg-primary-bg ${className}`}>
+  <slot />
+</section>

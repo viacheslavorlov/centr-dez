@@ -1,0 +1,23 @@
+---
+import { navItems } from 'src/config/menu';
+import Container from '../shared/ui/Container.astro';
+import Section from '../shared/ui/Section.astro';
+import Logo from './Logo.astro';
+import MobileMenu from './MobileMenu';
+import { MapPin } from 'lucide-preact';
+
+const { phone } = Astro.props;
+---
+
+<section class={'width-screen relative bg-primary-bg'}>
+	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-center gap-10 p-4'>
+		<Logo />
+		<div class='md:flex hidden mr-auto font-bold gap-2 w-full'><MapPin />Великий Новгород</div>
+		<div
+			class='ml-auto hidden text-lg w-full items-start justify-end gap-10 md:flex lg:items-center'>
+			{navItems.map(item => <a href={item.url}>{item.title}</a>)}
+		</div>
+		<div class='text-lg min-w-36 hidden lg:block'><a href={`tel:${phone}`}>{phone}</a></div>
+		<MobileMenu client:load />
+	</div>
+</section>

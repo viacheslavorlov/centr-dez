@@ -1,0 +1,14 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import Hero from '../partials/Hero.astro';
+
+const hero = await getCollection('hero');
+const heroData = hero[0].data;
+---
+
+<Layout
+	phone={heroData.phone}
+	title={heroData.windowTitle}>
+	<Hero />
+</Layout>
