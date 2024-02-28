@@ -7,7 +7,9 @@ parasites:
   - клопов
   - муравьев
   - грызунов
-video: https://www.youtube.com/shorts/-LkzHHpeOYk
+video: /video/video.mp4
+videoWrapper: /wrapper3.png
+dangerSign: /значок.png
 giftImg: /pngwing.com (6).png
 arrowImg: /pngwing.com (13).png
 smokeImg: /smoke.png

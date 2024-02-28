@@ -36,6 +36,8 @@ export default config({
 				subtitle: fields.text({ label: 'subtitle' }),
 				parasites: fields.array(fields.text( { label: 'parasite' })),
 				video: fields.text({ label: 'video' }),
+				videoWrapper: fields.text({ label: 'videoWrapper' }),
+				dangerSign: fields.text({ label: 'dangerSign' }),
 				giftImg: fields.text({ label: 'giftImg' }),
 				arrowImg: fields.text({ label: 'arrowImg' }),
 				smokeImg: fields.text({ label: 'smokeImg' }),

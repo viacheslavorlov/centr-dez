@@ -1,0 +1,45 @@
+---
+import videojs from 'video.js';
+import {clsx} from 'clsx'
+import 'video.js/dist/video-js.css';
+
+type Props = {
+	videoSrc: string
+	controls: boolean
+	className?: string
+}
+
+const { videoSrc, controls, className }: Props = Astro.props;
+---
+
+<video
+	id='my-video'
+	class={clsx('video-js', className)}
+	controls={controls}
+	preload='auto'
+	width='264'
+	height='640'
+	autoplay
+	data-setup='{}'>
+	<source
+		src={videoSrc}
+		type='video/mp4'
+	/>
+
+	To view this video please enable JavaScript, and consider upgrading to a web browser that
+	<a
+		href='https://videojs.com/html5-video-support/'
+		target='_blank'
+		>supports HTML5 video</a
+	>
+</video>
+
+<script define:vars={{ videojs }}>
+	document.addEventListener('DOMContentLoaded', () => {
+		const player = videojs('my-video');
+		return () => {
+			// This is important to do when your component unmounts
+			player.dispose();
+		};
+	});
+</script>

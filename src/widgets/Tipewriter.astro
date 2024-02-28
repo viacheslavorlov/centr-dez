@@ -11,7 +11,7 @@ let i: number = 0;
 const styleInterval = interval + 'ms';
 ---
 
-<div class={'w-full max-w-fit text-4xl min-w-1 min-h-10 typewriter ' + className}>
+<div class={'w-full max-w-fit text-4xl md:text-6xl min-w-1 min-h-10 md:min-h-[60px] typewriter ' + className}>
 	<span>{words[i]}?</span>
 </div>
 <script define:vars={{ words, interval, withEmptyString }}>
@@ -55,7 +55,6 @@ const styleInterval = interval + 'ms';
 		overflow: hidden;
 		border-right: 0.15em solid #2bbc69;
 		white-space: nowrap;
-		margin: 0 auto;
 		letter-spacing: 0.15em;
 		animation:
 			/* устанавливаем интервал и шаг анимации*/

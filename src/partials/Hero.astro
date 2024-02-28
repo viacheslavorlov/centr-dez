@@ -2,10 +2,11 @@
 import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getCollection } from 'astro:content';
-import Button from '../shared/ui/Button.astro';
+import ButtonLink from '../shared/ui/ButtonLink.astro';
 import Container from '../shared/ui/Container.astro';
 import Section from '../shared/ui/Section.astro';
 import Typewriter from '../widgets/Tipewriter.astro';
+import Video from '../shared/ui/Video.astro';
 
 const heroData = await getCollection('hero');
 const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
@@ -19,19 +20,63 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 		width={1280}
 		height={768}
 	/>
-	<Container className='m-auto flex flex-col z-10 gap-10'>
-		<h1 class='text-4xl relative w-full text-center md:text-left'>
-			{hero.title}
-		</h1>
+	<Container className='m-auto flex flex-col z-10 gap-10 md:justify-start md:items-start'>
+		<div class='relative'>
+			<h1 class='text-4xl relative w-full font-semibold text-center md:text-left md:text-6xl'>
+				{hero.title}
+			</h1>
 
-		<Typewriter
-			className='relative self-start justify-self-start z-10 text-accent drop-shadow-md'
-			withEmptyString
-			interval={1500}
-			words={hero.parasites}
+			<Typewriter
+				className='relative mx-auto md:mx-0 justify-self-center z-10 text-accent drop-shadow-md'
+				withEmptyString
+				interval={1500}
+				words={hero.parasites}
+			/>
+			<Image
+				src={hero.arrowImg}
+				width={'500'}
+				height={'500'}
+				alt={''}
+				class={'relative mt-5 h-14 md:h-56 lg:h-64 aspect-square object-contain md:left-1/5 lg:left-1/2'}
+			/>
+		</div>
+		<div
+			class={`rotate-3 mx-auto md:mx-0 relative h-[448px] bg-[url(${hero.videoWrapper})] self-end md:-top-32 md:right-20 w-[256px] lg:-top-80 lg:right-[15%]`}>
+			<Image
+				src={hero.videoWrapper}
+				alt={''}
+				height={'468'}
+				width={'262'}
+				class={'absolute z-20 w-[256px] h-[440px] bg-black rounded-[35px]'}
+			/>
+			<Image
+				src={hero.dangerSign}
+				alt={''}
+				height={'100'}
+				width={'100'}
+				class={'absolute z-50 -bottom-6 -right-6 -rotate-6'}
+			/>
+			<div
+				class='min-h-[400px] overflow-hidden z-40 rounded-3xl absolute top-3 left-3 right-3 bottom-5'>
+				<Video
+					controls
+					className='object-cover h-full'
+					videoSrc={hero.video}
+				/>
+			</div>
+		</div>
+		<div>
+			<p>
+				{hero.subtitle}
+			</p>
+			<ButtonLink
+			href='#'
+			title={hero.buttonText}
+			className=''
 		/>
-
-		<Button />
+		</div>
+		
 	</Container>
 </Section>
 
+<style></style>
