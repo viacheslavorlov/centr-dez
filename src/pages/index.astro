@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../partials/Hero.astro';
+import Quiz from '../partials/Quiz.astro';
 
 const hero = await getCollection('hero');
 const heroData = hero[0].data;
@@ -11,4 +12,5 @@ const heroData = hero[0].data;
 	phone={heroData.phone}
 	title={heroData.windowTitle}>
 	<Hero />
+	<Quiz/>
 </Layout>

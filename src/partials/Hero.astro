@@ -36,7 +36,8 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 		</div>
 		<div
 			class='flex justify-between gap-4 md:gap-8 relative mx-auto items-start w-full lg:px-0'>
-			<div class='mt-auto lg:flex lg:flex-col h-full max-w-[550px] shrink hidden gap-10'>
+			<div
+				class='mt-auto relative lg:flex lg:flex-col h-full max-w-[550px] shrink hidden gap-10'>
 				<p class='text-3xl'>
 					{hero.subtitle}
 				</p>
@@ -44,6 +45,20 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 					href='#'
 					title={hero.buttonText}
 					className='mt-auto'
+				/>
+				<Image
+					class={'absolute -bottom-14'}
+					src={hero.giftImg}
+					height={'100'}
+					width={'100'}
+					alt={''}
+				/>
+				<Image
+					class={'absolute right-0 bottom-2'}
+					src={hero.giftImg}
+					height={'100'}
+					width={'100'}
+					alt={''}
 				/>
 			</div>
 			<div class='flex gap-0 sm:gap-4 md:gap-10 mx-auto md:ml-auto justify-end'>
@@ -83,7 +98,7 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 			</div>
 		</div>
 
-		<div class='lg:hidden mt-16 flex flex-col gap-4'>
+		<div class='lg:hidden relative mt-16 flex flex-col gap-4'>
 			<p class='text-2xl relative w-full'>
 				{hero.subtitle}
 			</p>
@@ -91,6 +106,20 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 				href='#'
 				title={hero.buttonText}
 				className=''
+			/>
+			<Image
+				class={'absolute -bottom-14'}
+				src={hero.giftImg}
+				height={'100'}
+				width={'100'}
+				alt={''}
+			/>
+			<Image
+				class={'absolute right-0 bottom-2'}
+				src={hero.giftImg}
+				height={'100'}
+				width={'100'}
+				alt={''}
 			/>
 		</div>
 	</Container>

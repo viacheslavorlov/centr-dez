@@ -9,7 +9,7 @@ const { href, title, className }: Props = Astro.props;
 <a
 	href={href}
 	class={clsx(
-		'button relative bg-accent text-center px-4 py-2 min-w-80 rounded-2xl text-white font-semibold hover:bg-accent-secondary',
+		'button relative bg-accent text-center px-4 py-2 min-w-80 rounded-full text-white font-semibold hover:bg-accent-secondary',
 		className
 	)}>
 	<button class="text-center">{title}</button>

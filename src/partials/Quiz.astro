@@ -1,0 +1,21 @@
+---
+import Container from '../shared/ui/Container.astro';
+import Section from '../shared/ui/Section.astro';
+import { QuizCard } from '../widgets/QuizCard';
+
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+const questionsData = await getCollection('questions');
+const questions: CollectionEntry<'questions'>['data'] = questionsData.map(item => item.data);
+
+const quizData = await getCollection('quiz');
+const quiz: CollectionEntry<'quiz'>['data'] = quizData[0].data;
+
+console.log(questions, quiz);
+---
+
+<Section>
+	<Container>
+		<QuizCard client:only="react" />
+	</Container>
+</Section>
