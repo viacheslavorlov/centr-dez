@@ -12,12 +12,19 @@ const { phone } = Astro.props;
 <section class={'width-screen relative bg-primary-bg'}>
 	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-center gap-10 p-4'>
 		<Logo />
-		<div class='md:flex hidden mr-auto font-semibold gap-2 w-full'><MapPin />Великий Новгород</div>
+		<div class='md:flex justify-center items-center hidden mr-auto font-semibold gap-2 w-full'>
+			<MapPin /> <p>Великий Новгород</p>
+		</div>
 		<div
 			class='ml-auto hidden text-lg w-full items-start justify-end gap-10 md:flex lg:items-center'>
 			{navItems.map(item => <a href={item.url}>{item.title}</a>)}
 		</div>
-		<div class='text-lg min-w-36 hidden lg:block'><a href={`tel:${phone}`}>{phone}</a></div>
+		<div class='text-lg shrink-0 min-w-36 hidden lg:block'>
+			<a
+				href={`tel:${phone}`}
+				class='text-nowrap'
+				>{phone}</a>
+		</div>
 		<MobileMenu client:load />
 	</div>
 </section>

@@ -9,10 +9,10 @@ const { href, title, className }: Props = Astro.props;
 <a
 	href={href}
 	class={clsx(
-		'button relative bg-accent px-4 py-2 rounded-2xl text-white font-semibold',
+		'button relative bg-accent text-center px-4 py-2 min-w-80 rounded-2xl text-white font-semibold hover:bg-accent-secondary',
 		className
 	)}>
-	<button>{title}</button>
+	<button class="text-center">{title}</button>
 </a>
 <style>
 	@keyframes slide {

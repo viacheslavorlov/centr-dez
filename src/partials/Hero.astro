@@ -16,11 +16,12 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 	<Image
 		src={hero.smokeImg}
 		alt={''}
-		class={'absolute object-cover w-full md:w-3/5 z-0'}
+		class={'absolute object-cover object-top w-full md:w-3/5 z-0 opacity-40'}
 		width={1280}
 		height={768}
 	/>
-	<Container className='m-auto flex flex-col z-10 gap-10 md:justify-start md:items-start'>
+	<Container
+		className='mx-auto flex flex-col z-10 gap-10 md:px-8 lg:px-12 md:justify-center md:items-start'>
 		<div class='relative'>
 			<h1 class='text-4xl relative w-full font-semibold text-center md:text-left md:text-6xl'>
 				{hero.title}
@@ -32,50 +33,66 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 				interval={1500}
 				words={hero.parasites}
 			/>
-			<Image
-				src={hero.arrowImg}
-				width={'500'}
-				height={'500'}
-				alt={''}
-				class={'relative mt-5 h-14 md:h-56 lg:h-64 aspect-square object-contain md:left-1/5 lg:left-1/2'}
-			/>
 		</div>
 		<div
-			class={`rotate-3 mx-auto md:mx-0 relative h-[448px] bg-[url(${hero.videoWrapper})] self-end md:-top-32 md:right-20 w-[256px] lg:-top-80 lg:right-[15%]`}>
-			<Image
-				src={hero.videoWrapper}
-				alt={''}
-				height={'468'}
-				width={'262'}
-				class={'absolute z-20 w-[256px] h-[440px] bg-black rounded-[35px]'}
-			/>
-			<Image
-				src={hero.dangerSign}
-				alt={''}
-				height={'100'}
-				width={'100'}
-				class={'absolute z-50 -bottom-6 -right-6 -rotate-6'}
-			/>
-			<div
-				class='min-h-[400px] overflow-hidden z-40 rounded-3xl absolute top-3 left-3 right-3 bottom-5'>
-				<Video
-					controls
-					className='object-cover h-full'
-					videoSrc={hero.video}
+			class='flex justify-between gap-4 md:gap-8 relative mx-auto items-start w-full lg:px-0'>
+			<div class='mt-auto lg:flex lg:flex-col h-full max-w-[550px] shrink hidden gap-10'>
+				<p class='text-3xl'>
+					{hero.subtitle}
+				</p>
+				<ButtonLink
+					href='#'
+					title={hero.buttonText}
+					className='mt-auto'
 				/>
 			</div>
+			<div class='flex gap-0 sm:gap-4 md:gap-10 mx-auto md:ml-auto justify-end'>
+				<div class={'shrink relative max-w-80 min-w-10'}>
+					<Image
+						src={hero.arrowImg}
+						width={'500'}
+						height={'500'}
+						alt={''}
+					/>
+				</div>
+				<div
+					class={`rotate-3 mx-auto md:mx-0 relative h-[448px] w-[256px] shrink-0 bg-[url(${hero.videoWrapper})]`}>
+					<Image
+						src={hero.videoWrapper}
+						alt={''}
+						height={'468'}
+						width={'262'}
+						class={'z-20 w-[256px] h-[440px] relative bg-black  rounded-[35px]'}
+					/>
+					<Image
+						src={hero.dangerSign}
+						alt={''}
+						height={'110'}
+						width={'110'}
+						class={'relative z-50 -top-12 -right-40 -rotate-6'}
+					/>
+					<div
+						class='min-h-[400px] overflow-hidden z-40 rounded-3xl absolute top-3 left-3 right-3 bottom-5'>
+						<Video
+							controls
+							className='object-cover h-full'
+							videoSrc={hero.video}
+						/>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div>
-			<p>
+
+		<div class='lg:hidden mt-16 flex flex-col gap-4'>
+			<p class='text-2xl relative w-full'>
 				{hero.subtitle}
 			</p>
 			<ButtonLink
-			href='#'
-			title={hero.buttonText}
-			className=''
-		/>
+				href='#'
+				title={hero.buttonText}
+				className=''
+			/>
 		</div>
-		
 	</Container>
 </Section>
 

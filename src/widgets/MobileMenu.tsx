@@ -25,7 +25,7 @@ const MobileMenu = ({ className }: Props) => {
 			<div
 				onClick={() => setIsVisible(false)}
 				class={
-					'rounded-full flex justify-center items-center m-auto bg-accent absolute right-6 top-4 h-10 w-10 '
+					'rounded-full flex justify-center items-center m-auto bg-accent absolute right-6 top-4 h-10 w-10  hover:bg-accent-secondary'
 				}>
 				<X />
 			</div>
@@ -33,7 +33,7 @@ const MobileMenu = ({ className }: Props) => {
 	) : (
 		<div
 			onClick={() => setIsVisible(prev => !prev)}
-			className='md:hidden absolute flex justify-center z-20 items-center right-6 top-4 h-10 w-10  bg-accent rounded-full'>
+			className='md:hidden absolute flex justify-center z-20 items-center right-6 top-4 h-10 w-10  bg-accent rounded-full  hover:bg-accent-secondary'>
 			<Menu class={'stroke-primary-text'} />
 		</div>
 	);
