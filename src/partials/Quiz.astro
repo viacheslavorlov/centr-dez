@@ -11,11 +11,11 @@ const questions: CollectionEntry<'questions'>['data'] = questionsData.map(item =
 const quizData = await getCollection('quiz');
 const quiz: CollectionEntry<'quiz'>['data'] = quizData[0].data;
 
-console.log(questions, quiz);
+// console.log(questions, quiz);
 ---
 
 <Section>
 	<Container>
-		<QuizCard client:only="react" />
+		<QuizCard client:only="preact" />
 	</Container>
 </Section>

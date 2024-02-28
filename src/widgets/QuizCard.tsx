@@ -1,13 +1,13 @@
-import clsx from 'clsx';
 import { useStore } from '@nanostores/preact';
-import { useState } from 'preact/hooks';
-import { numAnswer } from 'src/store';
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { useEffect } from 'react';
+import clsx from 'clsx';
+import type { ChangeEvent } from 'preact/compat';
+import { useEffect, useState } from 'preact/hooks';
+import { numAnswer } from 'src/store';
 
 type Question = {
 	title: string;
-	answers: { answer: string; result: string }[];
+	ansvers: { answer: string; result: string }[];
 };
 
 type Props = {
@@ -44,18 +44,28 @@ const getData = async () => {
 	const quizData = await getCollection('quiz');
 	const quiz: CollectionEntry<'quiz'>['data'] = quizData[0].data;
 
-	return {...quiz, questions}
+	return { ...quiz, questions };
 };
 
+export function QuizCard({ className }: { className?: string }) {
+	const [data, setData] = useState<Props | null>(null);
+	const [result, setResult] = useState<string[]>([]);
+	const [current, setCurrent] = useState<string>('');
+	console.log(data);
+	console.log(data?.questions?.[1]?.ansvers);
 
-
-export function QuizCard() {
-	const [data, setData] = useState<Props | null>(null)
 	// const { discount, questions, titel_1, titel_2, className, pizeTitle, pizeImg } = props;
 	const num = useStore(numAnswer);
 
 	const increase = () => {
-		numAnswer.set(num + 1);
+		if (data?.questions?.length && num <= data?.questions?.length && current) {
+			numAnswer.set(num + 1);
+			setResult(prev => [...prev, current]);
+		}
+	};
+
+	const giveAnsver = (e: ChangeEvent<HTMLInputElement>) => {
+		setCurrent(e.target.value!);
 	};
 
 	const dots = data?.questions?.map((item, i) => (
@@ -67,15 +77,16 @@ export function QuizCard() {
 	));
 
 	useEffect(() => {
-		getData().then(res => setData(res))
-	}, [])
+		getData().then(res => setData(res));
+		console.log('useeffect', data);
+	}, []);
 	if (!data) return null;
 	return (
 		<div class={clsx('grid grid-cols-1 md:grid-cols-9 gap-8', className)}>
 			<div class={'flex flex-col md:col-span-6 gap-6 md:gap-10'}>
 				<h2 class={'text-3xl md:text-5xl'}>
-					{data?.titel_1} {data?.questions?.length - num} вопрос{wordEnding(data?.questions.length - num)}{' '}
-					{data?.titel_2}{' '}
+					{data?.titel_1} {data?.questions?.length - num} вопрос
+					{wordEnding(data?.questions?.length - num)} {data?.titel_2}{' '}
 					<span class={'text-3xl md:text-5xl text-secondary-bg text-nowrap'}>
 						{data?.discount}
 					</span>
@@ -84,17 +95,24 @@ export function QuizCard() {
 				<div class={'flex w-full relative justify-between'}>
 					{dots} <hr class={'absolute w-full bottom-1/2 border-2 border-secondary-bg'} />
 				</div>
-				<div class={'text-3xl'}>{data?.questions[num].title}</div>
+				<div class={'text-3xl'}>{data?.questions?.[num]?.title}</div>
 				<div class={'flex flex-col gap-4'}>
-					{data?.questions[num].answers.map(item => (
+					{data?.questions?.[num]?.ansvers?.map((item, i) => (
 						<div class={'flex gap-2'}>
 							<input
-								value={item.result}
+								onChange={giveAnsver}
+								id={item.answer + i}
+								value={item?.result}
 								type={'radio'}
+								name={'answer' + num}
 							/>
-							<label>{item.answer}</label>
+							<label htmlFor={item.answer + i}>{item?.answer}</label>
 						</div>
 					))}
+				</div>
+
+				<div>
+					<button onClick={increase}>Increas</button>
 				</div>
 			</div>
 
@@ -108,9 +126,10 @@ export function QuizCard() {
 				<div class={'mt-auto mx-auto w-full'}>
 					<img
 						src={data?.pizeImg}
+						class={'mx-auto'}
 						alt={''}
-						width={'620'}
-						height={'620'}
+						width={'220'}
+						height={'220'}
 					/>
 				</div>
 			</div>

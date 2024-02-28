@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../partials/Hero.astro';
 import Quiz from '../partials/Quiz.astro';
+import Slider from '../widgets/Slider.astro';
 
 const hero = await getCollection('hero');
 const heroData = hero[0].data;
