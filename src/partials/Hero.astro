@@ -12,7 +12,7 @@ const heroData = await getCollection('hero');
 const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 ---
 
-<Section>
+<Section className='overflow-x-hidden'>
 	<Image
 		src={hero.smokeImg}
 		alt={''}
@@ -71,13 +71,13 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 					/>
 				</div>
 				<div
-					class={`rotate-3 mx-auto md:mx-0 relative h-[448px] w-[256px] shrink-0 bg-[url(${hero.videoWrapper})]`}>
+					class={`rotate-3 mx-auto md:mx-0 relative h-[448px] w-[240px] md:w-[256px] shrink-0 bg-[url(${hero.videoWrapper})]`}>
 					<Image
 						src={hero.videoWrapper}
 						alt={''}
 						height={'468'}
 						width={'262'}
-						class={'z-20 w-[256px] h-[440px] relative bg-black  rounded-[35px]'}
+						class={'z-20 w-[240px] md:w-[256px] h-[440px] relative bg-black  rounded-[35px]'}
 					/>
 					<Image
 						src={hero.dangerSign}
