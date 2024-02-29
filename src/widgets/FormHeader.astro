@@ -1,10 +1,8 @@
 ---
 import { MapPin } from 'lucide-preact';
-import { navItems } from 'src/config/menu';
 import Logo from './Logo.astro';
-import MobileMenu from './MobileMenu';
 
-const { phone } = Astro.props;
+// const { phone } = Astro.props;
 ---
 
 <section class={'width-screen relative bg-primary-bg'}>
@@ -15,14 +13,13 @@ const { phone } = Astro.props;
 		</div>
 		<div
 			class='ml-auto hidden text-lg w-full items-start justify-end gap-10 md:flex lg:items-center'>
-			{navItems.map(item => <a href={item.url}>{item.title}</a>)}
+			<a href={'/'}>Назад</a>
 		</div>
-		<div class='text-lg shrink-0 min-w-36 hidden lg:block'>
+		<!-- <div class='text-lg shrink-0 min-w-36 hidden lg:block'>
 			<a
 				href={`tel:${phone}`}
 				class='text-nowrap'
 				>{phone}</a>
-		</div>
-		<MobileMenu client:load />
+		</div> -->
 	</div>
 </section>

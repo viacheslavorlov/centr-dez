@@ -1,6 +1,5 @@
 import { config, fields, collection, singleton } from '@keystatic/core';
 
-type Parasites = 'грызуны' | 'тараканы' | 'клопы' | '';
 
 export default config({
 	storage: {

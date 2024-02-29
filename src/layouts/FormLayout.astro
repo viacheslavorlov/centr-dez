@@ -1,0 +1,37 @@
+---
+import '../styles.css';
+import FormHeader from '../widgets/FormHeader.astro'
+
+import { ViewTransitions } from 'astro:transitions';
+---
+
+<!doctype html>
+<html lang='ru'>
+	<head>
+		<meta charset='UTF-8' />
+		
+		<meta
+			name='viewport'
+			content='width=device-width'
+		/>
+		
+		<meta
+			name='generator'
+			content={Astro.generator}
+		/>
+		<title></title>
+	</head>
+	<body
+		class='h-full overflow-x-hidden text-base text-primary-text bg-primary-bg '>
+		<FormHeader/>
+
+		<slot />
+	</body>
+</html>
+<ViewTransitions/>
+
+<style>
+	body {
+		font-family: 'Manrope', sans-serif;
+	}
+</style>

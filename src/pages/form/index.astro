@@ -1,0 +1,30 @@
+---
+import FormLayout from '../../layouts/FormLayout.astro';
+if (Astro.request.method === 'POST') {
+	try {
+		const data = await Astro.request.formData();
+		
+		const phone = data.get('phone');
+		// Do something with the data
+	} catch (error) {
+		if (error instanceof Error) {
+			console.error(error.message);
+		}
+	}
+}
+---
+
+<FormLayout title='Отправить данные'>
+	<form method='POST'>
+		<label>
+			Телефон:
+			<input
+				type='text'
+				name='phone'
+				required
+				minlength='6'
+			/>
+		</label>
+		<button>Отправить</button>
+	</form>
+</FormLayout>

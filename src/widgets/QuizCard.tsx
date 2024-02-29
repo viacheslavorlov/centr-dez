@@ -20,6 +20,8 @@ type Props = {
 	className?: string;
 };
 
+type Parasites = 'грызуны' | 'тараканы' | 'клопы' | 'нет' | '';
+
 const wordEnding = (num: number) => {
 	switch (num) {
 		case 1:
@@ -49,23 +51,41 @@ const getData = async () => {
 
 export function QuizCard({ className }: { className?: string }) {
 	const [data, setData] = useState<Props | null>(null);
-	const [result, setResult] = useState<string[]>([]);
-	const [current, setCurrent] = useState<string>('');
-	console.log(data);
-	console.log(data?.questions?.[1]?.ansvers);
+	const [result, setResult] = useState<{ грызуны: number; тараканы: number; клопы: number }>({
+		грызуны: 0,
+		тараканы: 0,
+		клопы: 0,
+	});
+	const [current, setCurrent] = useState<Parasites>('');
+	// console.log(data);
+	// console.log(data?.questions?.[1]?.ansvers);
 
-	// const { discount, questions, titel_1, titel_2, className, pizeTitle, pizeImg } = props;
 	const num = useStore(numAnswer);
 
 	const increase = () => {
-		if (data?.questions?.length && num <= data?.questions?.length && current) {
+		if (data?.questions?.length && current && num < data?.questions?.length && current) {
 			numAnswer.set(num + 1);
-			setResult(prev => [...prev, current]);
+			current.split(' ').forEach(item => {
+				setResult(prev => ({ ...prev, [item]: prev[item] + 1 }));
+			});
+			setCurrent(prev => '');
+		}
+	};
+
+	const decrease = () => {
+		if (data?.questions?.length && num < data?.questions?.length && current) {
+			numAnswer.set(num - 1);
+			if (current) {
+				current.split(' ').forEach(item => {
+					setResult(prev => ({ ...prev, [item]: prev[item] - 1 }));
+				});
+				setCurrent(prev => '');
+			}
 		}
 	};
 
 	const giveAnsver = (e: ChangeEvent<HTMLInputElement>) => {
-		setCurrent(e.target.value!);
+		setCurrent(e?.target?.value!);
 	};
 
 	const dots = data?.questions?.map((item, i) => (
@@ -80,6 +100,7 @@ export function QuizCard({ className }: { className?: string }) {
 		getData().then(res => setData(res));
 		console.log('useeffect', data);
 	}, []);
+
 	if (!data) return null;
 	return (
 		<div class={clsx('grid grid-cols-1 md:grid-cols-9 gap-8', className)}>
@@ -104,15 +125,50 @@ export function QuizCard({ className }: { className?: string }) {
 								id={item.answer + i}
 								value={item?.result}
 								type={'radio'}
+								checked={current === item.result}
 								name={'answer' + num}
+								className={
+									'w-4 h-4  rounded-full text-accent bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
+								}
 							/>
 							<label htmlFor={item.answer + i}>{item?.answer}</label>
 						</div>
 					))}
 				</div>
 
-				<div>
-					<button onClick={increase}>Increas</button>
+				<div class={'flex flex-col md:flex-row w-full gap-4 md:gap-8'}>
+					<button
+						class={clsx(
+							'button relative bg-accent text-center px-4 w-full py-2 rounded-full text-white font-semibold hover:bg-accent-secondary',
+							className
+						)}
+						onClick={decrease}>
+						Назад
+					</button>
+					{num + 1 === data.questions.length ? (
+						<a
+							title={current === '' ? 'Ответьте на последний вопрос' : ''}
+							disabled={current === ''}
+							style={
+								current === '' ? { pointerEvents: 'none', background: 'gray' } : {}
+							}
+							class={
+								'button relative  drop-shadow-lg bg-accent text-center px-4 w-full py-2 rounded-full text-white font-semibold hover:bg-accent-secondary'
+							}
+							href='/form'>
+							<button class={clsx('', className)}>Получить подарок</button>
+						</a>
+					) : (
+						<button
+							disabled={!current}
+							class={clsx(
+								'button relative  drop-shadow-lg bg-accent text-center px-4 w-full py-2 rounded-full text-white font-semibold hover:bg-accent-secondary',
+								className
+							)}
+							onClick={increase}>
+							Вперед
+						</button>
+					)}
 				</div>
 			</div>
 
@@ -120,7 +176,8 @@ export function QuizCard({ className }: { className?: string }) {
 				<div>
 					<p class={'text-center text-lg mb-6'}>{data?.pizeTitle}</p>
 					<p class={'text-2xl text-center'}>
-						{num + 1} вопрос{wordEnding(num + 1)}
+						{data.questions.length! - num} вопрос
+						{wordEnding(data.questions.length! - num)}
 					</p>
 				</div>
 				<div class={'mt-auto mx-auto w-full'}>

@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../partials/Hero.astro';
 import Quiz from '../partials/Quiz.astro';
-import Slider from '../widgets/Slider.astro';
 
 const hero = await getCollection('hero');
 const heroData = hero[0].data;
@@ -11,7 +10,73 @@ const heroData = hero[0].data;
 
 <Layout
 	phone={heroData.phone}
+	icon={'/favicon.ico'}
 	title={heroData.windowTitle}>
 	<Hero />
-	<Quiz/>
+	<Quiz />
 </Layout>
+<style is:global>
+	@keyframes slide {
+		0% {
+			opacity: 1;
+			bottom: -100%;
+			left: -10%;
+			width: 10%;
+			height: 201%;
+		}
+		15% {
+			opacity: 0.9;
+			left: -30%;
+			bottom: -180%;
+			width: 100%;
+			height: 350%;
+		}
+		30% {
+			opacity: 0.8;
+			left: -50%;
+			bottom: -200%;
+			width: 400%;
+			height: 400%;
+		}
+		40% {
+			opacity: 0;
+			width: 500%;
+			height: 400%;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.button {
+		overflow: hidden;
+		position: relative;
+		transition: all 200ms;
+		--tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+			drop-shadow(0 4px 3px rgb(0 0 0 / 0.2));
+		filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)
+			var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia)
+			var(--tw-drop-shadow);
+	}
+
+	.button::before {
+		content: '';
+		position: absolute;
+		bottom: -50%;
+		left: -10%;
+		width: 30%;
+		height: 200%;
+		background: linear-gradient(60deg, transparent, #fafafa);
+		animation: slide 4s linear infinite;
+		border-radius: 50%;
+	}
+	.button:hover {
+		transform: scale(1.05);
+		background-color:;
+	}
+
+	.button:disabled {
+		background: gray;
+		pointer-events: none;
+	}
+</style>
