@@ -8,6 +8,6 @@ const { className, children } = Astro.props;
 ---
 
 <!-- Переписать классы если нужно -->
-<div class={`mx-auto flex justify-center p-4 items-center w-full max-w-[1400px] ${className}`}>
+<div class={`mx-auto flex justify-center px-4 md:px-8 lg:px-12 items-center w-full max-w-[1400px] ${className}`}>
 	<slot />
 </div>

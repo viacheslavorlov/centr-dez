@@ -15,6 +15,7 @@ export default config({
 				buttonLable: fields.text({ label: 'buttonLable' }),
 				buttonLink: fields.text({ label: 'buttonLink' }),
 				img: fields.text({ label: 'img' }),
+				reverse: fields.text({lable: 'reverse'}),
 				resons: fields.array(
 					fields.object({
 						title: fields.text({ label: 'titel' }),
@@ -22,6 +23,7 @@ export default config({
 				),
 				content: fields.document({
 					label: 'Content',
+
 					formatting: true,
 					dividers: true,
 					links: true,

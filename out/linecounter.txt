@@ -1,0 +1,2189 @@
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-02-29 17:17:07
+count workspace : /home/viacheslav/WebstormProjects/centr-dez
+total files : 1854
+total code lines : 104071
+total comment lines : 1435
+total blank lines : 9395
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |           .mjs|            382|             36|             28|   0.37|
+   |            .ts|           6960|            145|            193|    6.7|
+   |          .json|          10666|              0|             78|     10|
+   |            .md|            239|              2|             97|   0.23|
+   |               |             37|              0|             12|  0.036|
+   |            .js|            223|             39|              3|   0.21|
+   |         .astro|          57351|            943|           5860|     55|
+   |           .svg|             18|              0|              0|  0.017|
+   |          .html|             41|              5|              2|  0.039|
+   |          .mdoc|             85|              0|              1|  0.082|
+   |          .yaml|             72|              0|              0|  0.069|
+   |           .tsx|          27891|            264|           3113|     27|
+   |           .css|            106|              1|              8|   0.10|
+   -------------------------------------------------------------------------
+.astro/keystatic-imports.js, code is 3, comment is 0, blank is 0.
+.astro/types.d.ts, code is 228, comment is 5, blank is 18.
+.gitignore, code is 17, comment is 0, blank is 8.
+.history/astro.config_20240227134851.mjs, code is 10, comment is 1, blank is 2.
+.history/astro.config_20240227134853.mjs, code is 10, comment is 1, blank is 2.
+.history/astro.config_20240227134952.mjs, code is 16, comment is 2, blank is 2.
+.history/astro.config_20240227140613.mjs, code is 16, comment is 2, blank is 2.
+.history/astro.config_20240227140651.mjs, code is 16, comment is 2, blank is 2.
+.history/astro.config_20240227140901.mjs, code is 16, comment is 2, blank is 2.
+.history/astro.config_20240227141523.mjs, code is 16, comment is 2, blank is 2.
+.history/astro.config_20240227141536.mjs, code is 16, comment is 2, blank is 2.
+.history/astro.config_20240227141736.mjs, code is 16, comment is 2, blank is 2.
+.history/astro.config_20240227141755.mjs, code is 17, comment is 2, blank is 2.
+.history/keystatic.config_19851026111459.ts, code is 27, comment is 0, blank is 1.
+.history/keystatic.config_20240227115940.ts, code is 37, comment is 0, blank is 1.
+.history/keystatic.config_20240227120135.ts, code is 37, comment is 0, blank is 2.
+.history/keystatic.config_20240227120138.ts, code is 37, comment is 0, blank is 2.
+.history/keystatic.config_20240227120250.ts, code is 38, comment is 0, blank is 1.
+.history/keystatic.config_20240227120446.ts, code is 38, comment is 0, blank is 2.
+.history/keystatic.config_20240227120553.ts, code is 43, comment is 1, blank is 2.
+.history/keystatic.config_20240227120638.ts, code is 38, comment is 0, blank is 2.
+.history/keystatic.config_20240227121041.ts, code is 39, comment is 0, blank is 1.
+.history/keystatic.config_20240227121101.ts, code is 39, comment is 0, blank is 1.
+.history/keystatic.config_20240227121217.ts, code is 42, comment is 0, blank is 2.
+.history/keystatic.config_20240227121238.ts, code is 42, comment is 0, blank is 2.
+.history/keystatic.config_20240227121305.ts, code is 43, comment is 0, blank is 2.
+.history/keystatic.config_20240227121316.ts, code is 43, comment is 0, blank is 2.
+.history/keystatic.config_20240227121516.ts, code is 43, comment is 0, blank is 2.
+.history/keystatic.config_20240227121538.ts, code is 43, comment is 0, blank is 2.
+.history/keystatic.config_20240227121613.ts, code is 43, comment is 5, blank is 2.
+.history/keystatic.config_20240227122011.ts, code is 44, comment is 5, blank is 2.
+.history/keystatic.config_20240227122205.ts, code is 44, comment is 5, blank is 2.
+.history/keystatic.config_20240227122301.ts, code is 44, comment is 5, blank is 2.
+.history/keystatic.config_20240227122507.ts, code is 43, comment is 5, blank is 1.
+.history/keystatic.config_20240227122651.ts, code is 43, comment is 5, blank is 1.
+.history/keystatic.config_20240227122723.ts, code is 42, comment is 5, blank is 1.
+.history/keystatic.config_20240227122903.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227122918.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227122928.ts, code is 51, comment is 6, blank is 1.
+.history/keystatic.config_20240227122947.ts, code is 51, comment is 6, blank is 1.
+.history/keystatic.config_20240227123009.ts, code is 51, comment is 6, blank is 1.
+.history/keystatic.config_20240227123050.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227123105.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227123137.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227123146.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227123252.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227123307.ts, code is 52, comment is 5, blank is 1.
+.history/keystatic.config_20240227123531.ts, code is 52, comment is 0, blank is 1.
+.history/keystatic.config_20240227123658.ts, code is 52, comment is 0, blank is 1.
+.history/keystatic.config_20240227123732.ts, code is 52, comment is 0, blank is 2.
+.history/keystatic.config_20240227123800.ts, code is 53, comment is 0, blank is 1.
+.history/keystatic.config_20240227123812.ts, code is 53, comment is 0, blank is 1.
+.history/keystatic.config_20240227123832.ts, code is 53, comment is 0, blank is 1.
+.history/keystatic.config_20240227123837.ts, code is 53, comment is 0, blank is 1.
+.history/keystatic.config_20240227123904.ts, code is 53, comment is 0, blank is 1.
+.history/keystatic.config_20240227124034.ts, code is 54, comment is 0, blank is 1.
+.history/keystatic.config_20240227141259.ts, code is 44, comment is 0, blank is 1.
+.history/keystatic.config_20240227150855.ts, code is 44, comment is 0, blank is 1.
+.history/keystatic.config_20240227150941.ts, code is 45, comment is 0, blank is 1.
+.history/keystatic.config_20240228104718.ts, code is 46, comment is 0, blank is 1.
+.history/keystatic.config_20240228104800.ts, code is 46, comment is 0, blank is 1.
+.history/keystatic.config_20240228115130.ts, code is 47, comment is 0, blank is 1.
+.history/keystatic.config_20240228115259.ts, code is 47, comment is 0, blank is 1.
+.history/keystatic.config_20240228140239.ts, code is 54, comment is 0, blank is 2.
+.history/keystatic.config_20240228140402.ts, code is 56, comment is 0, blank is 2.
+.history/keystatic.config_20240228140454.ts, code is 56, comment is 0, blank is 1.
+.history/keystatic.config_20240228140746.ts, code is 65, comment is 0, blank is 4.
+.history/keystatic.config_20240228141058.ts, code is 66, comment is 0, blank is 3.
+.history/keystatic.config_20240228141355.ts, code is 67, comment is 0, blank is 4.
+.history/keystatic.config_20240228141403.ts, code is 67, comment is 0, blank is 4.
+.history/keystatic.config_20240228141415.ts, code is 67, comment is 0, blank is 4.
+.history/keystatic.config_20240228141434.ts, code is 67, comment is 0, blank is 4.
+.history/keystatic.config_20240228141457.ts, code is 67, comment is 0, blank is 4.
+.history/keystatic.config_20240228141517.ts, code is 67, comment is 0, blank is 4.
+.history/keystatic.config_20240228141908.ts, code is 72, comment is 0, blank is 2.
+.history/keystatic.config_20240228141951.ts, code is 82, comment is 0, blank is 2.
+.history/keystatic.config_20240228142323.ts, code is 82, comment is 0, blank is 2.
+.history/keystatic.config_20240228142328.ts, code is 82, comment is 0, blank is 2.
+.history/keystatic.config_20240228144847.ts, code is 82, comment is 0, blank is 3.
+.history/keystatic.config_20240228144914.ts, code is 83, comment is 0, blank is 2.
+.history/keystatic.config_20240228145307.ts, code is 84, comment is 0, blank is 2.
+.history/keystatic.config_20240228155318.ts, code is 84, comment is 0, blank is 2.
+.history/keystatic.config_20240228155635.ts, code is 84, comment is 0, blank is 2.
+.history/keystatic.config_20240229093749.ts, code is 83, comment is 0, blank is 2.
+.history/keystatic.config_20240229131056.ts, code is 94, comment is 0, blank is 2.
+.history/keystatic.config_20240229131558.ts, code is 98, comment is 0, blank is 1.
+.history/keystatic.config_20240229131624.ts, code is 98, comment is 0, blank is 1.
+.history/keystatic.config_20240229131749.ts, code is 98, comment is 0, blank is 1.
+.history/keystatic.config_20240229131901.ts, code is 98, comment is 0, blank is 1.
+.history/keystatic.config_20240229135239.ts, code is 99, comment is 0, blank is 1.
+.history/keystatic.config_20240229141506.ts, code is 115, comment is 0, blank is 1.
+.history/keystatic.config_20240229141526.ts, code is 115, comment is 0, blank is 1.
+.history/keystatic.config_20240229141540.ts, code is 115, comment is 0, blank is 1.
+.history/keystatic.config_20240229141635.ts, code is 111, comment is 0, blank is 1.
+.history/keystatic.config_20240229161514.ts, code is 127, comment is 0, blank is 1.
+.history/keystatic.config_20240229161559.ts, code is 127, comment is 0, blank is 1.
+.history/keystatic.config_20240229161613.ts, code is 127, comment is 0, blank is 1.
+.history/keystatic.config_20240229161738.ts, code is 127, comment is 0, blank is 1.
+.history/keystatic.config_20240229161823.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229161900.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229162010.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229162050.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229162138.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229162219.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229162253.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229162338.ts, code is 126, comment is 0, blank is 1.
+.history/keystatic.config_20240229165720.ts, code is 134, comment is 0, blank is 1.
+.history/package_20240227132429.json, code is 28, comment is 0, blank is 0.
+.history/package_20240227141035.json, code is 32, comment is 0, blank is 0.
+.history/package_20240227141209.json, code is 32, comment is 0, blank is 0.
+.history/package_20240227141411.json, code is 28, comment is 0, blank is 1.
+.history/package_20240229104600.json, code is 32, comment is 0, blank is 0.
+.history/src/config/menu_20240227124848.ts, code is 6, comment is 1, blank is 1.
+.history/src/config/menu_20240227125618.ts, code is 6, comment is 1, blank is 1.
+.history/src/config/menu_20240227132045.ts, code is 6, comment is 1, blank is 1.
+.history/src/content/config_19851026111459.ts, code is 7, comment is 2, blank is 2.
+.history/src/content/config_20240229091650.ts, code is 7, comment is 1, blank is 2.
+.history/src/content/config_20240229092203.ts, code is 12, comment is 2, blank is 3.
+.history/src/content/config_20240229092356.ts, code is 16, comment is 2, blank is 3.
+.history/src/content/config_20240229092633.ts, code is 7, comment is 11, blank is 3.
+.history/src/content/config_20240229092707.ts, code is 7, comment is 11, blank is 3.
+.history/src/content/quiz/index_20240228150322.yaml, code is 5, comment is 0, blank is 0.
+.history/src/content/quiz/index_20240228155742.yaml, code is 5, comment is 0, blank is 0.
+.history/src/layouts/FormLayout_20240229112153.astro, code is 0, comment is 0, blank is 0.
+.history/src/layouts/FormLayout_20240229112251.astro, code is 3, comment is 0, blank is 1.
+.history/src/layouts/FormLayout_20240229112326.astro, code is 4, comment is 0, blank is 1.
+.history/src/layouts/FormLayout_20240229112345.astro, code is 42, comment is 0, blank is 4.
+.history/src/layouts/FormLayout_20240229112826.astro, code is 31, comment is 0, blank is 6.
+.history/src/layouts/FormLayout_20240229113035.astro, code is 31, comment is 0, blank is 6.
+.history/src/layouts/Layout_19851026111459.astro, code is 21, comment is 0, blank is 3.
+.history/src/layouts/Layout_20240227124300.astro, code is 35, comment is 0, blank is 3.
+.history/src/layouts/Layout_20240227125455.astro, code is 36, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240227125635.astro, code is 35, comment is 0, blank is 5.
+.history/src/layouts/Layout_20240227130020.astro, code is 37, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240227145631.astro, code is 37, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240227150527.astro, code is 38, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240227150656.astro, code is 38, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240227185438.astro, code is 40, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240227191003.astro, code is 40, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240227192528.astro, code is 45, comment is 0, blank is 4.
+.history/src/layouts/Layout_20240228094759.astro, code is 50, comment is 0, blank is 5.
+.history/src/layouts/Layout_20240228094911.astro, code is 50, comment is 0, blank is 5.
+.history/src/layouts/Layout_20240229110947.astro, code is 50, comment is 0, blank is 6.
+.history/src/layouts/Layout_20240229111005.astro, code is 51, comment is 0, blank is 5.
+.history/src/pages/form/index_20240229110552.astro, code is 0, comment is 0, blank is 0.
+.history/src/pages/form/index_20240229110657.astro, code is 7, comment is 0, blank is 3.
+.history/src/pages/form/index_20240229110844.astro, code is 26, comment is 1, blank is 5.
+.history/src/pages/form/index_20240229110854.astro, code is 26, comment is 1, blank is 5.
+.history/src/pages/form/index_20240229110927.astro, code is 29, comment is 1, blank is 1.
+.history/src/pages/form/index_20240229111050.astro, code is 27, comment is 1, blank is 2.
+.history/src/pages/form/index_20240229111124.astro, code is 27, comment is 1, blank is 2.
+.history/src/pages/form/index_20240229111131.astro, code is 27, comment is 1, blank is 2.
+.history/src/pages/form/index_20240229111154.astro, code is 27, comment is 1, blank is 2.
+.history/src/pages/form/index_20240229112635.astro, code is 27, comment is 1, blank is 2.
+.history/src/pages/index_19851026111459.astro, code is 10, comment is 0, blank is 2.
+.history/src/pages/index_20240227123955.astro, code is 7, comment is 0, blank is 3.
+.history/src/pages/index_20240227125343.astro, code is 9, comment is 0, blank is 3.
+.history/src/pages/index_20240227125427.astro, code is 8, comment is 0, blank is 3.
+.history/src/pages/index_20240227152027.astro, code is 9, comment is 0, blank is 3.
+.history/src/pages/index_20240227152154.astro, code is 9, comment is 0, blank is 2.
+.history/src/pages/index_20240227152229.astro, code is 12, comment is 0, blank is 2.
+.history/src/pages/index_20240228150207.astro, code is 14, comment is 0, blank is 2.
+.history/src/pages/index_20240228150314.astro, code is 14, comment is 0, blank is 2.
+.history/src/pages/index_20240228164058.astro, code is 14, comment is 0, blank is 2.
+.history/src/pages/index_20240228165143.astro, code is 14, comment is 0, blank is 2.
+.history/src/pages/index_20240228225605.astro, code is 16, comment is 0, blank is 2.
+.history/src/pages/index_20240228225628.astro, code is 16, comment is 0, blank is 2.
+.history/src/pages/index_20240228231534.astro, code is 15, comment is 0, blank is 2.
+.history/src/pages/index_20240228233304.astro, code is 15, comment is 0, blank is 3.
+.history/src/pages/index_20240228233306.astro, code is 15, comment is 0, blank is 3.
+.history/src/pages/index_20240228233318.astro, code is 16, comment is 0, blank is 2.
+.history/src/pages/index_20240228234553.astro, code is 15, comment is 0, blank is 2.
+.history/src/pages/index_20240229104157.astro, code is 16, comment is 0, blank is 3.
+.history/src/pages/index_20240229104234.astro, code is 67, comment is 0, blank is 4.
+.history/src/pages/index_20240229112016.astro, code is 72, comment is 0, blank is 4.
+.history/src/pages/index_20240229112050.astro, code is 72, comment is 0, blank is 4.
+.history/src/pages/index_20240229115920.astro, code is 75, comment is 0, blank is 6.
+.history/src/pages/index_20240229115945.astro, code is 76, comment is 0, blank is 6.
+.history/src/pages/index_20240229125128.astro, code is 77, comment is 0, blank is 6.
+.history/src/pages/index_20240229125158.astro, code is 77, comment is 0, blank is 5.
+.history/src/pages/index_20240229134236.astro, code is 79, comment is 0, blank is 5.
+.history/src/pages/index_20240229134254.astro, code is 79, comment is 0, blank is 5.
+.history/src/pages/index_20240229142740.astro, code is 81, comment is 0, blank is 5.
+.history/src/pages/index_20240229142759.astro, code is 81, comment is 0, blank is 5.
+.history/src/pages/index_20240229160548.astro, code is 82, comment is 0, blank is 5.
+.history/src/pages/index_20240229160609.astro, code is 82, comment is 0, blank is 5.
+.history/src/pages/index_20240229160730.astro, code is 87, comment is 0, blank is 6.
+.history/src/pages/index_20240229160757.astro, code is 87, comment is 0, blank is 6.
+.history/src/pages/index_20240229160810.astro, code is 87, comment is 0, blank is 6.
+.history/src/pages/index_20240229162543.astro, code is 89, comment is 0, blank is 6.
+.history/src/pages/index_20240229170851.astro, code is 91, comment is 0, blank is 6.
+.history/src/partials/Details_20240229170654.astro, code is 0, comment is 0, blank is 0.
+.history/src/partials/Details_20240229170727.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/Details_20240229170808.astro, code is 35, comment is 1, blank is 3.
+.history/src/partials/Details_20240229170857.astro, code is 35, comment is 1, blank is 3.
+.history/src/partials/Details_20240229170940.astro, code is 35, comment is 1, blank is 3.
+.history/src/partials/Details_20240229171004.astro, code is 37, comment is 1, blank is 3.
+.history/src/partials/Details_20240229171051.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Details_20240229171143.astro, code is 41, comment is 1, blank is 5.
+.history/src/partials/Details_20240229171204.astro, code is 41, comment is 1, blank is 5.
+.history/src/partials/Details_20240229171332.astro, code is 41, comment is 1, blank is 5.
+.history/src/partials/Details_20240229171412.astro, code is 41, comment is 1, blank is 5.
+.history/src/partials/DonDoItYourself_20240229133217.astro, code is 0, comment is 0, blank is 0.
+.history/src/partials/DonDoItYourself_20240229133330.astro, code is 6, comment is 0, blank is 4.
+.history/src/partials/DonDoItYourself_20240229133345.astro, code is 8, comment is 0, blank is 3.
+.history/src/partials/DonDoItYourself_20240229133417.astro, code is 10, comment is 0, blank is 3.
+.history/src/partials/DonDoItYourself_20240229133537.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/DonDoItYourself_20240229133712.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/DonDoItYourself_20240229133753.astro, code is 13, comment is 1, blank is 4.
+.history/src/partials/DonDoItYourself_20240229133806.astro, code is 13, comment is 1, blank is 4.
+.history/src/partials/DonDoItYourself_20240229133942.astro, code is 23, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229134039.astro, code is 27, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229134144.astro, code is 32, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229134411.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134420.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134516.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134540.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134622.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134627.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134703.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134734.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134830.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134919.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229134955.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229135045.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229135344.astro, code is 35, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229135431.astro, code is 35, comment is 1, blank is 3.
+.history/src/partials/DonDoItYourself_20240229135452.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229135645.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229135721.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229135740.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229135754.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229135844.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229135933.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140056.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140125.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140227.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140244.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140313.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140355.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140423.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229140947.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229141112.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229141125.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229141137.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229160204.astro, code is 38, comment is 1, blank is 2.
+.history/src/partials/DonDoItYourself_20240229165735.astro, code is 37, comment is 1, blank is 2.
+.history/src/partials/Hero_20240227151314.astro, code is 0, comment is 0, blank is 0.
+.history/src/partials/Hero_20240227151502.astro, code is 8, comment is 0, blank is 3.
+.history/src/partials/Hero_20240227151754.astro, code is 12, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227151901.astro, code is 14, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227151944.astro, code is 14, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227152110.astro, code is 14, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227152324.astro, code is 14, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227152332.astro, code is 14, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227152618.astro, code is 14, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227153635.astro, code is 14, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227153711.astro, code is 14, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227153932.astro, code is 19, comment is 0, blank is 3.
+.history/src/partials/Hero_20240227154152.astro, code is 22, comment is 0, blank is 3.
+.history/src/partials/Hero_20240227154230.astro, code is 23, comment is 0, blank is 4.
+.history/src/partials/Hero_20240227154340.astro, code is 23, comment is 0, blank is 4.
+.history/src/partials/Hero_20240227154353.astro, code is 23, comment is 0, blank is 4.
+.history/src/partials/Hero_20240227154428.astro, code is 23, comment is 0, blank is 3.
+.history/src/partials/Hero_20240227154449.astro, code is 24, comment is 0, blank is 2.
+.history/src/partials/Hero_20240227154544.astro, code is 24, comment is 0, blank is 2.
+.history/src/partials/Hero_20240227160845.astro, code is 24, comment is 0, blank is 4.
+.history/src/partials/Hero_20240227160935.astro, code is 26, comment is 0, blank is 3.
+.history/src/partials/Hero_20240227200346.astro, code is 48, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227201423.astro, code is 48, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227202634.astro, code is 48, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227202715.astro, code is 48, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227202730.astro, code is 48, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227202748.astro, code is 48, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203108.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203111.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203116.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203121.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203133.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203209.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203221.astro, code is 48, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227203232.astro, code is 26, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227204208.astro, code is 27, comment is 0, blank is 4.
+.history/src/partials/Hero_20240227204305.astro, code is 27, comment is 0, blank is 4.
+.history/src/partials/Hero_20240227204435.astro, code is 27, comment is 0, blank is 4.
+.history/src/partials/Hero_20240227204728.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227204812.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227204847.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227205128.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227215749.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227215808.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227215848.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227215855.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227215859.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227215923.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227220032.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227220117.astro, code is 51, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220146.astro, code is 51, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220220.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220228.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220621.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220644.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220653.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220714.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220730.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220839.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220910.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227220919.astro, code is 49, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227221543.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227221755.astro, code is 49, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222227.astro, code is 48, comment is 0, blank is 7.
+.history/src/partials/Hero_20240227222311.astro, code is 55, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227222330.astro, code is 55, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222359.astro, code is 53, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222406.astro, code is 53, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222433.astro, code is 53, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222458.astro, code is 53, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222542.astro, code is 53, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222558.astro, code is 53, comment is 0, blank is 6.
+.history/src/partials/Hero_20240227222625.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227222728.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227222736.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227222755.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227223134.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227223137.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227223150.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227223223.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227223319.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227223342.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227223423.astro, code is 52, comment is 1, blank is 6.
+.history/src/partials/Hero_20240227225429.astro, code is 31, comment is 0, blank is 5.
+.history/src/partials/Hero_20240227225451.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228091749.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228091800.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228091844.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228091901.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228093708.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228093728.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228093856.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228093915.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228093950.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228094301.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228094315.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228094344.astro, code is 32, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228095205.astro, code is 33, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228095335.astro, code is 33, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228095407.astro, code is 33, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228095419.astro, code is 33, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228095444.astro, code is 33, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228095507.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228095545.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228095734.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228095744.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228095814.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228095858.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228095915.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100024.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100034.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100055.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100102.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100129.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100224.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100253.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100335.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100346.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100413.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100429.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100454.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100529.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100535.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100616.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100642.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100717.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100733.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100738.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100800.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100818.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100841.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100851.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100925.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228100955.astro, code is 35, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228101037.astro, code is 36, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228101117.astro, code is 36, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228103141.astro, code is 36, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228103222.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228103447.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228103711.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228103749.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228103808.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228103848.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104319.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104351.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104538.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104548.astro, code is 37, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104625.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104909.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104936.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228104952.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105008.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105105.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105136.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105144.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105153.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105219.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105223.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228105242.astro, code is 40, comment is 0, blank is 7.
+.history/src/partials/Hero_20240228111111.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111122.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111147.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111156.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111210.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111234.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111252.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111310.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111345.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111352.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111408.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111418.astro, code is 60, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228111444.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111632.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111651.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111712.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111738.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111757.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111800.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111831.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111847.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111856.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111905.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111915.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111925.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111933.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111939.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111949.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228111952.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112005.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112012.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112029.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112041.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112059.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112116.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112128.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112151.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112210.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112217.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112238.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112245.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112249.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112257.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112304.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112309.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112313.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112320.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112327.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112339.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112352.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112358.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112406.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112413.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112433.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112443.astro, code is 61, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228112536.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112615.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112626.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112640.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112701.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112710.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112731.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112737.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112751.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112756.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112803.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112826.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112837.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112931.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112944.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112951.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228112956.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113013.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113019.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113027.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113037.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113043.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113055.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113103.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113136.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113204.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113214.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113218.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113242.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113253.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113308.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113311.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113316.astro, code is 62, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228113957.astro, code is 62, comment is 0, blank is 4.
+.history/src/partials/Hero_20240228114256.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114318.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114430.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114534.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114635.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114708.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114734.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114741.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114747.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114750.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228114759.astro, code is 67, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115105.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115336.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115354.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115427.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115438.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115446.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115505.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115511.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115518.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115536.astro, code is 68, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228115615.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115630.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115648.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115654.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115707.astro, code is 48, comment is 0, blank is 3.
+.history/src/partials/Hero_20240228115714.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115732.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115749.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115822.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115851.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115904.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115929.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115945.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228115954.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120041.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120124.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120138.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120147.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120214.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120308.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120318.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120325.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120405.astro, code is 65, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228120510.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228120516.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228120522.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121016.astro, code is 72, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228121035.astro, code is 72, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228121101.astro, code is 72, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228121151.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121212.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121232.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121338.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121346.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121403.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121633.astro, code is 72, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121851.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121920.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228121946.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122149.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122231.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122237.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122244.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122332.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122404.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122422.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122522.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122558.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122611.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122634.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122640.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122645.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122650.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122657.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122729.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122733.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122754.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122818.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122827.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122907.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122919.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122938.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228122947.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123000.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123014.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123021.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123025.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123029.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123033.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123040.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123049.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123104.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123127.astro, code is 77, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228123144.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123247.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123306.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123333.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123341.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123401.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123416.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123453.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123503.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123515.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123545.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123608.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123749.astro, code is 77, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228123832.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123855.astro, code is 77, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228123949.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124012.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124045.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124143.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124207.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124211.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124220.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124225.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124450.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124510.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124625.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124651.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124658.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124725.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124741.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124758.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124829.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124843.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124901.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124918.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124927.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124946.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124951.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228124958.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125008.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125021.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125027.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125101.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125112.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125124.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125153.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125222.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125243.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125300.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125354.astro, code is 79, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228125422.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125453.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125500.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125523.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125611.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125627.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125651.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125709.astro, code is 80, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125813.astro, code is 81, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125827.astro, code is 81, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228125835.astro, code is 81, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130242.astro, code is 86, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228130309.astro, code is 86, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228130323.astro, code is 86, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228130331.astro, code is 86, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228130446.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130516.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130551.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130707.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130756.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130910.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130923.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130951.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228130957.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131011.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131013.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131101.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131351.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131414.astro, code is 88, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131507.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131603.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131633.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131713.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131724.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131735.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131753.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131801.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131821.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228131931.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228132023.astro, code is 93, comment is 0, blank is 6.
+.history/src/partials/Hero_20240228132042.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132050.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132128.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132246.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132254.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132302.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132310.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132332.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132341.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132357.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132444.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132512.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132529.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132544.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132701.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132719.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132752.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132803.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132843.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228132933.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228133049.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228133117.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228133252.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228133343.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228133836.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228133843.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228133942.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134003.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134013.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134109.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134121.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134126.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134136.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134204.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134220.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134242.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134345.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228134413.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135134.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135147.astro, code is 94, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135212.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135215.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135249.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135311.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135446.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135504.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135509.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135518.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135522.astro, code is 95, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135539.astro, code is 96, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135546.astro, code is 96, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135551.astro, code is 96, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135603.astro, code is 96, comment is 0, blank is 5.
+.history/src/partials/Hero_20240228135627.astro, code is 123, comment is 0, blank is 5.
+.history/src/partials/Hero_20240229100742.astro, code is 123, comment is 0, blank is 5.
+.history/src/partials/Hero_20240229100945.astro, code is 123, comment is 0, blank is 5.
+.history/src/partials/Hero_20240229101127.astro, code is 123, comment is 0, blank is 5.
+.history/src/partials/Hero_20240229163922.astro, code is 123, comment is 0, blank is 5.
+.history/src/partials/Hero_20240229163943.astro, code is 123, comment is 0, blank is 5.
+.history/src/partials/Hero_20240229164029.astro, code is 123, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228145433.astro, code is 0, comment is 0, blank is 0.
+.history/src/partials/Quiz_20240228145446.astro, code is 2, comment is 0, blank is 2.
+.history/src/partials/Quiz_20240228145448.astro, code is 2, comment is 0, blank is 2.
+.history/src/partials/Quiz_20240228145735.astro, code is 12, comment is 0, blank is 3.
+.history/src/partials/Quiz_20240228145838.astro, code is 13, comment is 0, blank is 3.
+.history/src/partials/Quiz_20240228150018.astro, code is 15, comment is 0, blank is 4.
+.history/src/partials/Quiz_20240228150049.astro, code is 15, comment is 0, blank is 4.
+.history/src/partials/Quiz_20240228150133.astro, code is 16, comment is 0, blank is 6.
+.history/src/partials/Quiz_20240228150418.astro, code is 16, comment is 0, blank is 6.
+.history/src/partials/Quiz_20240228150538.astro, code is 19, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228151631.astro, code is 18, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240228155046.astro, code is 19, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228163519.astro, code is 20, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228163600.astro, code is 20, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228163615.astro, code is 20, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228163628.astro, code is 20, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228164030.astro, code is 20, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228164955.astro, code is 20, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228165115.astro, code is 24, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228165820.astro, code is 22, comment is 0, blank is 6.
+.history/src/partials/Quiz_20240228170235.astro, code is 16, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228170653.astro, code is 17, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228170726.astro, code is 17, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228170742.astro, code is 17, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228233033.astro, code is 16, comment is 0, blank is 5.
+.history/src/partials/Quiz_20240228233748.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240228234622.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240228234637.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240228234650.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240229100733.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240229100854.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240229100904.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240229101023.astro, code is 15, comment is 1, blank is 5.
+.history/src/partials/Quiz_20240229165739.astro, code is 15, comment is 0, blank is 5.
+.history/src/partials/Types_20240229162448.astro, code is 0, comment is 0, blank is 0.
+.history/src/partials/Types_20240229162501.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/Types_20240229162610.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/Types_20240229162648.astro, code is 24, comment is 1, blank is 3.
+.history/src/partials/Types_20240229162701.astro, code is 24, comment is 1, blank is 3.
+.history/src/partials/Types_20240229162738.astro, code is 36, comment is 1, blank is 3.
+.history/src/partials/Types_20240229162826.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/Types_20240229162948.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163019.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163054.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163200.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163246.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163418.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163435.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163444.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163454.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163516.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163541.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163551.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229163600.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164208.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164341.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164412.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164428.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164504.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164535.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164640.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164733.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164823.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164829.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164901.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164930.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229164941.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229165009.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229165019.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/Types_20240229165038.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhartAwaits_20240229141646.astro, code is 0, comment is 0, blank is 0.
+.history/src/partials/WhartAwaits_20240229142402.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/WhartAwaits_20240229142428.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/WhartAwaits_20240229142642.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229142641.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229142819.astro, code is 12, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143109.astro, code is 16, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143141.astro, code is 15, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143200.astro, code is 17, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143205.astro, code is 17, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143251.astro, code is 17, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143318.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143332.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143344.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143415.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143503.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143516.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143528.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143614.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143628.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143644.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143712.astro, code is 16, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143811.astro, code is 20, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143840.astro, code is 21, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229143934.astro, code is 23, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229143951.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229144026.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229151721.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229151736.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229151752.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229151851.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229151907.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229151929.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229151937.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152009.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152045.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152054.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152108.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152119.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152124.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152323.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152336.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152422.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152442.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152453.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152506.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152518.astro, code is 26, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152559.astro, code is 27, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152607.astro, code is 27, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152630.astro, code is 27, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152654.astro, code is 27, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152844.astro, code is 27, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229152925.astro, code is 27, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229153122.astro, code is 27, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229153248.astro, code is 31, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153316.astro, code is 31, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153442.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153457.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153525.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153536.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153600.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153634.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153652.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153912.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153923.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153930.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229153944.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154004.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154035.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154109.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154124.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154142.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154207.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154245.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154258.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154408.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154436.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154441.astro, code is 36, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154527.astro, code is 36, comment is 1, blank is 5.
+.history/src/partials/WhatAwaits_20240229154550.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154607.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154619.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154657.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154706.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154750.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154805.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154809.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154819.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154842.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154846.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154853.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154903.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154921.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154932.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154948.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229154957.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155004.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155020.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155029.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155039.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155102.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155157.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155336.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155426.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155435.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155508.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155521.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155601.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155620.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155725.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155729.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155736.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155739.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155805.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155813.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155858.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229155909.astro, code is 37, comment is 1, blank is 4.
+.history/src/partials/WhatAwaits_20240229160031.astro, code is 33, comment is 1, blank is 3.
+.history/src/partials/WhatAwaits_20240229160050.astro, code is 33, comment is 1, blank is 3.
+.history/src/shared/ui/Button_20240227160353.astro, code is 0, comment is 0, blank is 0.
+.history/src/shared/ui/Button_20240227160454.astro, code is 17, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227160719.astro, code is 32, comment is 0, blank is 6.
+.history/src/shared/ui/Button_20240227160733.astro, code is 32, comment is 0, blank is 6.
+.history/src/shared/ui/Button_20240227160735.astro, code is 32, comment is 0, blank is 6.
+.history/src/shared/ui/Button_20240227160740.astro, code is 32, comment is 0, blank is 6.
+.history/src/shared/ui/Button_20240227161033.astro, code is 32, comment is 0, blank is 6.
+.history/src/shared/ui/Button_20240227161111.astro, code is 32, comment is 0, blank is 6.
+.history/src/shared/ui/Button_20240227161147.astro, code is 45, comment is 1, blank is 2.
+.history/src/shared/ui/Button_20240227161230.astro, code is 51, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227161310.astro, code is 51, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227161353.astro, code is 51, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227161404.astro, code is 50, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227161444.astro, code is 50, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227161452.astro, code is 50, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227161622.astro, code is 52, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227161804.astro, code is 54, comment is 0, blank is 2.
+.history/src/shared/ui/Button_20240227162256.astro, code is 24, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162411.astro, code is 20, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162510.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162534.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162640.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162657.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162713.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162726.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162744.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162817.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162843.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162921.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227162933.astro, code is 23, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227163016.astro, code is 26, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163043.astro, code is 26, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163054.astro, code is 26, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163107.astro, code is 26, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163120.astro, code is 26, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163138.astro, code is 26, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163221.astro, code is 28, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227163243.astro, code is 28, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227163301.astro, code is 28, comment is 0, blank is 3.
+.history/src/shared/ui/Button_20240227163526.astro, code is 34, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163543.astro, code is 34, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163622.astro, code is 33, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163745.astro, code is 34, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163832.astro, code is 34, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227163924.astro, code is 35, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227163932.astro, code is 35, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164016.astro, code is 35, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164105.astro, code is 36, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164118.astro, code is 40, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164129.astro, code is 40, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164147.astro, code is 31, comment is 9, blank is 5.
+.history/src/shared/ui/Button_20240227164153.astro, code is 31, comment is 9, blank is 5.
+.history/src/shared/ui/Button_20240227164155.astro, code is 32, comment is 9, blank is 4.
+.history/src/shared/ui/Button_20240227164314.astro, code is 32, comment is 9, blank is 4.
+.history/src/shared/ui/Button_20240227164345.astro, code is 32, comment is 9, blank is 4.
+.history/src/shared/ui/Button_20240227164510.astro, code is 32, comment is 9, blank is 4.
+.history/src/shared/ui/Button_20240227164545.astro, code is 41, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240227164558.astro, code is 40, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164700.astro, code is 40, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164846.astro, code is 41, comment is 0, blank is 5.
+.history/src/shared/ui/Button_20240227164949.astro, code is 44, comment is 0, blank is 7.
+.history/src/shared/ui/Button_20240227165013.astro, code is 40, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165040.astro, code is 40, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165125.astro, code is 40, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165139.astro, code is 40, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165146.astro, code is 40, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165210.astro, code is 40, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165313.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165326.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165402.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165415.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165441.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165506.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165532.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165545.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227165606.astro, code is 45, comment is 3, blank is 7.
+.history/src/shared/ui/Button_20240227165627.astro, code is 40, comment is 8, blank is 7.
+.history/src/shared/ui/Button_20240227165646.astro, code is 40, comment is 8, blank is 7.
+.history/src/shared/ui/Button_20240227165707.astro, code is 40, comment is 8, blank is 7.
+.history/src/shared/ui/Button_20240227165723.astro, code is 40, comment is 8, blank is 7.
+.history/src/shared/ui/Button_20240227165740.astro, code is 41, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227165747.astro, code is 41, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227165810.astro, code is 41, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227165834.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227165907.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227165917.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227165929.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170047.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170145.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170155.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170204.astro, code is 42, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170207.astro, code is 41, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170233.astro, code is 41, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170311.astro, code is 40, comment is 8, blank is 7.
+.history/src/shared/ui/Button_20240227170351.astro, code is 41, comment is 7, blank is 7.
+.history/src/shared/ui/Button_20240227170404.astro, code is 42, comment is 6, blank is 7.
+.history/src/shared/ui/Button_20240227170414.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227170446.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227170503.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227170546.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227170553.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227170617.astro, code is 44, comment is 4, blank is 7.
+.history/src/shared/ui/Button_20240227170657.astro, code is 45, comment is 4, blank is 5.
+.history/src/shared/ui/Button_20240227170705.astro, code is 45, comment is 4, blank is 5.
+.history/src/shared/ui/Button_20240227170745.astro, code is 44, comment is 5, blank is 5.
+.history/src/shared/ui/Button_20240227170812.astro, code is 44, comment is 5, blank is 5.
+.history/src/shared/ui/Button_20240227170854.astro, code is 44, comment is 5, blank is 6.
+.history/src/shared/ui/Button_20240227171000.astro, code is 45, comment is 5, blank is 6.
+.history/src/shared/ui/Button_20240227171012.astro, code is 45, comment is 5, blank is 6.
+.history/src/shared/ui/Button_20240227171038.astro, code is 46, comment is 5, blank is 5.
+.history/src/shared/ui/Button_20240227171041.astro, code is 46, comment is 5, blank is 5.
+.history/src/shared/ui/Button_20240227171202.astro, code is 46, comment is 5, blank is 5.
+.history/src/shared/ui/Button_20240227171213.astro, code is 45, comment is 6, blank is 5.
+.history/src/shared/ui/Button_20240227171241.astro, code is 44, comment is 7, blank is 5.
+.history/src/shared/ui/Button_20240227171308.astro, code is 43, comment is 8, blank is 5.
+.history/src/shared/ui/Button_20240227171332.astro, code is 42, comment is 9, blank is 5.
+.history/src/shared/ui/Button_20240227171349.astro, code is 43, comment is 8, blank is 5.
+.history/src/shared/ui/Button_20240227171403.astro, code is 44, comment is 7, blank is 5.
+.history/src/shared/ui/Button_20240227171446.astro, code is 46, comment is 6, blank is 5.
+.history/src/shared/ui/Button_20240227171500.astro, code is 46, comment is 6, blank is 5.
+.history/src/shared/ui/Button_20240227171551.astro, code is 47, comment is 6, blank is 6.
+.history/src/shared/ui/Button_20240227171603.astro, code is 48, comment is 6, blank is 7.
+.history/src/shared/ui/Button_20240227171629.astro, code is 49, comment is 6, blank is 7.
+.history/src/shared/ui/Button_20240227171654.astro, code is 49, comment is 6, blank is 7.
+.history/src/shared/ui/Button_20240227171716.astro, code is 55, comment is 8, blank is 7.
+.history/src/shared/ui/Button_20240227171825.astro, code is 47, comment is 6, blank is 8.
+.history/src/shared/ui/Button_20240227171854.astro, code is 47, comment is 6, blank is 8.
+.history/src/shared/ui/Button_20240227171906.astro, code is 47, comment is 6, blank is 8.
+.history/src/shared/ui/Button_20240227171919.astro, code is 48, comment is 5, blank is 9.
+.history/src/shared/ui/Button_20240227171927.astro, code is 48, comment is 5, blank is 9.
+.history/src/shared/ui/Button_20240227171948.astro, code is 48, comment is 5, blank is 9.
+.history/src/shared/ui/Button_20240227172017.astro, code is 50, comment is 5, blank is 9.
+.history/src/shared/ui/Button_20240227172034.astro, code is 52, comment is 5, blank is 10.
+.history/src/shared/ui/Button_20240227172054.astro, code is 50, comment is 5, blank is 10.
+.history/src/shared/ui/Button_20240227172144.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172210.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172222.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172238.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172258.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172321.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172409.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172434.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172501.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172519.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172532.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172539.astro, code is 51, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172610.astro, code is 52, comment is 6, blank is 10.
+.history/src/shared/ui/Button_20240227172629.astro, code is 53, comment is 6, blank is 11.
+.history/src/shared/ui/Button_20240227172652.astro, code is 53, comment is 6, blank is 11.
+.history/src/shared/ui/Button_20240227172703.astro, code is 53, comment is 6, blank is 11.
+.history/src/shared/ui/Button_20240227172734.astro, code is 56, comment is 6, blank is 11.
+.history/src/shared/ui/Button_20240227172755.astro, code is 57, comment is 6, blank is 11.
+.history/src/shared/ui/Button_20240227172843.astro, code is 58, comment is 6, blank is 11.
+.history/src/shared/ui/Button_20240227200937.astro, code is 58, comment is 6, blank is 11.
+.history/src/shared/ui/Button_20240227201050.astro, code is 58, comment is 0, blank is 4.
+.history/src/shared/ui/Button_20240228091342.astro, code is 58, comment is 0, blank is 4.
+.history/src/shared/ui/ButtonLink_20240228091341.astro, code is 58, comment is 0, blank is 4.
+.history/src/shared/ui/ButtonLink_20240228091513.astro, code is 59, comment is 0, blank is 3.
+.history/src/shared/ui/ButtonLink_20240228092026.astro, code is 60, comment is 0, blank is 3.
+.history/src/shared/ui/ButtonLink_20240228092226.astro, code is 64, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240228093642.astro, code is 64, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240228114513.astro, code is 63, comment is 0, blank is 6.
+.history/src/shared/ui/ButtonLink_20240228121609.astro, code is 63, comment is 0, blank is 6.
+.history/src/shared/ui/ButtonLink_20240228121721.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240228131530.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240228131545.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240228132222.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240228133511.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240228135701.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240229135400.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240229135442.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240229160317.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240229160324.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ButtonLink_20240229160440.astro, code is 66, comment is 0, blank is 5.
+.history/src/shared/ui/ContactForm_20240229102227.tsx, code is 0, comment is 0, blank is 0.
+.history/src/shared/ui/ContactForm_20240229102359.tsx, code is 5, comment is 0, blank is 0.
+.history/src/shared/ui/ContactForm_20240229103243.tsx, code is 22, comment is 11, blank is 4.
+.history/src/shared/ui/ContactForm_20240229103344.tsx, code is 22, comment is 11, blank is 2.
+.history/src/shared/ui/ContactForm_20240229103710.tsx, code is 22, comment is 11, blank is 2.
+.history/src/shared/ui/ContactForm_20240229103830.tsx, code is 12, comment is 1, blank is 0.
+.history/src/shared/ui/ContactForm_20240229103939.tsx, code is 9, comment is 0, blank is 1.
+.history/src/shared/ui/ContactForm_20240229104103.tsx, code is 64, comment is 0, blank is 8.
+.history/src/shared/ui/ContactForm_20240229104115.tsx, code is 11, comment is 0, blank is 7.
+.history/src/shared/ui/ContactForm_20240229104515.tsx, code is 7, comment is 0, blank is 0.
+.history/src/shared/ui/ContactForm_20240229104707.tsx, code is 7, comment is 0, blank is 0.
+.history/src/shared/ui/Container_20240227124645.astro, code is 8, comment is 0, blank is 1.
+.history/src/shared/ui/Container_20240227131707.astro, code is 8, comment is 0, blank is 1.
+.history/src/shared/ui/Container_20240227154606.astro, code is 8, comment is 0, blank is 1.
+.history/src/shared/ui/Container_20240227202323.astro, code is 10, comment is 0, blank is 2.
+.history/src/shared/ui/Container_20240227202415.astro, code is 11, comment is 0, blank is 1.
+.history/src/shared/ui/Container_20240227202436.astro, code is 11, comment is 0, blank is 1.
+.history/src/shared/ui/Container_20240227202534.astro, code is 10, comment is 0, blank is 2.
+.history/src/shared/ui/Container_20240227202536.astro, code is 10, comment is 0, blank is 2.
+.history/src/shared/ui/Container_20240227202543.astro, code is 11, comment is 0, blank is 2.
+.history/src/shared/ui/Container_20240227202609.astro, code is 11, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227124645.astro, code is 6, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227125831.astro, code is 6, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227130607.astro, code is 6, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227133842.astro, code is 6, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227133928.astro, code is 6, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227152634.astro, code is 6, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227152644.astro, code is 6, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227184304.astro, code is 12, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227200503.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227200625.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227200839.astro, code is 12, comment is 1, blank is 2.
+.history/src/shared/ui/Section_20240227201453.astro, code is 14, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227201526.astro, code is 14, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227201538.astro, code is 14, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227201557.astro, code is 12, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227201806.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227201820.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227201917.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227201953.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227202027.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227202041.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227202115.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227202155.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227202447.astro, code is 14, comment is 0, blank is 1.
+.history/src/shared/ui/Section_20240227202519.astro, code is 13, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240227202525.astro, code is 14, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240228154329.astro, code is 14, comment is 0, blank is 2.
+.history/src/shared/ui/Section_20240228154347.astro, code is 14, comment is 0, blank is 2.
+.history/src/shared/ui/Video_20240228102337.astro, code is 0, comment is 0, blank is 0.
+.history/src/shared/ui/Video_20240228102431.astro, code is 29, comment is 1, blank is 4.
+.history/src/shared/ui/Video_20240228102643.astro, code is 28, comment is 1, blank is 4.
+.history/src/shared/ui/Video_20240228102716.astro, code is 28, comment is 1, blank is 4.
+.history/src/shared/ui/Video_20240228102814.astro, code is 31, comment is 1, blank is 3.
+.history/src/shared/ui/Video_20240228102936.astro, code is 32, comment is 1, blank is 4.
+.history/src/shared/ui/Video_20240228103616.astro, code is 36, comment is 1, blank is 5.
+.history/src/shared/ui/Video_20240228103658.astro, code is 37, comment is 1, blank is 5.
+.history/src/shared/ui/Video_20240228103727.astro, code is 38, comment is 1, blank is 5.
+.history/src/shared/ui/Video_20240228104523.astro, code is 39, comment is 1, blank is 5.
+.history/src/shared/ui/Video_20240228112519.astro, code is 39, comment is 1, blank is 5.
+.history/src/store_20240228164258.ts, code is 0, comment is 0, blank is 0.
+.history/src/store_20240228164304.ts, code is 0, comment is 0, blank is 0.
+.history/src/store_20240228164349.ts, code is 2, comment is 0, blank is 1.
+.history/src/store_20240228234428.ts, code is 2, comment is 0, blank is 1.
+.history/src/store_20240228234434.ts, code is 2, comment is 0, blank is 1.
+.history/src/styles_19851026111459.css, code is 26, comment is 0, blank is 3.
+.history/src/styles_20240227130518.css, code is 0, comment is 0, blank is 0.
+.history/src/styles_20240227155026.css, code is 7, comment is 0, blank is 0.
+.history/src/styles_20240227155049.css, code is 7, comment is 0, blank is 0.
+.history/src/styles_20240227155321.css, code is 7, comment is 0, blank is 0.
+.history/src/styles_20240227193319.css, code is 7, comment is 0, blank is 0.
+.history/src/styles_20240227193507.css, code is 10, comment is 0, blank is 1.
+.history/src/styles_20240228094455.css, code is 10, comment is 0, blank is 1.
+.history/src/styles_20240228094702.css, code is 10, comment is 0, blank is 1.
+.history/src/styles_20240228094821.css, code is 10, comment is 0, blank is 1.
+.history/src/widgets/FormHeader_20240229112421.astro, code is 0, comment is 0, blank is 0.
+.history/src/widgets/FormHeader_20240229112544.astro, code is 23, comment is 0, blank is 2.
+.history/src/widgets/FormHeader_20240229112843.astro, code is 23, comment is 0, blank is 2.
+.history/src/widgets/FormHeader_20240229112854.astro, code is 22, comment is 1, blank is 2.
+.history/src/widgets/FormHeader_20240229113050.astro, code is 22, comment is 1, blank is 2.
+.history/src/widgets/Header_20240227125648.astro, code is 0, comment is 0, blank is 0.
+.history/src/widgets/Header_20240227125720.astro, code is 5, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227125814.astro, code is 5, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227125924.astro, code is 7, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130046.astro, code is 7, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130405.astro, code is 7, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130424.astro, code is 8, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130437.astro, code is 8, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130528.astro, code is 8, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130603.astro, code is 8, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130613.astro, code is 8, comment is 0, blank is 3.
+.history/src/widgets/Header_20240227130639.astro, code is 11, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227131746.astro, code is 11, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227131819.astro, code is 11, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227131903.astro, code is 12, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227131924.astro, code is 12, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227132537.astro, code is 13, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227132602.astro, code is 13, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227132646.astro, code is 13, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227132738.astro, code is 14, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227134747.astro, code is 14, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227140043.astro, code is 16, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227141640.astro, code is 17, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142346.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142505.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142520.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142529.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142558.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142608.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142612.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142618.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142633.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142640.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142646.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142656.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142658.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142933.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227142952.astro, code is 23, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227143011.astro, code is 21, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227143036.astro, code is 18, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227143142.astro, code is 18, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227143221.astro, code is 18, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227143236.astro, code is 18, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227143244.astro, code is 18, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227150247.astro, code is 18, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227150303.astro, code is 18, comment is 0, blank is 1.
+.history/src/widgets/Header_20240227150625.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153010.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153058.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153208.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153220.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153343.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153351.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153407.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153447.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153508.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153606.astro, code is 20, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227153619.astro, code is 21, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227154854.astro, code is 21, comment is 0, blank is 2.
+.history/src/widgets/Header_20240227223557.astro, code is 21, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228125901.astro, code is 21, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228125917.astro, code is 21, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228125924.astro, code is 28, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228130012.astro, code is 28, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228130052.astro, code is 28, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228130122.astro, code is 28, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228130135.astro, code is 28, comment is 0, blank is 2.
+.history/src/widgets/Header_20240228130143.astro, code is 28, comment is 0, blank is 2.
+.history/src/widgets/Header_20240229112404.astro, code is 26, comment is 0, blank is 2.
+.history/src/widgets/Logo_20240227130100.astro, code is 0, comment is 0, blank is 0.
+.history/src/widgets/Logo_20240227130148.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227130340.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227135934.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227135956.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227143338.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227143400.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227143437.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227143523.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227143554.astro, code is 6, comment is 0, blank is 3.
+.history/src/widgets/Logo_20240227143611.astro, code is 12, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227143618.astro, code is 12, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227143632.astro, code is 11, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227143645.astro, code is 9, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227143708.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227143746.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227150101.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227150121.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227150127.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227150133.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227150147.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227150222.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/Logo_20240227150355.astro, code is 10, comment is 0, blank is 1.
+.history/src/widgets/MobileMenu_20240227124725.tsx, code is 43, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227132927.tsx, code is 35, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227133008.tsx, code is 35, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227133023.tsx, code is 35, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227133056.tsx, code is 35, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227134058.tsx, code is 36, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227134109.tsx, code is 36, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227134256.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227134501.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135159.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135305.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135326.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135338.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135404.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135409.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135431.tsx, code is 41, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135533.tsx, code is 41, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135558.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135619.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135628.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135700.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135706.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135710.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135726.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135752.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135809.tsx, code is 40, comment is 0, blank is 4.
+.history/src/widgets/MobileMenu_20240227135827.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227135851.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227140141.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227140309.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227140327.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227140332.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227140342.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227140432.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227141816.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227141839.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227141858.tsx, code is 41, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227141933.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227141942.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227141952.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227142026.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227142048.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227142155.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227142908.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227143111.tsx, code is 40, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227220401.tsx, code is 37, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240227220518.tsx, code is 37, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240228133602.tsx, code is 37, comment is 0, blank is 5.
+.history/src/widgets/MobileMenu_20240228133633.tsx, code is 37, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228143711.tsx, code is 0, comment is 0, blank is 0.
+.history/src/widgets/QuizCard_20240228144215.tsx, code is 15, comment is 0, blank is 2.
+.history/src/widgets/QuizCard_20240228144458.tsx, code is 19, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228144749.tsx, code is 21, comment is 0, blank is 3.
+.history/src/widgets/QuizCard_20240228144823.tsx, code is 26, comment is 0, blank is 3.
+.history/src/widgets/QuizCard_20240228144831.tsx, code is 26, comment is 0, blank is 3.
+.history/src/widgets/QuizCard_20240228145135.tsx, code is 29, comment is 0, blank is 3.
+.history/src/widgets/QuizCard_20240228145236.tsx, code is 30, comment is 0, blank is 3.
+.history/src/widgets/QuizCard_20240228145424.tsx, code is 32, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228150830.tsx, code is 42, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228150836.tsx, code is 42, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228150908.tsx, code is 50, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228150917.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228150952.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151005.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151012.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151111.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151148.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151206.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151219.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151240.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151304.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151346.tsx, code is 52, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151421.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151435.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151506.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228151515.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228153943.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228153949.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228153952.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228153957.tsx, code is 54, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228154502.tsx, code is 55, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228154648.tsx, code is 55, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228154656.tsx, code is 55, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228154725.tsx, code is 55, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228154754.tsx, code is 55, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228154808.tsx, code is 55, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155025.tsx, code is 57, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155139.tsx, code is 57, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155200.tsx, code is 57, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155220.tsx, code is 57, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155335.tsx, code is 57, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155822.tsx, code is 57, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155830.tsx, code is 57, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228155845.tsx, code is 59, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228155950.tsx, code is 57, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228160023.tsx, code is 59, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160030.tsx, code is 59, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160045.tsx, code is 59, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160104.tsx, code is 59, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160137.tsx, code is 60, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160201.tsx, code is 62, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228160215.tsx, code is 61, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160254.tsx, code is 61, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160309.tsx, code is 61, comment is 0, blank is 4.
+.history/src/widgets/QuizCard_20240228160326.tsx, code is 61, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228160415.tsx, code is 61, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228160729.tsx, code is 62, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228160851.tsx, code is 64, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228160916.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161007.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161020.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161031.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161050.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161059.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161109.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161116.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161244.tsx, code is 67, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161252.tsx, code is 69, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228161315.tsx, code is 69, comment is 0, blank is 5.
+.history/src/widgets/QuizCard_20240228161639.tsx, code is 72, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161651.tsx, code is 72, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161705.tsx, code is 72, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161725.tsx, code is 73, comment is 0, blank is 6.
+.history/src/widgets/QuizCard_20240228161754.tsx, code is 73, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228161812.tsx, code is 73, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228161822.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228161850.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228161923.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228161948.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228162007.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228162018.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228162121.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228162158.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228162204.tsx, code is 72, comment is 0, blank is 9.
+.history/src/widgets/QuizCard_20240228162238.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162254.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162258.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162324.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162403.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162512.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162515.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162551.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162558.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162628.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162714.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162729.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162739.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162753.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162811.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162858.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162912.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162917.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228162925.tsx, code is 77, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228163006.tsx, code is 78, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228163058.tsx, code is 78, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228163226.tsx, code is 81, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228163418.tsx, code is 89, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228164557.tsx, code is 91, comment is 0, blank is 8.
+.history/src/widgets/QuizCard_20240228165330.tsx, code is 97, comment is 0, blank is 15.
+.history/src/widgets/QuizCard_20240228165351.tsx, code is 91, comment is 0, blank is 12.
+.history/src/widgets/QuizCard_20240228165527.tsx, code is 95, comment is 0, blank is 13.
+.history/src/widgets/QuizCard_20240228165550.tsx, code is 96, comment is 0, blank is 11.
+.history/src/widgets/QuizCard_20240228165804.tsx, code is 104, comment is 0, blank is 14.
+.history/src/widgets/QuizCard_20240228170025.tsx, code is 104, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228170619.astro, code is 59, comment is 5, blank is 11.
+.history/src/widgets/QuizCard_20240228170620.tsx, code is 59, comment is 5, blank is 11.
+.history/src/widgets/QuizCard_20240228170956.astro, code is 59, comment is 5, blank is 13.
+.history/src/widgets/QuizCard_20240228171051.astro, code is 55, comment is 4, blank is 13.
+.history/src/widgets/QuizCard_20240228171127.astro, code is 55, comment is 4, blank is 13.
+.history/src/widgets/QuizCard_20240228171304.astro, code is 63, comment is 4, blank is 13.
+.history/src/widgets/QuizCard_20240228171406.astro, code is 64, comment is 4, blank is 14.
+.history/src/widgets/QuizCard_20240228171414.astro, code is 64, comment is 4, blank is 14.
+.history/src/widgets/QuizCard_20240228171626.astro, code is 68, comment is 4, blank is 16.
+.history/src/widgets/QuizCard_20240228171639.astro, code is 68, comment is 4, blank is 16.
+.history/src/widgets/QuizCard_20240228231506.tsx, code is 104, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228233142.tsx, code is 103, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228233354.tsx, code is 104, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228233417.tsx, code is 105, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228233529.tsx, code is 105, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228233555.tsx, code is 105, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228233607.tsx, code is 105, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228233846.tsx, code is 105, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228233937.tsx, code is 105, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228234020.tsx, code is 105, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228234259.tsx, code is 106, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240228234515.tsx, code is 109, comment is 1, blank is 16.
+.history/src/widgets/QuizCard_20240228234825.tsx, code is 111, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228234853.tsx, code is 111, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228235017.tsx, code is 111, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228235150.tsx, code is 112, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228235210.tsx, code is 113, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228235316.tsx, code is 113, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228235333.tsx, code is 113, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240228235544.tsx, code is 114, comment is 1, blank is 14.
+.history/src/widgets/QuizCard_20240229000130.tsx, code is 119, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229000457.tsx, code is 123, comment is 1, blank is 16.
+.history/src/widgets/QuizCard_20240229000605.tsx, code is 122, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229000716.tsx, code is 122, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229000847.tsx, code is 122, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229000917.tsx, code is 122, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229001007.tsx, code is 121, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229001127.tsx, code is 121, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229001157.tsx, code is 122, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229092503.tsx, code is 109, comment is 14, blank is 15.
+.history/src/widgets/QuizCard_20240229092738.tsx, code is 122, comment is 1, blank is 15.
+.history/src/widgets/QuizCard_20240229093149.tsx, code is 124, comment is 2, blank is 15.
+.history/src/widgets/QuizCard_20240229093744.tsx, code is 128, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229093818.tsx, code is 129, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229093901.tsx, code is 128, comment is 2, blank is 17.
+.history/src/widgets/QuizCard_20240229094046.tsx, code is 129, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229094119.tsx, code is 129, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229094148.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229094204.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229094346.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229094657.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229094708.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229095043.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229095058.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229095208.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229095242.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229095346.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229095411.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229095520.tsx, code is 130, comment is 2, blank is 16.
+.history/src/widgets/QuizCard_20240229100434.tsx, code is 146, comment is 2, blank is 17.
+.history/src/widgets/QuizCard_20240229100633.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101249.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101253.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101307.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101321.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101343.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101351.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101444.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101446.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101541.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101556.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101854.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229101931.tsx, code is 156, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229103535.tsx, code is 157, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229103619.tsx, code is 163, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229104900.tsx, code is 163, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229105155.tsx, code is 157, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229105443.tsx, code is 161, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229105524.tsx, code is 161, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111253.tsx, code is 157, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111352.tsx, code is 164, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111449.tsx, code is 170, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111511.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111556.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111648.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111704.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111747.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111809.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111852.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111909.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229111937.tsx, code is 169, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229113435.tsx, code is 171, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229115844.tsx, code is 172, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229120009.tsx, code is 172, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229120014.tsx, code is 172, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121207.tsx, code is 173, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121341.tsx, code is 173, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121417.tsx, code is 173, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121443.tsx, code is 173, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121510.tsx, code is 173, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121523.tsx, code is 173, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121547.tsx, code is 172, comment is 2, blank is 18.
+.history/src/widgets/QuizCard_20240229121759.tsx, code is 173, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229122241.tsx, code is 173, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229122508.tsx, code is 173, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229122512.tsx, code is 173, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229122517.tsx, code is 173, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229122520.tsx, code is 173, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229123032.tsx, code is 173, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229123126.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229123232.tsx, code is 174, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229123342.tsx, code is 174, comment is 2, blank is 19.
+.history/src/widgets/QuizCard_20240229123454.tsx, code is 174, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229123553.tsx, code is 174, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229123626.tsx, code is 174, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229123930.tsx, code is 175, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229123951.tsx, code is 175, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229124135.tsx, code is 175, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229124238.tsx, code is 176, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229124249.tsx, code is 176, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229124254.tsx, code is 176, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229124509.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229124540.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229132614.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229132703.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229132709.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229141232.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229141239.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229141254.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229141301.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229141315.tsx, code is 173, comment is 2, blank is 20.
+.history/src/widgets/QuizCard_20240229165746.tsx, code is 173, comment is 0, blank is 19.
+.history/src/widgets/QuizCard_20240229165750.tsx, code is 172, comment is 0, blank is 19.
+.history/src/widgets/Slider_20240228225508.astro, code is 0, comment is 0, blank is 0.
+.history/src/widgets/Slider_20240228225545.astro, code is 60, comment is 3, blank is 7.
+.history/src/widgets/Slider_20240228225941.astro, code is 44, comment is 0, blank is 3.
+.history/src/widgets/Slider_20240228230002.astro, code is 43, comment is 0, blank is 3.
+.history/src/widgets/Slider_20240228230037.astro, code is 42, comment is 1, blank is 9.
+.history/src/widgets/Slider_20240228230151.astro, code is 65, comment is 2, blank is 14.
+.history/src/widgets/Slider_20240228230321.astro, code is 70, comment is 2, blank is 12.
+.history/src/widgets/Slider_20240228230444.astro, code is 75, comment is 2, blank is 14.
+.history/src/widgets/Slider_20240228230603.astro, code is 78, comment is 2, blank is 14.
+.history/src/widgets/Slider_20240228230635.astro, code is 78, comment is 2, blank is 14.
+.history/src/widgets/Slider_20240228230703.astro, code is 78, comment is 2, blank is 14.
+.history/src/widgets/Slider_20240228230727.astro, code is 78, comment is 2, blank is 14.
+.history/src/widgets/Slider_20240228230833.astro, code is 78, comment is 2, blank is 14.
+.history/src/widgets/Slider_20240228233244.astro, code is 78, comment is 2, blank is 14.
+.history/src/widgets/Tipewriter_20240227203243.astro, code is 0, comment is 0, blank is 0.
+.history/src/widgets/Tipewriter_20240227204103.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227204556.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227204632.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227204647.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227204853.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227204929.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227204951.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205048.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205103.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205204.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205224.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205229.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205234.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205238.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205256.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205341.astro, code is 40, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205411.astro, code is 40, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205451.astro, code is 40, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227205722.astro, code is 39, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227214626.astro, code is 40, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227214815.astro, code is 41, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227214915.astro, code is 42, comment is 0, blank is 6.
+.history/src/widgets/Tipewriter_20240227215021.astro, code is 44, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215113.astro, code is 44, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215134.astro, code is 44, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215205.astro, code is 44, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215233.astro, code is 44, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215348.astro, code is 44, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215402.astro, code is 44, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215552.astro, code is 45, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227215659.astro, code is 45, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227220823.astro, code is 46, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227221740.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227221842.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227221958.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222056.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222149.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222805.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222826.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222847.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222909.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222926.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222941.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227222948.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227223023.astro, code is 50, comment is 0, blank is 5.
+.history/src/widgets/Tipewriter_20240227223054.astro, code is 52, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227223215.astro, code is 52, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227223239.astro, code is 52, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227223823.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227223911.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227223954.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224010.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224139.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224247.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224359.astro, code is 52, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224447.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224510.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224525.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224558.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224612.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224647.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224857.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227224943.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227225026.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227225107.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227225242.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227225600.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227225905.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227225941.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227230027.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227230047.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227230214.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227230245.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227230310.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227230431.astro, code is 59, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240227230819.md, code is 0, comment is 0, blank is 0.
+.history/src/widgets/Tipewriter_20240227230955.md, code is 24, comment is 0, blank is 9.
+.history/src/widgets/Tipewriter_20240227231009.md, code is 24, comment is 0, blank is 9.
+.history/src/widgets/Tipewriter_20240227231021.md, code is 24, comment is 0, blank is 9.
+.history/src/widgets/Tipewriter_20240227231034.md, code is 24, comment is 0, blank is 9.
+.history/src/widgets/Tipewriter_20240228094038.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228095623.astro, code is 56, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228095643.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228095652.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228095714.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228095759.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228095942.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228104044.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228104227.astro, code is 58, comment is 1, blank is 5.
+.history/src/widgets/Tipewriter_20240228234155.astro, code is 57, comment is 2, blank is 5.
+.history/src/widgets/Tipewriter_20240229165754.astro, code is 57, comment is 1, blank is 5.
+.history/tailwind.config_20240227124357.mjs, code is 7, comment is 1, blank is 0.
+.history/tailwind.config_20240227133133.mjs, code is 8, comment is 1, blank is 1.
+.history/tailwind.config_20240227133640.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133650.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133704.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133732.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133739.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133753.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133756.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133800.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227133917.mjs, code is 14, comment is 1, blank is 0.
+.history/tailwind.config_20240227172926.mjs, code is 15, comment is 1, blank is 1.
+.history/tailwind.config_20240227172946.mjs, code is 15, comment is 1, blank is 1.
+.history/tailwind.config_20240227173003.mjs, code is 15, comment is 1, blank is 1.
+.history/tailwind.config_20240227173137.mjs, code is 15, comment is 1, blank is 1.
+.history/tsconfig_20240227124809.json, code is 7, comment is 0, blank is 0.
+.history/tsconfig_20240227141012.json, code is 12, comment is 0, blank is 1.
+.history/tsconfig_20240227141134.json, code is 10, comment is 0, blank is 1.
+.history/tsconfig_20240227141347.json, code is 12, comment is 0, blank is 1.
+.prettierignore, code is 3, comment is 0, blank is 0.
+astro.config.mjs, code is 17, comment is 2, blank is 2.
+CHANGELOG.md, code is 107, comment is 0, blank is 45.
+dist/,kj[f.png, it is a binary file.
+dist/_49f90493_c4a9_4407_83df_94f88a03351d_Photoroom_png_Photoroom.png, it is a binary file.
+dist/_astro/1vy-slyshite-shorohi-po-nocham.Clf8gfhJ.js, code is 7, comment is 0, blank is 0.
+dist/_astro/1vy-slyshite-shorohi-po-nocham.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/1vy-slyshite-shorohi-po-nocham.DHl7QljS.js, code is 7, comment is 0, blank is 0.
+dist/_astro/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.CiTpfuV9.js, code is 7, comment is 0, blank is 0.
+dist/_astro/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.DzqRASrf.js, code is 7, comment is 0, blank is 0.
+dist/_astro/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.Cv6cOSk4.js, code is 7, comment is 0, blank is 0.
+dist/_astro/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.DN34dvzx.js, code is 7, comment is 0, blank is 0.
+dist/_astro/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.Ch4mLqpO.js, code is 9, comment is 0, blank is 0.
+dist/_astro/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.feMyUItF.js, code is 7, comment is 0, blank is 0.
+dist/_astro/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.5xLYKMjr.js, code is 7, comment is 0, blank is 0.
+dist/_astro/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.Cz3facaA.js, code is 7, comment is 0, blank is 0.
+dist/_astro/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/astro/assets-service.wELP8qww.js, code is 15, comment is 2, blank is 3.
+dist/_astro/client.CuYUVflw.js, code is 7, comment is 0, blank is 0.
+dist/_astro/first-post.C3I0GcbZ.js, code is 2, comment is 0, blank is 0.
+dist/_astro/first-post.CuquWPRe.js, code is 7, comment is 0, blank is 0.
+dist/_astro/first-post.D9-J8n4i.js, code is 1, comment is 0, blank is 0.
+dist/_astro/hoisted.DqR2iBSn.js, code is 1, comment is 0, blank is 0.
+dist/_astro/hooks.module.DM7uocbS.js, code is 1, comment is 0, blank is 0.
+dist/_astro/index.6WjYqZEn.js, code is 21, comment is 0, blank is 0.
+dist/_astro/index.C0FWibR6.js, code is 16, comment is 0, blank is 0.
+dist/_astro/index.C7axDoVI.js, code is 2, comment is 0, blank is 0.
+dist/_astro/index.CGtGYZat.js, code is 7, comment is 0, blank is 0.
+dist/_astro/index.CLhkWUkk.css, code is 1, comment is 1, blank is 0.
+dist/_astro/index.CtIUGn5z.js, code is 6, comment is 0, blank is 0.
+dist/_astro/index.Dz9jkkeq.js, code is 17, comment is 0, blank is 0.
+dist/_astro/index.U6GXCydE.css, code is 1, comment is 0, blank is 0.
+dist/_astro/jsxRuntime.module.u1ZkBRD6.js, code is 1, comment is 0, blank is 0.
+dist/_astro/MobileMenu.CPZg9t6x.js, code is 5, comment is 20, blank is 0.
+dist/_astro/preact.module.CBmz4tZK.js, code is 1, comment is 0, blank is 0.
+dist/_astro/QuizCard.B_xN2Nop.js, code is 1, comment is 0, blank is 0.
+dist/_astro/QuizCard.DXy_VcVX.js, code is 3, comment is 1, blank is 0.
+dist/_astro/runtime-assets-config.B5RXp2R1.js, code is 28, comment is 16, blank is 0.
+dist/_astro/signals.module.2CVNH5eF.js, code is 1, comment is 0, blank is 0.
+dist/dezinfector.png, it is a binary file.
+dist/DL-Turbo-Green-Smoke.png, it is a binary file.
+dist/favicon.ico, it is a binary file.
+dist/favicon.svg, code is 9, comment is 0, blank is 0.
+dist/fonts/Manrope-Semibold.woff, it is a binary file.
+dist/form/index.html, code is 6, comment is 5, blank is 0.
+dist/image.png, it is a binary file.
+dist/index.html, code is 32, comment is 0, blank is 2.
+dist/pngwing 8.png, it is a binary file.
+dist/pngwing 9.png, it is a binary file.
+dist/pngwing.com (13).png, it is a binary file.
+dist/pngwing.com (3).png, it is a binary file.
+dist/pngwing.com (4).png, it is a binary file.
+dist/pngwing.com (6).png, it is a binary file.
+dist/pngwing.com (7).png, it is a binary file.
+dist/pngwing.com (8).png, it is a binary file.
+dist/posts/first-post/index.html, code is 3, comment is 0, blank is 0.
+dist/smoke.png, it is a binary file.
+dist/snapedit_1708501538194.png, it is a binary file.
+dist/video/video.mp4, it is a binary file.
+dist/videoWrapper.png, it is a binary file.
+dist/wrapper2.png, it is a binary file.
+dist/wrapper3.png, it is a binary file.
+dist/вырезанная мышь.png, it is a binary file.
+dist/вырезанный клоп.png, it is a binary file.
+dist/гриб 1.png, it is a binary file.
+dist/значок.png, it is a binary file.
+dist/клоп 1.png, it is a binary file.
+dist/ЛогоЦД (2).png, it is a binary file.
+dist/муравей 1.png, it is a binary file.
+dist/мышь 1.png, it is a binary file.
+dist/оса 1.png, it is a binary file.
+dist/таракан.png, it is a binary file.
+dist/тараканн 1.png, it is a binary file.
+keystatic.config.ts, code is 134, comment is 0, blank is 1.
+LICENSE, code is 17, comment is 0, blank is 4.
+package-lock.json, code is 10429, comment is 0, blank is 73.
+package.json, code is 32, comment is 0, blank is 0.
+public/,kj[f.png, it is a binary file.
+public/_49f90493_c4a9_4407_83df_94f88a03351d_Photoroom_png_Photoroom.png, it is a binary file.
+public/dezinfector.png, it is a binary file.
+public/DL-Turbo-Green-Smoke.png, it is a binary file.
+public/favicon.ico, it is a binary file.
+public/favicon.svg, code is 9, comment is 0, blank is 0.
+public/fonts/Manrope-Semibold.woff, it is a binary file.
+public/image.png, it is a binary file.
+public/pngwing 8.png, it is a binary file.
+public/pngwing 9.png, it is a binary file.
+public/pngwing.com (13).png, it is a binary file.
+public/pngwing.com (3).png, it is a binary file.
+public/pngwing.com (4).png, it is a binary file.
+public/pngwing.com (6).png, it is a binary file.
+public/pngwing.com (7).png, it is a binary file.
+public/pngwing.com (8).png, it is a binary file.
+public/smoke.png, it is a binary file.
+public/snapedit_1708501538194.png, it is a binary file.
+public/video/video.mp4, it is a binary file.
+public/videoWrapper.png, it is a binary file.
+public/wrapper2.png, it is a binary file.
+public/wrapper3.png, it is a binary file.
+public/вырезанная мышь.png, it is a binary file.
+public/вырезанный клоп.png, it is a binary file.
+public/гриб 1.png, it is a binary file.
+public/значок.png, it is a binary file.
+public/клоп 1.png, it is a binary file.
+public/ЛогоЦД (2).png, it is a binary file.
+public/муравей 1.png, it is a binary file.
+public/мышь 1.png, it is a binary file.
+public/оса 1.png, it is a binary file.
+public/таракан.png, it is a binary file.
+public/тараканн 1.png, it is a binary file.
+README.md, code is 12, comment is 2, blank is 7.
+src/config/menu.ts, code is 6, comment is 1, blank is 1.
+src/content/config.ts, code is 7, comment is 11, blank is 3.
+src/content/dangers/chem-opasny-gryzuny-v-dome.mdoc, code is 13, comment is 0, blank is 0.
+src/content/dangers/chem-opasny-klopy-v-dome.mdoc, code is 13, comment is 0, blank is 0.
+src/content/dangers/chem-opasny-tarakany-v-dome.mdoc, code is 12, comment is 0, blank is 0.
+src/content/dontdoityrself/index.yaml, code is 15, comment is 0, blank is 0.
+src/content/hero/index.yaml, code is 16, comment is 0, blank is 0.
+src/content/paraisiteTypes/index.yaml, code is 20, comment is 0, blank is 0.
+src/content/posts/first-post.mdoc, code is 5, comment is 0, blank is 1.
+src/content/questions/1vy-slyshite-shorohi-po-nocham.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.mdoc, code is 10, comment is 0, blank is 0.
+src/content/questions/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.mdoc, code is 8, comment is 0, blank is 0.
+src/content/quiz/index.yaml, code is 5, comment is 0, blank is 0.
+src/content/whatawaits/index.yaml, code is 6, comment is 0, blank is 0.
+src/env.d.ts, code is 0, comment is 2, blank is 0.
+src/layouts/FormLayout.astro, code is 31, comment is 0, blank is 6.
+src/layouts/Layout.astro, code is 51, comment is 0, blank is 5.
+src/pages/form/index.astro, code is 27, comment is 1, blank is 2.
+src/pages/index.astro, code is 91, comment is 0, blank is 6.
+src/pages/posts/[slug].astro, code is 17, comment is 1, blank is 4.
+src/partials/Details.astro, code is 41, comment is 1, blank is 5.
+src/partials/DonDoItYourself.astro, code is 37, comment is 1, blank is 2.
+src/partials/Hero.astro, code is 123, comment is 0, blank is 5.
+src/partials/Quiz.astro, code is 15, comment is 0, blank is 5.
+src/partials/Types.astro, code is 37, comment is 1, blank is 4.
+src/partials/WhatAwaits.astro, code is 33, comment is 1, blank is 3.
+src/shared/ui/ButtonLink.astro, code is 66, comment is 0, blank is 5.
+src/shared/ui/ContactForm.tsx, code is 7, comment is 0, blank is 0.
+src/shared/ui/Container.astro, code is 11, comment is 0, blank is 2.
+src/shared/ui/Section.astro, code is 14, comment is 0, blank is 2.
+src/shared/ui/Video.astro, code is 39, comment is 1, blank is 5.
+src/store.ts, code is 2, comment is 0, blank is 1.
+src/styles.css, code is 10, comment is 0, blank is 1.
+src/widgets/FormHeader.astro, code is 22, comment is 1, blank is 2.
+src/widgets/Header.astro, code is 26, comment is 0, blank is 2.
+src/widgets/Logo.astro, code is 10, comment is 0, blank is 1.
+src/widgets/MobileMenu.tsx, code is 37, comment is 0, blank is 5.
+src/widgets/QuizCard.tsx, code is 172, comment is 0, blank is 19.
+src/widgets/Tipewriter.astro, code is 57, comment is 1, blank is 5.
+src/widgets/Tipewriter.md, code is 24, comment is 0, blank is 9.
+tailwind.config.mjs, code is 15, comment is 1, blank is 1.
+tsconfig.json, code is 12, comment is 0, blank is 1.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-02-29 19:44:23
+count workspace : /home/viacheslav/WebstormProjects/centr-dez
+total files : 161
+total code lines : 12467
+total comment lines : 78
+total blank lines : 276
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .json|          10473|              0|             74|     84|
+   |           .mjs|             32|              3|              3|   0.26|
+   |               |             37|              0|             12|   0.30|
+   |            .md|            143|              2|             61|    1.1|
+   |            .ts|            377|             19|             24|    3.0|
+   |           .css|             12|              1|              1|  0.096|
+   |         .astro|            748|              9|             71|    6.0|
+   |           .svg|             18|              0|              0|   0.14|
+   |            .js|            223|             39|              3|    1.8|
+   |          .yaml|             62|              0|              0|   0.50|
+   |          .html|             41|              5|              2|   0.33|
+   |          .mdoc|             85|              0|              1|   0.68|
+   |           .tsx|            216|              0|             24|    1.7|
+   -------------------------------------------------------------------------
+.astro/keystatic-imports.js, code is 3, comment is 0, blank is 0.
+.astro/types.d.ts, code is 228, comment is 5, blank is 18.
+.gitignore, code is 17, comment is 0, blank is 8.
+.prettierignore, code is 3, comment is 0, blank is 0.
+astro.config.mjs, code is 17, comment is 2, blank is 2.
+CHANGELOG.md, code is 107, comment is 0, blank is 45.
+dist/,kj[f.png, it is a binary file.
+dist/_49f90493_c4a9_4407_83df_94f88a03351d_Photoroom_png_Photoroom.png, it is a binary file.
+dist/_astro/1vy-slyshite-shorohi-po-nocham.Clf8gfhJ.js, code is 7, comment is 0, blank is 0.
+dist/_astro/1vy-slyshite-shorohi-po-nocham.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/1vy-slyshite-shorohi-po-nocham.DHl7QljS.js, code is 7, comment is 0, blank is 0.
+dist/_astro/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.CiTpfuV9.js, code is 7, comment is 0, blank is 0.
+dist/_astro/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.DzqRASrf.js, code is 7, comment is 0, blank is 0.
+dist/_astro/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.Cv6cOSk4.js, code is 7, comment is 0, blank is 0.
+dist/_astro/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.DN34dvzx.js, code is 7, comment is 0, blank is 0.
+dist/_astro/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.Ch4mLqpO.js, code is 9, comment is 0, blank is 0.
+dist/_astro/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.feMyUItF.js, code is 7, comment is 0, blank is 0.
+dist/_astro/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.5xLYKMjr.js, code is 7, comment is 0, blank is 0.
+dist/_astro/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.Cz3facaA.js, code is 7, comment is 0, blank is 0.
+dist/_astro/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.DBT_ZMGi.js, code is 1, comment is 0, blank is 0.
+dist/_astro/astro/assets-service.wELP8qww.js, code is 15, comment is 2, blank is 3.
+dist/_astro/client.CuYUVflw.js, code is 7, comment is 0, blank is 0.
+dist/_astro/first-post.C3I0GcbZ.js, code is 2, comment is 0, blank is 0.
+dist/_astro/first-post.CuquWPRe.js, code is 7, comment is 0, blank is 0.
+dist/_astro/first-post.D9-J8n4i.js, code is 1, comment is 0, blank is 0.
+dist/_astro/hoisted.DqR2iBSn.js, code is 1, comment is 0, blank is 0.
+dist/_astro/hooks.module.DM7uocbS.js, code is 1, comment is 0, blank is 0.
+dist/_astro/index.6WjYqZEn.js, code is 21, comment is 0, blank is 0.
+dist/_astro/index.C0FWibR6.js, code is 16, comment is 0, blank is 0.
+dist/_astro/index.C7axDoVI.js, code is 2, comment is 0, blank is 0.
+dist/_astro/index.CGtGYZat.js, code is 7, comment is 0, blank is 0.
+dist/_astro/index.CLhkWUkk.css, code is 1, comment is 1, blank is 0.
+dist/_astro/index.CtIUGn5z.js, code is 6, comment is 0, blank is 0.
+dist/_astro/index.Dz9jkkeq.js, code is 17, comment is 0, blank is 0.
+dist/_astro/index.U6GXCydE.css, code is 1, comment is 0, blank is 0.
+dist/_astro/jsxRuntime.module.u1ZkBRD6.js, code is 1, comment is 0, blank is 0.
+dist/_astro/MobileMenu.CPZg9t6x.js, code is 5, comment is 20, blank is 0.
+dist/_astro/preact.module.CBmz4tZK.js, code is 1, comment is 0, blank is 0.
+dist/_astro/QuizCard.B_xN2Nop.js, code is 1, comment is 0, blank is 0.
+dist/_astro/QuizCard.DXy_VcVX.js, code is 3, comment is 1, blank is 0.
+dist/_astro/runtime-assets-config.B5RXp2R1.js, code is 28, comment is 16, blank is 0.
+dist/_astro/signals.module.2CVNH5eF.js, code is 1, comment is 0, blank is 0.
+dist/dezinfector.png, it is a binary file.
+dist/DL-Turbo-Green-Smoke.png, it is a binary file.
+dist/favicon.ico, it is a binary file.
+dist/favicon.svg, code is 9, comment is 0, blank is 0.
+dist/fonts/Manrope-Semibold.woff, it is a binary file.
+dist/form/index.html, code is 6, comment is 5, blank is 0.
+dist/image.png, it is a binary file.
+dist/index.html, code is 32, comment is 0, blank is 2.
+dist/pngwing 8.png, it is a binary file.
+dist/pngwing 9.png, it is a binary file.
+dist/pngwing.com (13).png, it is a binary file.
+dist/pngwing.com (3).png, it is a binary file.
+dist/pngwing.com (4).png, it is a binary file.
+dist/pngwing.com (6).png, it is a binary file.
+dist/pngwing.com (7).png, it is a binary file.
+dist/pngwing.com (8).png, it is a binary file.
+dist/posts/first-post/index.html, code is 3, comment is 0, blank is 0.
+dist/smoke.png, it is a binary file.
+dist/snapedit_1708501538194.png, it is a binary file.
+dist/video/video.mp4, it is a binary file.
+dist/videoWrapper.png, it is a binary file.
+dist/wrapper2.png, it is a binary file.
+dist/wrapper3.png, it is a binary file.
+dist/вырезанная мышь.png, it is a binary file.
+dist/вырезанный клоп.png, it is a binary file.
+dist/гриб 1.png, it is a binary file.
+dist/значок.png, it is a binary file.
+dist/клоп 1.png, it is a binary file.
+dist/ЛогоЦД (2).png, it is a binary file.
+dist/муравей 1.png, it is a binary file.
+dist/мышь 1.png, it is a binary file.
+dist/оса 1.png, it is a binary file.
+dist/таракан.png, it is a binary file.
+dist/тараканн 1.png, it is a binary file.
+keystatic.config.ts, code is 134, comment is 0, blank is 1.
+LICENSE, code is 17, comment is 0, blank is 4.
+package-lock.json, code is 10429, comment is 0, blank is 73.
+package.json, code is 32, comment is 0, blank is 0.
+public/,kj[f.png, it is a binary file.
+public/_49f90493_c4a9_4407_83df_94f88a03351d_Photoroom_png_Photoroom.png, it is a binary file.
+public/dezinfector.png, it is a binary file.
+public/DL-Turbo-Green-Smoke.png, it is a binary file.
+public/favicon.ico, it is a binary file.
+public/favicon.svg, code is 9, comment is 0, blank is 0.
+public/fonts/Manrope-Semibold.woff, it is a binary file.
+public/image.png, it is a binary file.
+public/pngwing 8.png, it is a binary file.
+public/pngwing 9.png, it is a binary file.
+public/pngwing.com (13).png, it is a binary file.
+public/pngwing.com (3).png, it is a binary file.
+public/pngwing.com (4).png, it is a binary file.
+public/pngwing.com (6).png, it is a binary file.
+public/pngwing.com (7).png, it is a binary file.
+public/pngwing.com (8).png, it is a binary file.
+public/smoke.png, it is a binary file.
+public/snapedit_1708501538194.png, it is a binary file.
+public/video/video.mp4, it is a binary file.
+public/videoWrapper.png, it is a binary file.
+public/wrapper2.png, it is a binary file.
+public/wrapper3.png, it is a binary file.
+public/вырезанная мышь.png, it is a binary file.
+public/вырезанный клоп.png, it is a binary file.
+public/гриб 1.png, it is a binary file.
+public/значок.png, it is a binary file.
+public/клоп 1.png, it is a binary file.
+public/ЛогоЦД (2).png, it is a binary file.
+public/муравей 1.png, it is a binary file.
+public/мышь 1.png, it is a binary file.
+public/оса 1.png, it is a binary file.
+public/таракан.png, it is a binary file.
+public/тараканн 1.png, it is a binary file.
+README.md, code is 12, comment is 2, blank is 7.
+src/config/menu.ts, code is 6, comment is 1, blank is 1.
+src/content/config.ts, code is 7, comment is 11, blank is 3.
+src/content/dangers/chem-opasny-gryzuny-v-dome.mdoc, code is 13, comment is 0, blank is 0.
+src/content/dangers/chem-opasny-klopy-v-dome.mdoc, code is 13, comment is 0, blank is 0.
+src/content/dangers/chem-opasny-tarakany-v-dome.mdoc, code is 12, comment is 0, blank is 0.
+src/content/dontdoityrself/index.yaml, code is 15, comment is 0, blank is 0.
+src/content/hero/index.yaml, code is 16, comment is 0, blank is 0.
+src/content/paraisiteTypes/index.yaml, code is 20, comment is 0, blank is 0.
+src/content/posts/first-post.mdoc, code is 5, comment is 0, blank is 1.
+src/content/questions/1vy-slyshite-shorohi-po-nocham.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.mdoc, code is 10, comment is 0, blank is 0.
+src/content/questions/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.mdoc, code is 8, comment is 0, blank is 0.
+src/content/quiz/index.yaml, code is 5, comment is 0, blank is 0.
+src/content/whatawaits/index.yaml, code is 6, comment is 0, blank is 0.
+src/env.d.ts, code is 0, comment is 2, blank is 0.
+src/layouts/FormLayout.astro, code is 31, comment is 0, blank is 6.
+src/layouts/Layout.astro, code is 51, comment is 0, blank is 5.
+src/pages/form/index.astro, code is 27, comment is 1, blank is 2.
+src/pages/index.astro, code is 91, comment is 0, blank is 6.
+src/pages/posts/[slug].astro, code is 17, comment is 1, blank is 4.
+src/partials/Details.astro, code is 41, comment is 1, blank is 5.
+src/partials/DonDoItYourself.astro, code is 37, comment is 1, blank is 2.
+src/partials/Hero.astro, code is 123, comment is 0, blank is 5.
+src/partials/Quiz.astro, code is 15, comment is 0, blank is 5.
+src/partials/Types.astro, code is 37, comment is 1, blank is 4.
+src/partials/WhatAwaits.astro, code is 33, comment is 1, blank is 3.
+src/shared/ui/ButtonLink.astro, code is 66, comment is 0, blank is 5.
+src/shared/ui/ContactForm.tsx, code is 7, comment is 0, blank is 0.
+src/shared/ui/Container.astro, code is 11, comment is 0, blank is 2.
+src/shared/ui/Section.astro, code is 14, comment is 0, blank is 2.
+src/shared/ui/Video.astro, code is 39, comment is 1, blank is 5.
+src/store.ts, code is 2, comment is 0, blank is 1.
+src/styles.css, code is 10, comment is 0, blank is 1.
+src/widgets/FormHeader.astro, code is 22, comment is 1, blank is 2.
+src/widgets/Header.astro, code is 26, comment is 0, blank is 2.
+src/widgets/Logo.astro, code is 10, comment is 0, blank is 1.
+src/widgets/MobileMenu.tsx, code is 37, comment is 0, blank is 5.
+src/widgets/QuizCard.tsx, code is 172, comment is 0, blank is 19.
+src/widgets/Tipewriter.astro, code is 57, comment is 1, blank is 5.
+src/widgets/Tipewriter.md, code is 24, comment is 0, blank is 9.
+tailwind.config.mjs, code is 15, comment is 1, blank is 1.
+tsconfig.json, code is 12, comment is 0, blank is 1.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecounter
+EXTENSION VERSION : 0.2.7
+-------------------------------------------------------------------------------
+count time : 2024-02-29 19:50:01
+count workspace : /home/viacheslav/WebstormProjects/centr-dez
+total files : 88
+total code lines : 12195
+total comment lines : 33
+total blank lines : 271
+
+    statistics
+   |      extension|     total code|  total comment|    total blank|percent|
+   -------------------------------------------------------------------------
+   |          .json|          10473|              0|             74|     86|
+   |           .mjs|             32|              3|              3|   0.26|
+   |            .ts|            377|             19|             24|    3.1|
+   |            .md|            143|              2|             61|    1.2|
+   |               |             37|              0|             12|   0.30|
+   |         .astro|            748|              9|             71|    6.1|
+   |           .tsx|            216|              0|             24|    1.8|
+   |           .css|             10|              0|              1|  0.082|
+   |          .mdoc|             85|              0|              1|   0.70|
+   |          .yaml|             62|              0|              0|   0.51|
+   |           .svg|              9|              0|              0|  0.074|
+   |            .js|              3|              0|              0|  0.025|
+   -------------------------------------------------------------------------
+.astro/keystatic-imports.js, code is 3, comment is 0, blank is 0.
+.astro/types.d.ts, code is 228, comment is 5, blank is 18.
+.gitignore, code is 17, comment is 0, blank is 8.
+.prettierignore, code is 3, comment is 0, blank is 0.
+astro.config.mjs, code is 17, comment is 2, blank is 2.
+CHANGELOG.md, code is 107, comment is 0, blank is 45.
+keystatic.config.ts, code is 134, comment is 0, blank is 1.
+LICENSE, code is 17, comment is 0, blank is 4.
+package-lock.json, code is 10429, comment is 0, blank is 73.
+package.json, code is 32, comment is 0, blank is 0.
+public/,kj[f.png, it is a binary file.
+public/_49f90493_c4a9_4407_83df_94f88a03351d_Photoroom_png_Photoroom.png, it is a binary file.
+public/dezinfector.png, it is a binary file.
+public/DL-Turbo-Green-Smoke.png, it is a binary file.
+public/favicon.ico, it is a binary file.
+public/favicon.svg, code is 9, comment is 0, blank is 0.
+public/fonts/Manrope-Semibold.woff, it is a binary file.
+public/image.png, it is a binary file.
+public/pngwing 8.png, it is a binary file.
+public/pngwing 9.png, it is a binary file.
+public/pngwing.com (13).png, it is a binary file.
+public/pngwing.com (3).png, it is a binary file.
+public/pngwing.com (4).png, it is a binary file.
+public/pngwing.com (6).png, it is a binary file.
+public/pngwing.com (7).png, it is a binary file.
+public/pngwing.com (8).png, it is a binary file.
+public/smoke.png, it is a binary file.
+public/snapedit_1708501538194.png, it is a binary file.
+public/video/video.mp4, it is a binary file.
+public/videoWrapper.png, it is a binary file.
+public/wrapper2.png, it is a binary file.
+public/wrapper3.png, it is a binary file.
+public/вырезанная мышь.png, it is a binary file.
+public/вырезанный клоп.png, it is a binary file.
+public/гриб 1.png, it is a binary file.
+public/значок.png, it is a binary file.
+public/клоп 1.png, it is a binary file.
+public/ЛогоЦД (2).png, it is a binary file.
+public/муравей 1.png, it is a binary file.
+public/мышь 1.png, it is a binary file.
+public/оса 1.png, it is a binary file.
+public/таракан.png, it is a binary file.
+public/тараканн 1.png, it is a binary file.
+README.md, code is 12, comment is 2, blank is 7.
+src/config/menu.ts, code is 6, comment is 1, blank is 1.
+src/content/config.ts, code is 7, comment is 11, blank is 3.
+src/content/dangers/chem-opasny-gryzuny-v-dome.mdoc, code is 13, comment is 0, blank is 0.
+src/content/dangers/chem-opasny-klopy-v-dome.mdoc, code is 13, comment is 0, blank is 0.
+src/content/dangers/chem-opasny-tarakany-v-dome.mdoc, code is 12, comment is 0, blank is 0.
+src/content/dontdoityrself/index.yaml, code is 15, comment is 0, blank is 0.
+src/content/hero/index.yaml, code is 16, comment is 0, blank is 0.
+src/content/paraisiteTypes/index.yaml, code is 20, comment is 0, blank is 0.
+src/content/posts/first-post.mdoc, code is 5, comment is 0, blank is 1.
+src/content/questions/1vy-slyshite-shorohi-po-nocham.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/2u-vas-poyavlyayutsya-chernye-tochki-na-stene-i-mebeli.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/3vy-chuvstvuete-speczificheskij-zapah-v-kvartire.mdoc, code is 8, comment is 0, blank is 0.
+src/content/questions/4nahodite-li-vy-u-sebya-detej-domashnih-zhivotnyh-ukusy.mdoc, code is 10, comment is 0, blank is 0.
+src/content/questions/5vy-obnaruzhivaete-rvanye-otverstiya-v-paketah-s-edoj.mdoc, code is 8, comment is 0, blank is 0.
+src/content/quiz/index.yaml, code is 5, comment is 0, blank is 0.
+src/content/whatawaits/index.yaml, code is 6, comment is 0, blank is 0.
+src/env.d.ts, code is 0, comment is 2, blank is 0.
+src/layouts/FormLayout.astro, code is 31, comment is 0, blank is 6.
+src/layouts/Layout.astro, code is 51, comment is 0, blank is 5.
+src/pages/form/index.astro, code is 27, comment is 1, blank is 2.
+src/pages/index.astro, code is 91, comment is 0, blank is 6.
+src/pages/posts/[slug].astro, code is 17, comment is 1, blank is 4.
+src/partials/Details.astro, code is 41, comment is 1, blank is 5.
+src/partials/DonDoItYourself.astro, code is 37, comment is 1, blank is 2.
+src/partials/Hero.astro, code is 123, comment is 0, blank is 5.
+src/partials/Quiz.astro, code is 15, comment is 0, blank is 5.
+src/partials/Types.astro, code is 37, comment is 1, blank is 4.
+src/partials/WhatAwaits.astro, code is 33, comment is 1, blank is 3.
+src/shared/ui/ButtonLink.astro, code is 66, comment is 0, blank is 5.
+src/shared/ui/ContactForm.tsx, code is 7, comment is 0, blank is 0.
+src/shared/ui/Container.astro, code is 11, comment is 0, blank is 2.
+src/shared/ui/Section.astro, code is 14, comment is 0, blank is 2.
+src/shared/ui/Video.astro, code is 39, comment is 1, blank is 5.
+src/store.ts, code is 2, comment is 0, blank is 1.
+src/styles.css, code is 10, comment is 0, blank is 1.
+src/widgets/FormHeader.astro, code is 22, comment is 1, blank is 2.
+src/widgets/Header.astro, code is 26, comment is 0, blank is 2.
+src/widgets/Logo.astro, code is 10, comment is 0, blank is 1.
+src/widgets/MobileMenu.tsx, code is 37, comment is 0, blank is 5.
+src/widgets/QuizCard.tsx, code is 172, comment is 0, blank is 19.
+src/widgets/Tipewriter.astro, code is 57, comment is 1, blank is 5.
+src/widgets/Tipewriter.md, code is 24, comment is 0, blank is 9.
+tailwind.config.mjs, code is 15, comment is 1, blank is 1.
+tsconfig.json, code is 12, comment is 0, blank is 1.
+===============================================================================

@@ -8,9 +8,9 @@ parasites:
   - муравьев
   - грызунов
 video: /video/video.mp4
-videoWrapper: /wrapper3.png
-dangerSign: /значок.png
-giftImg: /pngwing.com (6).png
-arrowImg: /pngwing.com (13).png
-smokeImg: /smoke.png
+videoWrapper: /wrapper3.webp
+dangerSign: /значок.webp
+giftImg: /pngwing.com (6).webp
+arrowImg: /pngwing.com (13).webp
+smokeImg: /smoke.webp
 buttonText: Пройти тест

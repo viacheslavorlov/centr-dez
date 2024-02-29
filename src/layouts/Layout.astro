@@ -1,13 +1,14 @@
 ---
 import '../styles.css';
-import Header from '../widgets/Header.astro'
+import Header from '../widgets/Header.astro';
+import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
 	title: string;
 	phone?: string;
 	description?: string;
 	icon?: string;
-	keywords?: string[]
+	keywords?: string[];
 	children?: any | any[];
 }
 
@@ -26,8 +27,8 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 			name='viewport'
 			content='width=device-width'
 		/>
-		<meta 
-			name="keywords"
+		<meta
+			name='keywords'
 			content={keywords?.join(', ')}
 		/>
 		<link
@@ -41,13 +42,13 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 		/>
 		<title>{title}</title>
 	</head>
-	<body
-		class='h-full overflow-x-hidden text-base text-primary-text bg-primary-bg '>
-		<Header phone={phone}/>
+	<body class='h-full w-full overflow-x-hidden text-base text-primary-text bg-primary-bg'>
+		<Header phone={phone} />
 
 		<slot />
 	</body>
 </html>
+<ViewTransitions />
 
 <style>
 	body {
