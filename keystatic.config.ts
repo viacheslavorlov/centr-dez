@@ -1,18 +1,25 @@
-import { config, fields, collection, singleton } from '@keystatic/core';
-
+import { collection, config, fields, singleton } from '@keystatic/core';
 
 export default config({
 	storage: {
 		kind: 'local',
 	},
 	collections: {
-		posts: collection({
-			label: 'Posts',
+		dangers: collection({
+			label: 'Dangers',
 			slugField: 'title',
-			path: 'src/content/posts/*',
+			path: 'src/content/dangers/*',
 			format: { contentField: 'content' },
 			schema: {
 				title: fields.slug({ name: { label: 'Title' } }),
+				buttonLable: fields.text({ label: 'buttonLable' }),
+				buttonLink: fields.text({ label: 'buttonLink' }),
+				img: fields.text({ label: 'img' }),
+				resons: fields.array(
+					fields.object({
+						title: fields.text({ label: 'titel' }),
+					}, {label: 'опасности'})
+				),
 				content: fields.document({
 					label: 'Content',
 					formatting: true,
@@ -79,6 +86,49 @@ export default config({
 				discount: fields.text({ label: 'discount' }),
 				pizeTitle: fields.text({ label: 'prizeTitle' }),
 				pizeImg: fields.text({ label: 'prizeImg' }),
+			},
+		}),
+		dontDoItUrself: singleton({
+			label: 'Dont Do It Yourself',
+			path: 'src/content/dontdoityrself/',
+			schema: {
+				titel: fields.text({ label: 'titel' }),
+				buttonLable: fields.text({ label: 'buttonLable' }),
+				buttonLink: fields.text({ label: 'buttonLink' }),
+				resons: fields.array(
+					fields.object({
+						title: fields.text({ label: 'titel' }),
+						img: fields.text({ label: 'img' }),
+						description: fields.text({ label: 'description' }),
+					})
+				),
+			},
+		}),
+		whatAwaits: singleton({
+			label: 'Что вас ждет?',
+			path: 'src/content/whatawaits/',
+			schema: {
+				titel: fields.text({ label: 'titel' }),
+				features: fields.array(
+					fields.object({
+						title: fields.text({ label: 'titel' }),
+					})
+				),
+			},
+		}),
+		paraisiteTypes: singleton({
+			label: 'Види паразитов',
+			path: 'src/content/paraisiteTypes/',
+			schema: {
+				titel: fields.text({ label: 'titel' }),
+				buttonLable: fields.text({ label: 'buttonLable' }),
+				buttonLink: fields.text({ label: 'buttonLink' }),
+				parasites: fields.array(
+					fields.object({
+						title: fields.text({ label: 'titel' }),
+						img: fields.text({ label: 'img' }),
+					})
+				),
 			},
 		}),
 	},

@@ -3,6 +3,10 @@ import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
 import Hero from '../partials/Hero.astro';
 import Quiz from '../partials/Quiz.astro';
+import DontDoItYourself from '../partials/DonDoItYourself.astro';
+import WhatAwaits from '../partials/WhatAwaits.astro';
+import Types from '../partials/Types.astro';
+import Details from '../partials/Details.astro';
 
 const hero = await getCollection('hero');
 const heroData = hero[0].data;
@@ -14,6 +18,10 @@ const heroData = hero[0].data;
 	title={heroData.windowTitle}>
 	<Hero />
 	<Quiz />
+	<DontDoItYourself />
+	<WhatAwaits />
+	<Types/>
+	<Details />
 </Layout>
 <style is:global>
 	@keyframes slide {
@@ -49,6 +57,7 @@ const heroData = hero[0].data;
 	}
 
 	.button {
+		font-size: larger;
 		overflow: hidden;
 		position: relative;
 		transition: all 200ms;
@@ -57,6 +66,12 @@ const heroData = hero[0].data;
 		filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale)
 			var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia)
 			var(--tw-drop-shadow);
+	}
+
+	@media screen and (min-width: 768px) {
+		.button {
+			font-size: x-large;
+		}
 	}
 
 	.button::before {

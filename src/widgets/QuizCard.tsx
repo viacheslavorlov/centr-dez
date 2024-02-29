@@ -57,9 +57,6 @@ export function QuizCard({ className }: { className?: string }) {
 		клопы: 0,
 	});
 	const [current, setCurrent] = useState<Parasites>('');
-	// console.log(data);
-	// console.log(data?.questions?.[1]?.ansvers);
-
 	const num = useStore(numAnswer);
 
 	const increase = () => {
@@ -98,13 +95,12 @@ export function QuizCard({ className }: { className?: string }) {
 
 	useEffect(() => {
 		getData().then(res => setData(res));
-		console.log('useeffect', data);
 	}, []);
 
 	if (!data) return null;
 	return (
 		<div class={clsx('grid grid-cols-1 md:grid-cols-9 gap-8', className)}>
-			<div class={'flex flex-col md:col-span-6 gap-6 md:gap-10'}>
+			<div class={'flex flex-col md:col-span-6 lg:col-span-7 gap-6 md:gap-10'}>
 				<h2 class={'text-3xl md:text-5xl'}>
 					{data?.titel_1} {data?.questions?.length - num} вопрос
 					{wordEnding(data?.questions?.length - num)} {data?.titel_2}{' '}
@@ -119,7 +115,7 @@ export function QuizCard({ className }: { className?: string }) {
 				<div class={'text-3xl'}>{data?.questions?.[num]?.title}</div>
 				<div class={'flex flex-col gap-4'}>
 					{data?.questions?.[num]?.ansvers?.map((item, i) => (
-						<div class={'flex gap-2'}>
+						<div class={'flex gap-2 items-center'}>
 							<input
 								onChange={giveAnsver}
 								id={item.answer + i}
@@ -131,7 +127,7 @@ export function QuizCard({ className }: { className?: string }) {
 									'w-4 h-4  rounded-full text-accent bg-gray-100 border-gray-300 focus:ring-green-500 dark:focus:ring-green-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600'
 								}
 							/>
-							<label htmlFor={item.answer + i}>{item?.answer}</label>
+							<label class={'text-xl'} htmlFor={item.answer + i}>{item?.answer}</label>
 						</div>
 					))}
 				</div>
@@ -172,7 +168,7 @@ export function QuizCard({ className }: { className?: string }) {
 				</div>
 			</div>
 
-			<div class='flex w-full md:col-span-3 border border-secondary-bg md:flex-col p-4 md:p-8 lg:p-12 rounded-2xl bg-gradient-to-b from-secondary-bg/40 to-transparent'>
+			<div class='flex w-full md:col-span-3 lg:col-span-2  border border-secondary-bg md:flex-col p-4 md:p-8 lg:p-12 rounded-2xl bg-gradient-to-b from-secondary-bg/40 to-transparent'>
 				<div>
 					<p class={'text-center text-lg mb-6'}>{data?.pizeTitle}</p>
 					<p class={'text-2xl text-center'}>

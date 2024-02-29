@@ -1,0 +1,36 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import Container from '../shared/ui/Container.astro';
+import Section from '../shared/ui/Section.astro';
+
+const collectionData = await getCollection('whatawaits'); // change collection name
+const collection: CollectionEntry<'whatawaits'>['data'] = collectionData[0].data;
+
+const dots = collection?.features?.map(
+	(item, i) =>
+		`<div class='w-8 aspect-square rounded-full border border-secondary-bg relative z-30 bg-secondary-bg'></div>`
+);
+---
+
+<Section>
+	<Container className='flex flex-col gap-8 md:gap-12 lg:gap-16 '>
+		<h2 class='text-3xl md:text-4xl w-full md:w-3/4 self-start text-left'>{collection.titel}</h2>
+		<div class='flex mr-auto relative ml-4 gap-12 justify-between flex-col rounded-sm'>
+			<div class='absolute w-[3px] h-[85%] mt-4 mb-5 bg-accent-secondary -left-[2px]'></div>
+			{
+				collection.features.map(item => (
+					<div class='flex relative items-center'>
+						<div class='w-8 absolute aspect-square rounded-full -left-4 border border-secondary-bg z-30 bg-secondary-bg' />
+						<p class='flex items-center pl-16 text-xl md:text-2xl text-left'>{item.title}</p>
+					</div>
+				))
+			}
+		</div>
+		<!-- </div> -->
+	</Container>
+</Section>
+<style>
+	.withDot::before {
+	}
+</style>

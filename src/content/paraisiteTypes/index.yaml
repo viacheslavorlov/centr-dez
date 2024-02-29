@@ -1,0 +1,20 @@
+titel: Избавим от любых вредителей
+buttonLable: Вызвать профессионалов
+buttonLink: /form
+parasites:
+  - title: Крысы и мыши
+    img: /мышь 1.png
+  - title: Тараканы
+    img: /тараканн 1.png
+  - title: Комары
+    img: /pngwing 8.png
+  - title: Клопы
+    img: /клоп 1.png
+  - title: Муравьи
+    img: /муравей 1.png
+  - title: Осы
+    img: /оса 1.png
+  - title: Грибки и плесень
+    img: /гриб 1.png
+  - title: Блохи
+    img: /pngwing 9.png
