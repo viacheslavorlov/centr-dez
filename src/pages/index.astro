@@ -7,6 +7,7 @@ import DontDoItYourself from '../partials/DonDoItYourself.astro';
 import WhatAwaits from '../partials/WhatAwaits.astro';
 import Types from '../partials/Types.astro';
 import Details from '../partials/Details.astro';
+import Calculator from 'src/partials/Calculator.astro';
 
 const hero = await getCollection('hero');
 const heroData = hero[0].data;
@@ -20,6 +21,7 @@ const heroData = hero[0].data;
 	<Quiz />
 	<DontDoItYourself />
 	<WhatAwaits />
+	<Calculator />
 	<Types/>
 	<Details />
 </Layout>
@@ -87,7 +89,6 @@ const heroData = hero[0].data;
 	}
 	.button:hover {
 		transform: scale(1.05);
-		background-color:;
 	}
 
 	.button:disabled {

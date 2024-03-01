@@ -133,5 +133,27 @@ export default config({
 				),
 			},
 		}),
+		form: singleton({
+			label: 'Форма',
+			path: 'src/content/form/',
+			schema: {
+				titel: fields.text({ label: 'titel' }),
+				fields: fields.array(
+					fields.object({
+						lable: fields.text({ label: 'lable' }),
+						type: fields.text({ label: 'type' }),
+						placeholder: fields.text({ label: 'placeholder' }),
+						options: fields.array(
+							fields.object({
+								title: fields.text({ label: 'titel' }),
+								value: fields.text({ label: 'value' }),
+							})
+						)
+					})
+				),
+				buttonLable: fields.text({ label: 'buttonLable' }),
+				img: fields.text({ label: 'img' }),
+			},
+		}),
 	},
 });

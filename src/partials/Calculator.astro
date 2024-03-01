@@ -1,0 +1,95 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import { getCollection } from 'astro:content';
+import clsx from 'clsx';
+import ButtonLink from 'src/shared/ui/ButtonLink.astro';
+import Container from '../shared/ui/Container.astro';
+import Section from '../shared/ui/Section.astro';
+
+const collectionData = await getCollection('form'); // change collection name
+const collection: CollectionEntry<'form'>['data'] = collectionData[0].data;
+
+if (Astro.request.method === 'POST') {
+	try {
+		const data = await Astro.request.formData();
+
+		const phone = data.get('phone');
+		// Do something with the data
+	} catch (error) {
+		if (error instanceof Error) {
+			console.error(error.message);
+		}
+	}
+}
+
+console.log(collection);
+---
+
+<Section>
+	<Container className='flex flex-col md:flex-row shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+		<form method='POST' class="flex">
+			<h2 class='text-3xl md:text-4xl'>{collection.title}</h2>
+			{
+				collection.fields.map(
+					(field: {
+						type: string;
+						lable: string;
+						options?: { title: string; value: string }[];
+					}) => {
+						switch (field.type) {
+							case 'text':
+								return (
+									<div>
+										<label>{field.lable}</label>
+										<input
+											type='text'
+											value=''
+										/>
+									</div>
+								);
+							case 'number':
+								return (
+									<div>
+										<label>{field.lable}</label>
+										<input
+											type='number'
+											value=''
+										/>
+									</div>
+								);
+							case 'select':
+								return (
+									<div>
+										<label>{field.lable}</label>
+										<select value=''>
+											{field.options?.map(
+												(option: { title: string; value: string }) => (
+													<option value={option.value}>
+														{option.title}
+													</option>
+												)
+											)}
+										</select>
+									</div>
+								);
+							default:
+								return null;
+						}
+					}
+				)
+			}
+
+			<button class='button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'
+				>{collection.buttonLable}</button
+			>
+		</form>
+		<Image
+			class='w-full md:w-1/2 md:h-full md:object-cover md:object-center'
+			src={collection.img}
+			height={'600'}
+			width={'300'}
+			alt={collection.titel}
+		/>
+	</Container>
+</Section>

@@ -1,0 +1,42 @@
+titel: Рассчитайте стоимость прямо сейчас
+fields:
+  - lable: Вид вредителя
+    type: select
+    placeholder: Выбрать
+    options:
+      - title: Клопы
+        value: Клопы
+      - title: Тараканы
+        value: Тараканы
+      - title: Крысы и мыши
+        value: Крысы и мыши
+      - title: Грибки и плесень
+        value: Грибки и плесень
+      - title: Комары
+        value: Комары
+      - title: Муравьи
+        value: Муравьи
+      - title: Осы
+        value: Осы
+      - title: Блохи
+        value: Блохи
+  - lable: Вид помещения
+    type: select
+    placeholder: Выбрать
+    options:
+      - title: Квартира
+        value: Квартира
+      - title: Частный дом
+        value: Частный дом
+      - title: Другое
+        value: Другое
+  - lable: Площадь помещения
+    type: number
+    placeholder: Например 35
+    options: []
+  - lable: Номер телефона
+    type: text
+    placeholder: +7(999)-999-99-99
+    options: []
+buttonLable: Рассчитать сейчас
+img: /dezinfector.webp
