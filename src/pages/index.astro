@@ -1,22 +1,21 @@
 ---
-import { getCollection } from 'astro:content';
+import Calculator from 'src/partials/Calculator.astro';
 import Layout from '../layouts/Layout.astro';
+import Details from '../partials/Details.astro';
+import DontDoItYourself from '../partials/DonDoItYourself.astro';
 import Hero from '../partials/Hero.astro';
 import Quiz from '../partials/Quiz.astro';
-import DontDoItYourself from '../partials/DonDoItYourself.astro';
-import WhatAwaits from '../partials/WhatAwaits.astro';
 import Types from '../partials/Types.astro';
-import Details from '../partials/Details.astro';
-import Calculator from 'src/partials/Calculator.astro';
+import WhatAwaits from '../partials/WhatAwaits.astro';
+import { reader } from '../reader';
 
-const hero = await getCollection('hero');
-const heroData = hero[0].data;
+const heroData = await reader.singletons.hero.read();
 ---
 
 <Layout
-	phone={heroData.phone}
+	phone={heroData?.phone}
 	icon={'/favicon.ico'}
-	title={heroData.windowTitle}>
+	title={heroData?.windowTitle || ''}>
 	<Hero />
 	<Quiz />
 	<DontDoItYourself />

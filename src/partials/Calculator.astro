@@ -6,9 +6,9 @@ import clsx from 'clsx';
 import ButtonLink from 'src/shared/ui/ButtonLink.astro';
 import Container from '../shared/ui/Container.astro';
 import Section from '../shared/ui/Section.astro';
+import { reader } from 'src/reader';
 
-const collectionData = await getCollection('form'); // change collection name
-const collection: CollectionEntry<'form'>['data'] = collectionData[0].data;
+const collection = await reader.singletons.form.read();
 
 if (Astro.request.method === 'POST') {
 	try {
@@ -23,20 +23,17 @@ if (Astro.request.method === 'POST') {
 	}
 }
 
-console.log(collection);
 ---
 
-<Section>
-	<Container className='flex flex-col md:flex-row shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
-		<form method='POST' class="flex">
-			<h2 class='text-3xl md:text-4xl'>{collection.title}</h2>
-			{
-				collection.fields.map(
-					(field: {
-						type: string;
-						lable: string;
-						options?: { title: string; value: string }[];
-					}) => {
+{
+	collection && (
+		<Section>
+			<Container className='flex flex-col md:flex-row shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+				<form
+					method='POST'
+					class='flex'>
+					<h2 class='text-3xl md:text-4xl'>{collection.titel}</h2>
+					{collection.fields.map(field => {
 						switch (field.type) {
 							case 'text':
 								return (
@@ -76,20 +73,20 @@ console.log(collection);
 							default:
 								return null;
 						}
-					}
-				)
-			}
+					})}
 
-			<button class='button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'
-				>{collection.buttonLable}</button
-			>
-		</form>
-		<Image
-			class='w-full md:w-1/2 md:h-full md:object-cover md:object-center'
-			src={collection.img}
-			height={'600'}
-			width={'300'}
-			alt={collection.titel}
-		/>
-	</Container>
-</Section>
+					<button class='button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'>
+						{collection.buttonLable}
+					</button>
+				</form>
+				<Image
+					class='w-full md:w-1/2 md:h-full md:object-cover md:object-center'
+					src={collection.img}
+					height={'600'}
+					width={'300'}
+					alt={collection.titel}
+				/>
+			</Container>
+		</Section>
+	)
+}

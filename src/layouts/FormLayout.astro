@@ -1,6 +1,6 @@
 ---
 import '../styles.css';
-import FormHeader from '../widgets/FormHeader.astro'
+import FormHeader from '../widgets/FormHeader.astro';
 
 import { ViewTransitions } from 'astro:transitions';
 ---
@@ -9,26 +9,26 @@ import { ViewTransitions } from 'astro:transitions';
 <html lang='ru'>
 	<head>
 		<meta charset='UTF-8' />
-		
+
 		<meta
 			name='viewport'
 			content='width=device-width'
 		/>
-		
+
 		<meta
 			name='generator'
 			content={Astro.generator}
 		/>
 		<title></title>
+		<script src='https://smtpjs.com/v3/smtp.js'></script>
 	</head>
-	<body
-		class='h-full overflow-x-hidden text-base text-primary-text bg-primary-bg '>
-		<FormHeader/>
+	<body class='h-full overflow-x-hidden text-base text-primary-text bg-primary-bg'>
+		<FormHeader />
 
 		<slot />
 	</body>
 </html>
-<ViewTransitions/>
+<ViewTransitions />
 
 <style>
 	body {

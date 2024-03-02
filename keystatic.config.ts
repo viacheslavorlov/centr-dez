@@ -15,7 +15,7 @@ export default config({
 				buttonLable: fields.text({ label: 'buttonLable' }),
 				buttonLink: fields.text({ label: 'buttonLink' }),
 				img: fields.text({ label: 'img' }),
-				reverse: fields.text({lable: 'reverse'}),
+				reverse: fields.text({label: 'reverse'}),
 				resons: fields.array(
 					fields.object({
 						title: fields.text({ label: 'titel' }),

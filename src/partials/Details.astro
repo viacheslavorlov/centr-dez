@@ -1,31 +1,30 @@
 ---
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
 import clsx from 'clsx';
+import { reader } from 'src/reader';
 import ButtonLink from 'src/shared/ui/ButtonLink.astro';
 import Container from '../shared/ui/Container.astro';
 import Section from '../shared/ui/Section.astro';
 
-const collectionData = await getCollection('dangers'); // change collection name
-const collection: CollectionEntry<'dangers'>['data'] = collectionData.map(item => item.data);
+const collection = await reader.collections.dangers.all()
+
 ---
 
-<Section>
+{collection && <Section>
 	<Container>
 		<!-- <h2 class="text-4xl text-left w-full md:w-3/4 self-start">{collection.titel}</h2> -->
 		<div class='flex flex-col w-full gap-8 md:gap-12 lg:gap-28'>
 			{
-				collection.map(item => (
+				collection.map(({entry}) => (
 					<div
 						class={clsx(
 							'w-full rounded-2xl flex flex-col md:flex-row gap-4 md:gap-8 lg:gap-12',
-							item.reverse === 'reverse' && 'md:flex-row-reverse'
+							entry.reverse === 'reverse' && 'md:flex-row-reverse'
 						)}>
 						<div class='flex flex-col w-full md:w-[70%] gap-4 md:gap-8 lg:gap-12 justify-between'>
-							<h3 class='text-4xl'>{item.title}</h3>
+							<h3 class='entrytext-4xl'>{entry.title}</h3>
 							<div class='flex flex-col gap-4 md:gap-8 bg-secondary-bg/10 p-4 md:p-8 lg:p-12 rounded-2xl border-secondary-bg border'>
-								{item.resons.map(item => (
+								{entry.resons.map(item => (
 									<div class='flex gap-4 items-center'>
 										<div class='min-w-4 aspect-square rounded-full border border-secondary-bg z-30 bg-secondary-bg' />
 										<p class='flex items-center text-xl md:text-2xl text-left'>
@@ -39,14 +38,14 @@ const collection: CollectionEntry<'dangers'>['data'] = collectionData.map(item =
 							<Image
 								height={'200'}
 								width={'200'}
-								src={item.img}
+								src={entry.img}
 								class='w-full  object-contain'
 								alt={''}
 							/>
 							<ButtonLink
 								className='max-w-full w-full text-lg relative py-4'
-								href={item.buttonLink}
-								title={item.buttonLable}
+								href={entry.buttonLink}
+								title={entry.buttonLable}
 							/>
 						</div>
 					</div>
@@ -54,4 +53,4 @@ const collection: CollectionEntry<'dangers'>['data'] = collectionData.map(item =
 			}
 		</div>
 	</Container>
-</Section>
+</Section>}

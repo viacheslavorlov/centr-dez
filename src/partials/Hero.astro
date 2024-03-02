@@ -1,18 +1,17 @@
 ---
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
+import { reader } from 'src/reader';
 import ButtonLink from '../shared/ui/ButtonLink.astro';
 import Container from '../shared/ui/Container.astro';
 import Section from '../shared/ui/Section.astro';
-import Typewriter from '../widgets/Tipewriter.astro';
 import Video from '../shared/ui/Video.astro';
+import Typewriter from '../widgets/Tipewriter.astro';
 
-const heroData = await getCollection('hero');
-const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
+const hero = await reader.singletons.hero.read();
+
 ---
 
-<Section className='overflow-x-hidden'>
+{hero && <Section className='overflow-x-hidden'>
 	<Image
 		src={hero.smokeImg}
 		alt={''}
@@ -31,7 +30,7 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 				className='relative mx-auto md:mx-0 justify-self-center z-10 text-accent drop-shadow-md'
 				withEmptyString
 				interval={1500}
-				words={hero.parasites}
+				words={hero.parasites as string[]}
 			/>
 		</div>
 		<div
@@ -123,6 +122,4 @@ const hero: CollectionEntry<'hero'>['data'] = heroData[0].data;
 			/>
 		</div>
 	</Container>
-</Section>
-
-<style></style>
+</Section>}

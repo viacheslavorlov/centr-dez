@@ -1,21 +1,37 @@
 ---
 import FormLayout from '../../layouts/FormLayout.astro';
-if (Astro.request.method === 'POST') {
+
+---
+
+<script>
+	if (Astro.request.method === 'POST' && window !== undefined) {
 	try {
 		const data = await Astro.request.formData();
-		
+
 		const phone = data.get('phone');
+
 		// Do something with the data
+		Email.send({
+			Host: 'smtp.elasticemail.com',
+			Username: 'viacheslavorlov@gmail.com',
+			Password: '4051AD344AB465AA4F474F12A67C5E15142A',
+			To: 'viacheslavorlov@gmail.com',
+			From: 'viacheslavorlov@gmail.com',
+			Subject: 'This is the subject',
+			Body: 'And this is the body' + phone,
+		}).then(message => alert(message));
 	} catch (error) {
 		if (error instanceof Error) {
 			console.error(error.message);
 		}
 	}
 }
----
-
+// API key
+// CA9BA915165578868088261583D5610397429845314C4A165498D9D8532BCCB90B6D587A88DE342E0F558C228141CE9E
+</script>
 <FormLayout title='Отправить данные'>
-	<form method='POST'>
+	<form
+		method='POST'>
 		<label>
 			Телефон:
 			<input
@@ -25,6 +41,9 @@ if (Astro.request.method === 'POST') {
 				minlength='6'
 			/>
 		</label>
-		<button>Отправить</button>
+		<input
+			type='submit'
+			value='Отправить'
+		/>
 	</form>
 </FormLayout>
