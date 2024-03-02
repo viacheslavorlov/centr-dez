@@ -19,16 +19,17 @@ import { ViewTransitions } from 'astro:transitions';
 			name='generator'
 			content={Astro.generator}
 		/>
-		<title></title>
-		<script src='https://smtpjs.com/v3/smtp.js'></script>
+
 	</head>
 	<body class='h-full overflow-x-hidden text-base text-primary-text bg-primary-bg'>
 		<FormHeader />
 
 		<slot />
+		<script is:inline data-cfasync="false" type="text/javascript" src="/src/email-handler/handler.js"></script>
 	</body>
 </html>
-<ViewTransitions />
+
+
 
 <style>
 	body {

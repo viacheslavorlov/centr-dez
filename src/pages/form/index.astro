@@ -1,42 +1,17 @@
 ---
 import FormLayout from '../../layouts/FormLayout.astro';
-
 ---
 
-<script>
-	if (Astro.request.method === 'POST' && window !== undefined) {
-	try {
-		const data = await Astro.request.formData();
-
-		const phone = data.get('phone');
-
-		// Do something with the data
-		Email.send({
-			Host: 'smtp.elasticemail.com',
-			Username: 'viacheslavorlov@gmail.com',
-			Password: '4051AD344AB465AA4F474F12A67C5E15142A',
-			To: 'viacheslavorlov@gmail.com',
-			From: 'viacheslavorlov@gmail.com',
-			Subject: 'This is the subject',
-			Body: 'And this is the body' + phone,
-		}).then(message => alert(message));
-	} catch (error) {
-		if (error instanceof Error) {
-			console.error(error.message);
-		}
-	}
-}
-// API key
-// CA9BA915165578868088261583D5610397429845314C4A165498D9D8532BCCB90B6D587A88DE342E0F558C228141CE9E
-</script>
 <FormLayout title='Отправить данные'>
 	<form
+		class="gform"
+		action='https://script.google.com/macros/s/AKfycbwm7KZAgBCihF2dyZO9oKfzTyp76q-Rx5cbOggQWErROpxv-FDLhD_PJG7S0VrfEd3M/exec'
 		method='POST'>
 		<label>
 			Телефон:
 			<input
 				type='text'
-				name='phone'
+				name='телефон'
 				required
 				minlength='6'
 			/>
@@ -45,5 +20,13 @@ import FormLayout from '../../layouts/FormLayout.astro';
 			type='submit'
 			value='Отправить'
 		/>
+		<div
+			style='display:none'
+			class='thankyou_message'>
+			<!-- You can customize the thankyou message by editing the code below -->
+			<h2>
+				<em>Спасибо что выбрали нас!</em> Наши сотрудники свяжутся с вами в ближайшее время.
+			</h2>
+		</div>
 	</form>
 </FormLayout>
