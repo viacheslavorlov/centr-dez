@@ -1,7 +1,7 @@
 ---
+import { ViewTransitions } from 'astro:transitions';
 import '../styles.css';
 import Header from '../widgets/Header.astro';
-import { ViewTransitions } from 'astro:transitions';
 
 export interface Props {
 	title: string;
@@ -46,6 +46,23 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 		<Header phone={phone} />
 
 		<slot />
+		<script
+			is:inline
+			data-cfasync='false'
+			type='text/javascript'
+			src='/src/email-handler/handler.js'
+		></script>
+		<script>
+			import IMask from 'imask';
+
+			// Apply input masking using Imask
+			const element = document.getElementById('maskedInput') as HTMLElement;
+			const maskOptions = {
+				mask: '+{7}(000)-000-00-00',
+			};
+			console.log(element);
+			const mask = IMask(element, maskOptions);
+		</script>
 	</body>
 </html>
 <ViewTransitions />

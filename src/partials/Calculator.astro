@@ -1,12 +1,8 @@
 ---
 import { Image } from 'astro:assets';
-import type { CollectionEntry } from 'astro:content';
-import { getCollection } from 'astro:content';
-import clsx from 'clsx';
-import ButtonLink from 'src/shared/ui/ButtonLink.astro';
+import { reader } from 'src/reader';
 import Container from '../shared/ui/Container.astro';
 import Section from '../shared/ui/Section.astro';
-import { reader } from 'src/reader';
 
 const collection = await reader.singletons.form.read();
 
@@ -22,71 +18,134 @@ if (Astro.request.method === 'POST') {
 		}
 	}
 }
-
 ---
 
 {
 	collection && (
 		<Section>
-			<Container className='flex flex-col md:flex-row shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
-				<form
-					method='POST'
-					class='flex'>
-					<h2 class='text-3xl md:text-4xl'>{collection.titel}</h2>
-					{collection.fields.map(field => {
-						switch (field.type) {
-							case 'text':
-								return (
-									<div>
-										<label>{field.lable}</label>
-										<input
-											type='text'
-											value=''
-										/>
-									</div>
-								);
-							case 'number':
-								return (
-									<div>
-										<label>{field.lable}</label>
-										<input
-											type='number'
-											value=''
-										/>
-									</div>
-								);
-							case 'select':
-								return (
-									<div>
-										<label>{field.lable}</label>
-										<select value=''>
-											{field.options?.map(
-												(option: { title: string; value: string }) => (
-													<option value={option.value}>
-														{option.title}
+			<Container className=' px-4 md:px-8 lg:px-12 items-center w-full max-w-[1400px]'>
+				<div class='w-full p-4 md:p-8 lg:p-12 flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+					<form
+						action='https://script.google.com/macros/s/AKfycbwm7KZAgBCihF2dyZO9oKfzTyp76q-Rx5cbOggQWErROpxv-FDLhD_PJG7S0VrfEd3M/exec'
+						method='POST'
+						class='gform flex flex-col gap-8 md:gap-12 '>
+						<h2 class='text-3xl md:text-4xl'>{collection.titel}</h2>
+						<div class='flex flex-col gap-4 md:gap-8'>
+							{collection.fields.map(field => {
+								switch (field.type) {
+									case 'text':
+										return (
+											<div class='flex flex-col'>
+												<label>{field.lable}</label>
+												<input
+													class=' p-4 md:p-5 rounded-2xl border border-accent-secondary'
+													type='text'
+													value=''
+													name={field.lable}
+													id='maskedInput'
+													required
+													placeholder={field.placeholder}
+												/>
+											</div>
+										);
+									case 'number':
+										return (
+											<div class='flex flex-col'>
+												<label>{field.lable}</label>
+												<input
+													required
+													name={field.lable}
+													class='appearance-none p-4 md:p-5 rounded-2xl border border-accent-secondary'
+													type='number'
+													value=''
+													placeholder='Например: 35'
+												/>
+											</div>
+										);
+									case 'select':
+										return (
+											<div class='flex flex-col'>
+												<label>{field.lable}</label>
+												<select
+													required
+													name={field.lable}
+													class='bg-primary-bg appearance-none p-4 md:p-5 rounded-2xl border border-accent-secondary text-gray'>
+													<option
+														value=''
+														disabled
+														selected
+														class='bg-primary-bg text-gray opacity-35'>
+														Выберите
 													</option>
-												)
-											)}
-										</select>
-									</div>
-								);
-							default:
-								return null;
-						}
-					})}
-
-					<button class='button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'>
-						{collection.buttonLable}
-					</button>
-				</form>
-				<Image
-					class='w-full md:w-1/2 md:h-full md:object-cover md:object-center'
-					src={collection.img}
-					height={'600'}
-					width={'300'}
-					alt={collection.titel}
-				/>
+													{field.options?.map(
+														(option: {
+															title: string;
+															value: string;
+														}) => (
+															<option
+																class='bg-primary-bg'
+																value={option.value}>
+																{option.title}
+															</option>
+														)
+													)}
+												</select>
+											</div>
+										);
+									default:
+										return null;
+								}
+							})}
+						</div>
+						<button
+							type='submit'
+							class='text-white button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'>
+							{collection.buttonLable}
+						</button>
+						<div
+							style='display:none'
+							class='thankyou_message'>
+							<h2 class='flex flex-col'>
+								<em class='text bold'>Спасибо что выбрали нас!</em> Наши сотрудники
+								свяжутся с вами в ближайшее время.
+							</h2>
+						</div>
+					</form>
+					<div class='w-full md:w-1/2 min-h-full shrink-0 relative'>
+						<Image
+							class='object-contain z-40 md:object-center h-[120%] w-[110%] -top-[15%] absolute'
+							src={collection.img}
+							height={'1200'}
+							width={'800'}
+							alt={collection.titel}
+						/>
+					</div>
+				</div>
 			</Container>
 		</Section>
 	)
 }
+<style>
+	select:required:invalid {
+		color: #9e9e9e;
+	}
+	option[value=''][disabled] {
+		display: none;
+	}
+	option {
+		color: #000;
+	}
+	input[type='number']::-webkit-outer-spin-button,
+	input[type='number']::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	input[type='number'] {
+		-moz-appearance: textfield;
+	}
+	input[type='number']:hover,
+	input[type='number']:focus {
+		-moz-appearance: number-input;
+	}
+</style>

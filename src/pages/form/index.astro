@@ -4,14 +4,14 @@ import FormLayout from '../../layouts/FormLayout.astro';
 
 <FormLayout title='Отправить данные'>
 	<form
-		class="gform"
+		class="gform "
 		action='https://script.google.com/macros/s/AKfycbwm7KZAgBCihF2dyZO9oKfzTyp76q-Rx5cbOggQWErROpxv-FDLhD_PJG7S0VrfEd3M/exec'
 		method='POST'>
 		<label>
 			Телефон:
 			<input
 				type='text'
-				name='телефон'
+				name='Номер телефона'
 				required
 				minlength='6'
 			/>
@@ -24,8 +24,8 @@ import FormLayout from '../../layouts/FormLayout.astro';
 			style='display:none'
 			class='thankyou_message'>
 			<!-- You can customize the thankyou message by editing the code below -->
-			<h2>
-				<em>Спасибо что выбрали нас!</em> Наши сотрудники свяжутся с вами в ближайшее время.
+			<h2 class="flex flex-col">
+				<em class="text bold">Спасибо что выбрали нас!</em> Наши сотрудники свяжутся с вами в ближайшее время.
 			</h2>
 		</div>
 	</form>
