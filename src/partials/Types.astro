@@ -8,7 +8,7 @@ import { reader } from '../reader';
 const collection = await reader.singletons.paraisiteTypes.read();
 ---
 
-<Section>
+<Section id='services'>
 	<Container className='flex flex-col gap-8 md:gap-12 lg:gap-16'>
 		<h2 class='text-4xl text-left w-full md:w-3/4 self-start'>{collection?.titel}</h2>
 		<div class='grid w-full grid-cols-12 gap-4 md:gap-8 lg:gap-12'>

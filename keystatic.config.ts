@@ -15,11 +15,14 @@ export default config({
 				buttonLable: fields.text({ label: 'buttonLable' }),
 				buttonLink: fields.text({ label: 'buttonLink' }),
 				img: fields.text({ label: 'img' }),
-				reverse: fields.text({label: 'reverse'}),
+				reverse: fields.text({ label: 'reverse' }),
 				resons: fields.array(
-					fields.object({
-						title: fields.text({ label: 'titel' }),
-					}, {label: 'опасности'})
+					fields.object(
+						{
+							title: fields.text({ label: 'titel' }),
+						},
+						{ label: 'опасности' }
+					)
 				),
 				content: fields.document({
 					label: 'Content',
@@ -148,11 +151,29 @@ export default config({
 								title: fields.text({ label: 'titel' }),
 								value: fields.text({ label: 'value' }),
 							})
-						)
+						),
 					})
 				),
 				buttonLable: fields.text({ label: 'buttonLable' }),
 				img: fields.text({ label: 'img' }),
+			},
+		}),
+		contacts: singleton({
+			label: 'Контакты',
+			path: 'src/content/contacts/',
+			schema: {
+				titel: fields.text({ label: 'Заголовок' }),
+				working: fields.text({ label: 'Режим работы' }),
+				address: fields.text({ label: 'Адрес' }),
+				email: fields.text({ label: 'Email' }),
+				contacts: fields.array(fields.object({
+					titel: fields.text({ label: 'Название' }),
+					href: fields.text({ label: 'ссылка' }),
+					img: fields.text({ label: 'картинка' }),
+				},
+				{
+					label: 'Контакт',
+				}), {label: "Контакты"}),
 			},
 		}),
 	},

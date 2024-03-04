@@ -63,7 +63,7 @@ export function QuizCard({ className }: { className?: string }) {
 		if (data?.questions?.length && current && num < data?.questions?.length && current) {
 			numAnswer.set(num + 1);
 			current.split(' ').forEach(item => {
-				setResult(prev => ({ ...prev, [item]: prev[item] + 1 }));
+				setResult((prev) => ({ ...prev, [item]: prev[item] + 1 }));
 			});
 			setCurrent(prev => '');
 		}

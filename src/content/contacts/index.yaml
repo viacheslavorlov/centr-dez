@@ -1,0 +1,14 @@
+titel: Контакты
+working: ' ПН - ВС: 9:00 до 21:00'
+address: 173009, г. Великий Новгород, Октябрьская ул., д. 8А эт. 3, оф. 3.4
+email: zakaz@centr-dez.ru
+contacts:
+  - titel: 8(8162)555-009
+    href: tel:88162555009
+    img: /phone.svg
+  - titel: Вконтакте
+    href: https://vk.com/tarakanklop
+    img: /VK Logo.svg
+  - titel: Whatsapp
+    href: https://api.whatsapp.com/send/?phone=89517281122
+    img: /WhatsApp-Logo.svg

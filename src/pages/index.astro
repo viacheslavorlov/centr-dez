@@ -6,6 +6,7 @@ import DontDoItYourself from '../partials/DonDoItYourself.astro';
 import Hero from '../partials/Hero.astro';
 import Quiz from '../partials/Quiz.astro';
 import Types from '../partials/Types.astro';
+import Contacts from '../partials/Contacts.astro'
 import WhatAwaits from '../partials/WhatAwaits.astro';
 import { reader } from '../reader';
 
@@ -23,6 +24,7 @@ const heroData = await reader.singletons.hero.read();
 	<Calculator />
 	<Types/>
 	<Details />
+	<Contacts/>
 </Layout>
 <style is:global>
 	@keyframes slide {

@@ -1,0 +1,72 @@
+---
+import { Image } from 'astro:assets';
+import { reader } from 'src/reader';
+import Container from '../shared/ui/Container.astro';
+import Section from '../shared/ui/Section.astro';
+import { CalendarClock, LocateIcon, Mail, MapPin } from 'lucide-preact';
+
+const collection = await reader.singletons.contacts.read();
+---
+
+<Section id='contacts'>
+	<Container>
+		<div
+			class='flex flex-col w-full items-center md:flex-row gap-4 md:gap-8 lg:gap-12 justify-between shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+			<div class='flex flex-col gap-4 md:gap-8 lg:gap-12 p-8 md:p-8 lg:p-12'>
+				<h2 class='text-3xl md:text-4xl'>{collection?.titel}</h2>
+				<div class='flex w-full flex-col items-start justify-start gap-4 md:gap-8'>
+					{
+						collection?.contacts.map(item => (
+							<a
+								href={item.href}
+								class='flex items-center gap-2 hover:underline hover:text-accent'>
+								<Image
+									src={item.img || ''}
+									alt={''}
+									height={'120'}
+									width={'120'}
+									class={'w-10 h-10'}
+								/>
+								<h3>{item.titel}</h3>
+							</a>
+						))
+					}
+				</div>
+				<div class='flex gap-4 w-full items-center justify-start'>
+					<CalendarClock
+						className={'shrink-0'}
+						size={40}
+						client:load
+					/>
+					<p>{collection?.working}</p>
+				</div>
+				<div class='flex gap-4 w-full items-center justify-start'>
+					<MapPin
+						className={'shrink-0'}
+						class:list={['shrink-0']}
+						size={40}
+						client:load
+					/>
+					<p>{collection?.address}</p>
+				</div>
+				<div class='flex gap-4 w-full items-center justify-start'>
+					<Mail
+						className={'shrink-0'}
+						size={40}
+						client:load
+					/>
+					<a href={`mailto:${collection?.email}`}>{collection?.email}</a>
+				</div>
+			</div>
+			<div class='md:w-[55%] h-full shrink-0 p-4 md:p-8 lg:p-12'>
+				<Image
+					class={'object-contain min-w-[250px] mx-auto'}
+					src={'/испуганный таракан.png'}
+					alt={''}
+					height={'600'}
+					width={'600'}
+				/>
+			</div>
+		</div>
+	</Container>
+</Section>

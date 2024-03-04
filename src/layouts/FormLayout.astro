@@ -1,21 +1,18 @@
 ---
-import Container from 'src/shared/ui/Container.astro';
+import Container from '../shared/ui/Container.astro';
 import '../styles.css';
 import FormHeader from '../widgets/FormHeader.astro';
-
-import Section from 'src/shared/ui/Section.astro';
+import Section from '../shared/ui/Section.astro';
 ---
 
 <!doctype html>
 <html lang='ru'>
 	<head>
 		<meta charset='UTF-8' />
-
 		<meta
 			name='viewport'
 			content='width=device-width'
 		/>
-
 		<meta
 			name='generator'
 			content={Astro.generator}
@@ -148,7 +145,6 @@ import Section from 'src/shared/ui/Section.astro';
 			const maskOptions = {
 				mask: '+{7}(000)-000-00-00',
 			};
-			console.log(element);
 			const mask = IMask(element, maskOptions);
 		</script>
 	</body>
