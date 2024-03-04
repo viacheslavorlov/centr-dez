@@ -1,19 +1,18 @@
 ---
-import { MapPin } from 'lucide-preact';
 import Logo from './Logo.astro';
 
 // const { phone } = Astro.props;
 ---
 
 <section class={'width-screen relative bg-primary-bg'}>
-	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-center gap-10 p-4'>
+	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-start md:items-center gap-10 p-4'>
 		<Logo />
-		<div class='md:flex justify-center items-center hidden mr-auto font-semibold gap-2 w-full'>
+		<!-- <div class='md:flex mr-auto justify-center items-center hidden font-semibold gap-2 w-full'>
 			<MapPin /> <p>Великий Новгород</p>
-		</div>
+		</div> -->
 		<div
-			class='ml-auto hidden text-lg w-full items-start justify-end gap-10 md:flex lg:items-center'>
-			<a href={'/'}>Назад</a>
+			class='ml-auto h-full text-right text-lg w-full gap-10 '>
+			<a class="hover:underline" href={'/'}>Назад</a>
 		</div>
 		<!-- <div class='text-lg shrink-0 min-w-36 hidden lg:block'>
 			<a

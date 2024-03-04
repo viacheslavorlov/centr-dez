@@ -12,7 +12,7 @@ const collection = await reader.collections.dangers.all()
 
 {collection && <Section>
 	<Container>
-		<!-- <h2 class="text-4xl text-left w-full md:w-3/4 self-start">{collection.titel}</h2> -->
+		
 		<div class='flex flex-col w-full gap-8 md:gap-12 lg:gap-28'>
 			{
 				collection.map(({entry}) => (
@@ -22,7 +22,7 @@ const collection = await reader.collections.dangers.all()
 							entry.reverse === 'reverse' && 'md:flex-row-reverse'
 						)}>
 						<div class='flex flex-col w-full md:w-[70%] gap-4 md:gap-8 lg:gap-12 justify-between'>
-							<h3 class='entrytext-4xl'>{entry.title}</h3>
+							<h3 class='text-4xl'>{entry.title}</h3>
 							<div class='flex flex-col gap-4 md:gap-8 bg-secondary-bg/10 p-4 md:p-8 lg:p-12 rounded-2xl border-secondary-bg border'>
 								{entry.resons.map(item => (
 									<div class='flex gap-4 items-center'>
