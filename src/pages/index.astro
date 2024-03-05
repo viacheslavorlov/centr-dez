@@ -8,6 +8,7 @@ import Quiz from '../partials/Quiz.astro';
 import Types from '../partials/Types.astro';
 import Contacts from '../partials/Contacts.astro'
 import WhatAwaits from '../partials/WhatAwaits.astro';
+import HoveringButton from '../shared/ui/HoveringButton.astro'
 import { reader } from '../reader';
 
 const heroData = await reader.singletons.hero.read();
@@ -25,6 +26,7 @@ const heroData = await reader.singletons.hero.read();
 	<Types/>
 	<Details />
 	<Contacts/>
+	<HoveringButton url="/form" title="Перезвоните мне" className="" />
 </Layout>
 <style is:global>
 	@keyframes slide {

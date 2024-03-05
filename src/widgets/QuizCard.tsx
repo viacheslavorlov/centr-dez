@@ -133,14 +133,14 @@ export function QuizCard({ className }: { className?: string }) {
 				</div>
 
 				<div class={'flex flex-col md:flex-row w-full gap-4 md:gap-8'}>
-					<button
+					{/* <button
 						class={clsx(
 							'button relative bg-accent text-center px-4 w-full py-2 rounded-full text-white font-semibold hover:bg-accent-secondary',
 							className
 						)}
 						onClick={decrease}>
 						Назад
-					</button>
+					</button> */}
 					{num + 1 === data.questions.length ? (
 						<a
 							title={current === '' ? 'Ответьте на последний вопрос' : ''}

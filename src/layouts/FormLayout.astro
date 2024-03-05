@@ -118,6 +118,10 @@ import Section from '../shared/ui/Section.astro';
 						})
 						.join('&');
 					xhr.send(encoded);
+					// таймер для перехода на главную страницу
+					setTimeout(() => {
+						window.location.replace('/');
+					}, 10000);
 				}
 
 				function loaded() {
@@ -126,6 +130,7 @@ import Section from '../shared/ui/Section.astro';
 					for (var i = 0; i < forms.length; i++) {
 						forms[i].addEventListener('submit', handleFormSubmit, false);
 					}
+					
 				}
 				document.addEventListener('DOMContentLoaded', loaded, false);
 
