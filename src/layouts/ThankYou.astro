@@ -1,0 +1,40 @@
+---
+import Container from '../shared/ui/Container.astro';
+import '../styles.css';
+import FormHeader from '../widgets/FormHeader.astro';
+import Section from '../shared/ui/Section.astro';
+---
+
+<!doctype html>
+<html lang='ru'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta
+			name='viewport'
+			content='width=device-width'
+		/>
+		<meta
+			name='generator'
+			content={Astro.generator}
+		/>
+	</head>
+	<body class='h-full overflow-x-hidden text-base text-primary-text bg-primary-bg'>
+		<FormHeader />
+		<Section>
+			<Container className='flex-col'>
+				<slot />
+			</Container>
+		</Section>
+		<script is:inline>
+			setTimeout(() => {
+				window.location.replace('/')
+			}, 8000)
+		</script>
+	</body>
+
+	<style>
+		body {
+			font-family: 'Manrope', sans-serif;
+		}
+	</style>
+</html>

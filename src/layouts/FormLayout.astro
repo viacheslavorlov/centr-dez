@@ -1,8 +1,9 @@
 ---
 import Container from '../shared/ui/Container.astro';
+import Section from '../shared/ui/Section.astro';
 import '../styles.css';
 import FormHeader from '../widgets/FormHeader.astro';
-import Section from '../shared/ui/Section.astro';
+
 ---
 
 <!doctype html>
@@ -120,8 +121,8 @@ import Section from '../shared/ui/Section.astro';
 					xhr.send(encoded);
 					// таймер для перехода на главную страницу
 					setTimeout(() => {
-						window.location.replace('/');
-					}, 10000);
+						window.location.replace('/thank-you');
+					}, 0);
 				}
 
 				function loaded() {
@@ -130,7 +131,6 @@ import Section from '../shared/ui/Section.astro';
 					for (var i = 0; i < forms.length; i++) {
 						forms[i].addEventListener('submit', handleFormSubmit, false);
 					}
-					
 				}
 				document.addEventListener('DOMContentLoaded', loaded, false);
 
@@ -142,6 +142,7 @@ import Section from '../shared/ui/Section.astro';
 				}
 			})();
 		</script>
+
 		<script>
 			import IMask from 'imask';
 

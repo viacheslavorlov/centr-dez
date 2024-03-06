@@ -1,13 +1,13 @@
 ---
 import videojs from 'video.js';
-import {clsx} from 'clsx'
+import { clsx } from 'clsx';
 import 'video.js/dist/video-js.css';
 
 type Props = {
-	videoSrc: string
-	controls: boolean
-	className?: string
-}
+	videoSrc: string;
+	controls: boolean;
+	className?: string;
+};
 
 const { videoSrc, controls, className }: Props = Astro.props;
 ---
@@ -15,32 +15,40 @@ const { videoSrc, controls, className }: Props = Astro.props;
 <video
 	id='my-video'
 	class={clsx('video-js', className)}
-	controls={controls || "true"}
+	controls={controls || 'true'}
 	preload='auto'
-	width='264'
-	height='640'
-	playsinline
 	muted
-	data-setup='{}'>
+	width='236'
+	height='420'
+	playsinline
+	
+	>
 	<source
 		src={videoSrc}
 		type='video/mp4'
+		
 	/>
 
-	<!-- To view this video please enable JavaScript, and consider upgrading to a web browser that
+	To view this video please enable JavaScript, and consider upgrading to a web browser that
 	<a
 		href='https://videojs.com/html5-video-support/'
 		target='_blank'
 		>supports HTML5 video</a
-	> -->
+	>
 </video>
 
-<!-- <script define:vars={{ videojs }}>
+<script>
+	import videojs from 'video.js';
 	document.addEventListener('DOMContentLoaded', () => {
 		const player = videojs('my-video');
+		// player.muted(false)
+		player.volume(1)
+		player.controls(true)
+		console.log('video is ready');
+
 		return () => {
 			// This is important to do when your component unmounts
 			player.dispose();
 		};
 	});
-</script> -->
+</script>
