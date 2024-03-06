@@ -166,6 +166,7 @@ export default config({
 				working: fields.text({ label: 'Режим работы' }),
 				address: fields.text({ label: 'Адрес' }),
 				email: fields.text({ label: 'Email' }),
+				image: fields.text({ label: 'Картинка' }),
 				contacts: fields.array(fields.object({
 					titel: fields.text({ label: 'Название' }),
 					href: fields.text({ label: 'ссылка' }),
