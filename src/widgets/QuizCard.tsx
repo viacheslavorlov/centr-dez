@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import clsx from 'clsx';
 import type { ChangeEvent } from 'preact/compat';
 import { useEffect, useState } from 'preact/hooks';
+import { findKeyWithMaxValue } from 'src/shared/lib/findMaxKey';
 import { numAnswer } from 'src/store';
 
 type Question = {
@@ -151,7 +152,7 @@ export function QuizCard({ className }: { className?: string }) {
 							class={
 								'button relative  drop-shadow-lg bg-accent text-center px-4 w-full py-2 rounded-full text-white font-semibold hover:bg-accent-secondary'
 							}
-							href='/form'>
+							href={'/form/' + findKeyWithMaxValue(result)}>
 							<button class={clsx('', className)}>Получить подарок</button>
 						</a>
 					) : (

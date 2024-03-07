@@ -1,9 +1,9 @@
 ---
 import { Image } from 'astro:assets';
+import { CalendarClock, Mail, MapPin } from 'lucide-preact';
 import { reader } from 'src/reader';
 import Container from '../shared/ui/Container.astro';
 import Section from '../shared/ui/Section.astro';
-import { CalendarClock, LocateIcon, Mail, MapPin } from 'lucide-preact';
 
 const collection = await reader.singletons.contacts.read();
 ---
@@ -19,7 +19,7 @@ const collection = await reader.singletons.contacts.read();
 						collection?.contacts.map(item => (
 							<a
 								href={item.href}
-								class='flex items-center gap-2 hover:underline hover:text-accent'>
+								class='flex items-center gap-4 hover:underline hover:text-accent'>
 								<Image
 									src={item.img || ''}
 									alt={''}
@@ -32,6 +32,18 @@ const collection = await reader.singletons.contacts.read();
 						))
 					}
 				</div>
+
+				<a
+					href={`mailto:${collection?.email}`}
+					class='flex gap-4 w-full items-center justify-start hover:underline hover:text-accent'>
+					<Mail
+						className={'shrink-0'}
+						size={40}
+						client:load
+					/>
+					<p>{collection?.email}</p>
+				</a>
+
 				<div class='flex gap-4 w-full items-center justify-start'>
 					<CalendarClock
 						className={'shrink-0'}
@@ -49,14 +61,7 @@ const collection = await reader.singletons.contacts.read();
 					/>
 					<p>{collection?.address}</p>
 				</div>
-				<div class='flex gap-4 w-full items-center justify-start'>
-					<Mail
-						className={'shrink-0'}
-						size={40}
-						client:load
-					/>
-					<a href={`mailto:${collection?.email}`}>{collection?.email}</a>
-				</div>
+				
 			</div>
 			<div class='md:w-[55%] h-full shrink-0 p-4 md:p-8 lg:p-12'>
 				<Image

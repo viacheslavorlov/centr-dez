@@ -1,0 +1,96 @@
+---
+import { Image } from 'astro:assets';
+import FormLayout from '../../../layouts/FormLayout.astro';
+import { reader } from '../../../reader';
+import Flex from '../../../shared/ui/Flex.astro';
+
+const collection = await reader.collections.dangers.read('chem-opasny-gryzuny-v-dome');
+console.log(collection);
+---
+
+<FormLayout title='Отправить данные'>
+	<Flex adaptive className='w-full gap-8 md:gap-12 lg:gap-16 p-4 md:p-8 lg:p-12 pb-0 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg relative overflow-hidden'>
+		<form
+			class='gform flex flex-col gap-8  w-full'
+			action='https://script.google.com/macros/s/AKfycbwDm0ZSGYA_YOgmgt1IlIw9ck2g46sUpCdR9EHQqo55Di1x8hwkp3xoTWF40Tw1liDs/exec'
+			method='POST'>
+			
+			<div class="space-y-4">
+				<h1 class='text-3xl md:text-4xl'>
+					Возможно у вас завелись 
+					<span class="text-accent-secondary font-extrabold">
+						{collection?.type}!
+					</span>
+				</h1>
+				<h2 class='text-xl md:text-2xl'>
+					Укажите номер телефона, за которым будет закреплен подарок, и мы с Вами свяжемся.
+				</h2>
+			</div>
+			<div class='flex flex-col'>
+				<label>{'Номер телефона'}</label>
+				<input
+					class='p-4 md:p-5 rounded-2xl border border-accent-secondary'
+					type='text'
+					value=''
+					name='Номер телефона'
+					id='maskedInput'
+					required
+					placeholder='+7 (___)___-__-__'
+				/>
+			</div>
+			<button
+				id='myButton'
+				onclick='disableButton()'
+				type='submit'
+				class='text-white button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'>
+				{'Заказать звонок'}
+			</button>
+			<!-- <div
+				style='display:none'
+				class='thankyou_message'>
+				<h2 class='flex flex-col'>
+					<em class='text bold'>Спасибо что выбрали нас!</em> Наши сотрудники свяжутся с вами в
+					ближайшее время.
+				</h2>
+			</div> -->
+		</form>
+		<div class='mx-auto justify-self-end self-end w-full relative -bottom-4 md:-bottom-8 lg:-bottom-12'>
+			<Image
+				class={'object-cover w-full mx-auto'}
+				src={collection?.img || ''}
+				alt={''}
+				height={'600'}
+				width={'600'}
+			/>
+		</div>
+		</Flex>
+		<Flex adaptive={false} className='w-full pt-8 md:pt-12 gap-4 md:12'>
+			<h2 class="text-2xl md:text-3xl">
+
+				Чем опасны {collection?.type}
+			</h2>
+
+			<div>
+
+				{collection?.resons.map(item => (
+					<div class="flex gap-4 items-center">
+						<div class="w-4 h-4 bg-accent-secondary rounded-full"></div>
+						<p class=" text-xl">{item.title}</p>
+						</div>
+				))}
+			</div>
+		</Flex>
+	<script is:inline>
+		function disableButton() {
+			document.getElementById('myButton').disable= true;
+		}
+	</script>
+	<style>
+		button:disabled {
+			background-color: gray;
+			pointer-events: none;
+		}
+	</style>
+
+	<!-- <Image src={'/public/DL-Turbo-Green-Smoke.webp'} width={'320'} height={'320'} alt={''}/> -->
+</FormLayout>

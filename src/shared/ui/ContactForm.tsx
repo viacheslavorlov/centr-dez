@@ -2,7 +2,7 @@ export function ContactForm() {
 	return (
 		<form
 		class='gform flex flex-col w-full gap-8 md:gap-12 lg:gap-16 p-4 md:p-8 lg:p-12 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'
-		action='https://script.google.com/macros/s/AKfycbwhFuvoEO1a_8O6PQa2wgHq2zcIMNLo9Q5wD9CD60NKPMoeMKjis0NSjqBKvIqDttmGYQ/exec'
+		action='https://script.google.com/macros/s/AKfycbwDm0ZSGYA_YOgmgt1IlIw9ck2g46sUpCdR9EHQqo55Di1x8hwkp3xoTWF40Tw1liDs/exec'
 		method='POST'>
 		<div class='flex flex-col'>
 			<label>{"Номер телефона"}</label>

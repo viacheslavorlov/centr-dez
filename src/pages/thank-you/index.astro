@@ -1,23 +1,26 @@
 ---
 import ThankYou from 'src/layouts/ThankYou.astro';
+import Flex from 'src/shared/ui/Flex.astro';
 
 import { Image } from 'astro:assets';
 ---
 
 <ThankYou>
-	<div
-		class='max-w-[750px] flex flex-col w-full gap-8 md:gap-12 lg:gap-16 p-4 md:p-8 lg:p-12 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
-		<h1 class='text-2xl md:text-4xl'>Спасибо что выбрали нас!</h1>
-		<h2 class="text-2xl md:text-3xl">Скоро наши сотрудники свяжутся с вами</h2>
-		<p>Сейчас вас перенаправит на главную страницу сайта</p>
-		<div class='mx-auto w-full h-full shrink-0 p-4 md:p-8 lg:p-12'>
+	<Flex
+		className='w-full gap-8 md:gap-12 lg:gap-16 p-4 md:p-8 lg:p-12 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+		<div class="w-full flex flex-col justify-center items-start gap-4 md:gap-8 lg:gap">
+			<h1 class='text-2xl md:text-4xl'>Спасибо что выбрали нас!</h1>
+			<h2 class='text-2xl md:text-3xl'>Скоро наши сотрудники свяжутся с вами</h2>
+			<p>Сейчас вас перенаправит на главную страницу сайта</p>
+		</div>
+		<div class='mx-auto w-full p-4 md:p-8 lg:p-12'>
 			<Image
-				class={'object-contain min-w-[250px] mx-auto'}
+				class={'object-cover  mx-auto'}
 				src={'/испуганный таракан.webp'}
 				alt={''}
 				height={'600'}
 				width={'600'}
 			/>
 		</div>
-	</div>
+	</Flex>
 </ThankYou>

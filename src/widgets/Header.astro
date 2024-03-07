@@ -8,13 +8,13 @@ const { phone } = Astro.props;
 ---
 
 <section class={'width-screen relative bg-primary-bg'}>
-	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-center gap-10 p-4'>
+	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-center gap-8 p-4 md:px-8 lg:px-12'>
 		<Logo />
 		<div class='md:flex justify-center items-center hidden mr-auto font-semibold gap-2 w-full'>
 			<MapPin /> <p>Великий Новгород</p>
 		</div>
 		<div
-			class='ml-auto hidden text-lg w-full items-start justify-end gap-10 md:flex lg:items-center'>
+			class='ml-auto hidden text-lg w-full items-start justify-end gap-8 md:flex lg:items-center'>
 			{navItems.map(item => <a class="hover:underline text-xl" href={item.url}>{item.title}</a>)}
 		</div>
 		<div class='text-lg shrink-0 min-w-36 hidden lg:block'>

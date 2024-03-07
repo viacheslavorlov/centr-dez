@@ -12,6 +12,7 @@ export default config({
 			format: { contentField: 'content' },
 			schema: {
 				title: fields.slug({ name: { label: 'Title' } }),
+				type: fields.text({ label: 'Тип (type)' }),
 				buttonLable: fields.text({ label: 'buttonLable' }),
 				buttonLink: fields.text({ label: 'buttonLink' }),
 				img: fields.text({ label: 'img' }),

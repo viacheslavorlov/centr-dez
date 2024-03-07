@@ -1,45 +1,48 @@
 ---
 import { Image } from 'astro:assets';
+import Flex from 'src/shared/ui/Flex.astro';
 import FormLayout from '../../layouts/FormLayout.astro';
 ---
 
 <FormLayout title='Отправить данные'>
-	<form
-		class='gform max-w-[750px] flex flex-col w-full gap-8 md:gap-12 lg:gap-16 p-4 md:p-8 lg:p-12 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'
-		action='https://script.google.com/macros/s/AKfycbwhFuvoEO1a_8O6PQa2wgHq2zcIMNLo9Q5wD9CD60NKPMoeMKjis0NSjqBKvIqDttmGYQ/exec'
-		method='POST'>
-		<h1 class='text-2xl md:text-4xl'>
-			Укажите номер телефона, за которым будет закреплен подарок
-		</h1>
-		<div class='flex flex-col'>
-			<label>{'Номер телефона'}</label>
-			<input
-				class='p-4 md:p-5 rounded-2xl border border-accent-secondary'
-				type='text'
-				value=''
-				name='Номер телефона'
-				id='maskedInput'
-				required
-				placeholder='+7 (___)___-__-__'
-			/>
-		</div>
-		<button
-			id='myButton'
-			onclick="disableButton()"
-			type='submit'
-			class='text-white button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'>
-			{'Заказать звонок'}
-		</button>
-		<div
+	<Flex  className='gform flex flex-col  w-full p-4 md:p-8 lg:p-12 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+		<form
+			class='gform max-w-[750px] flex flex-col w-full gap-8 md:gap-12 lg:gap-16 '
+			action='https://script.google.com/macros/s/AKfycbwDm0ZSGYA_YOgmgt1IlIw9ck2g46sUpCdR9EHQqo55Di1x8hwkp3xoTWF40Tw1liDs/exec'
+			method='POST'>
+			<h1 class='text-2xl md:text-4xl'>
+				Отправьте номер телефона и мы с Вами связемся
+			</h1>
+			<div class='flex flex-col'>
+				<label>{'Номер телефона'}</label>
+				<input
+					class='p-4 md:p-5 rounded-2xl border border-accent-secondary'
+					type='text'
+					value=''
+					name='Номер телефона'
+					id='maskedInput'
+					required
+					placeholder='+7 (___)___-__-__'
+				/>
+			</div>
+			<button
+				id='myButton'
+				onclick='disableButton()'
+				type='submit'
+				class='text-white button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'>
+				{'Заказать звонок'}
+			</button>
+			<!-- <div
 			style='display:none'
-			class='thankyou_message'>
+			class='thankyou_message'> -->
 			<!-- You can customize the thankyou message by editing the code below -->
-			<h2 class='flex flex-col'>
+			<!-- <h2 class='flex flex-col'>
 				<em class='text bold'>Спасибо что выбрали нас!</em> Наши сотрудники свяжутся с вами в
 				ближайшее время.
 			</h2>
-		</div>
-		<div class='mx-auto w-full h-full shrink-0 p-4 md:p-8 lg:p-12'>
+		</div> -->
+		</form>
+		<div class='mx-auto w-full h-full p-4 md:p-8 lg:p-12'>
 			<Image
 				class={'object-contain min-w-[250px] mx-auto'}
 				src={'/испуганный таракан.webp'}
@@ -48,12 +51,16 @@ import FormLayout from '../../layouts/FormLayout.astro';
 				width={'600'}
 			/>
 		</div>
-	</form>
-	<script is:inline>
-		function disableButton() {
-			document.getElementById('myButton').style.display = 'none';
-		}
-	</script>
+	</Flex>
+
+	<script is:inline></script>
 
 	<!-- <Image src={'/public/DL-Turbo-Green-Smoke.webp'} width={'320'} height={'320'} alt={''}/> -->
 </FormLayout>
+
+<style>
+	button:disabled {
+		background-color: gray;
+		pointer-events: none;
+	}
+</style>

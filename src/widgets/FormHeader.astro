@@ -1,11 +1,12 @@
 ---
+import Section from 'src/shared/ui/Section.astro';
 import Logo from './Logo.astro';
+import Container from 'src/shared/ui/Container.astro';
 
-// const { phone } = Astro.props;
 ---
 
 <section class={'width-screen relative bg-primary-bg'}>
-	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-start md:items-center gap-10 p-4'>
+	<div class='mx-auto w-full max-w-[1400px] flex justify-between items-start md:items-center gap-8 p-4 md:px-8 lg:px-12'>
 		<Logo />
 		<!-- <div class='md:flex mr-auto justify-center items-center hidden font-semibold gap-2 w-full'>
 			<MapPin /> <p>Великий Новгород</p>

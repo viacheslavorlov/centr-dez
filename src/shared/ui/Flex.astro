@@ -1,0 +1,28 @@
+---
+import { clsx } from 'clsx';
+type Props = {
+	align?: 'cener' | 'start' | 'end';
+	justify?: 'cener' | 'start' | 'end' | 'between';
+	direction?: 'col' | 'row';
+	adaptive?: boolean;
+	children?: any;
+	className?: string;
+};
+
+const {
+	adaptive = true,
+	direction = 'col',
+	align = 'cener',
+	justify = 'cener',
+	className
+}: Props = Astro.props;
+---
+
+<div
+	class={clsx(
+		`flex justify-${justify} items-${align}`,
+		adaptive ? 'flex-col md:flex-row' : 'flex-' + direction,
+		className
+	)}>
+	<slot />
+</div>

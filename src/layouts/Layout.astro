@@ -31,11 +31,26 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 			name='keywords'
 			content={keywords?.join(', ')}
 		/>
-		<meta property="og:locale" content="ru_RU">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="Главная - Группа компаний &quot;Центр дезинфекций&quot; в Великом Новгороде - Группа компаний &quot;Центр дезинфекции&quot;">
-		<meta property="og:url" content="https://centr-dez.ru/">
-		<meta property="og:site_name" content="Группа компаний &quot;Центр дезинфекций&quot; в Великом Новгороде - Группа компаний &quot;Центр дезинфекции&quot;">
+		<meta
+			property='og:locale'
+			content='ru_RU'
+		/>
+		<meta
+			property='og:type'
+			content='website'
+		/>
+		<meta
+			property='og:title'
+			content='Главная - Группа компаний "Центр дезинфекций" в Великом Новгороде - Группа компаний "Центр дезинфекции"'
+		/>
+		<meta
+			property='og:url'
+			content='https://centr-dez.ru/'
+		/>
+		<meta
+			property='og:site_name'
+			content='Группа компаний "Центр дезинфекций" в Великом Новгороде - Группа компаний "Центр дезинфекции"'
+		/>
 		<link
 			rel='icon'
 			type='image/svg+xml'
@@ -144,6 +159,9 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 						})
 						.join('&');
 					xhr.send(encoded);
+					setTimeout(() => {
+						window.location.replace('/thank-you');
+					}, 2500);
 				}
 
 				function loaded() {
