@@ -32,6 +32,12 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 			content={keywords?.join(', ')}
 		/>
 		<meta
+			name='robots'
+			content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+		/>
+
+		<!-- Open Graph START -->
+		<meta
 			property='og:locale'
 			content='ru_RU'
 		/>
@@ -41,26 +47,82 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 		/>
 		<meta
 			property='og:title'
-			content='Главная - Группа компаний "Центр дезинфекций" в Великом Новгороде - Группа компаний "Центр дезинфекции"'
+			content='Группа компаний "Центр дезинфекций" в Великом Новгороде'
 		/>
 		<meta
 			property='og:url'
-			content='https://centr-dez.ru/'
+			content='https://dez-nov.ru/'
+		/>
+		<meta
+			property='og:description'
+			content='Группа компаний "Центр дезинфекций" в Великом Новгороде'
+		/>
+		<meta
+			property='og:video'
+			content='https://dez-nov.ru/video/video.mov'
+		/>
+		<meta
+			property='og:locale'
+			content='ru_RU'
+		/>
+		<meta
+			property='og:image'
+			content='https://dez-nov.ru/%D0%9B%D0%BE%D0%B3%D0%BE%D0%A6%D0%94%20(2).webp'
 		/>
 		<meta
 			property='og:site_name'
-			content='Группа компаний "Центр дезинфекций" в Великом Новгороде - Группа компаний "Центр дезинфекции"'
+			content='Группа компаний "Центр дезинфекций" в Великом Новгороде'
 		/>
+		<!-- Open Graph END -->
 		<link
 			rel='icon'
 			type='image/svg+xml'
 			href={icon}
 		/>
 		<meta
-			name='generator'
+			name='generator'	
 			content={Astro.generator}
 		/>
 		<title>{title}</title>
+
+		<!-- Yandex.Metrika counter -->
+		<script type='text/javascript'>
+			(function (m, e, t, r, i, k, a) {
+				m[i] =
+					m[i] ||
+					function () {
+						(m[i].a = m[i].a || []).push(arguments);
+					};
+				m[i].l = 1 * new Date();
+				for (var j = 0; j < document.scripts.length; j++) {
+					if (document.scripts[j].src === r) {
+						return;
+					}
+				}
+				(k = e.createElement(t)),
+					(a = e.getElementsByTagName(t)[0]),
+					(k.async = 1),
+					(k.src = r),
+					a.parentNode.insertBefore(k, a);
+			})(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+
+			ym(96688405, 'init', {
+				clickmap: true,
+				trackLinks: true,
+				accurateTrackBounce: true,
+				webvisor: true,
+			});
+		</script>
+		<noscript
+			><div>
+				<img
+					src='https://mc.yandex.ru/watch/96688405'
+					style='position:absolute; left:-9999px;'
+					alt=''
+				/>
+			</div></noscript
+		>
+		<!-- /Yandex.Metrika counter -->
 	</head>
 	<body class='h-full w-full overflow-x-hidden text-base text-primary-text bg-primary-bg'>
 		<Header phone={phone} />

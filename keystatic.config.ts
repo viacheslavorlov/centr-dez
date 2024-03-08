@@ -17,7 +17,7 @@ export default config({
 				buttonLink: fields.text({ label: 'buttonLink' }),
 				img: fields.text({ label: 'img' }),
 				reverse: fields.text({ label: 'reverse' }),
-				resons: fields.array(
+				reasons: fields.array(
 					fields.object(
 						{
 							title: fields.text({ label: 'titel' }),
@@ -101,7 +101,7 @@ export default config({
 				titel: fields.text({ label: 'titel' }),
 				buttonLable: fields.text({ label: 'buttonLable' }),
 				buttonLink: fields.text({ label: 'buttonLink' }),
-				resons: fields.array(
+				reasons: fields.array(
 					fields.object({
 						title: fields.text({ label: 'titel' }),
 						img: fields.text({ label: 'img' }),

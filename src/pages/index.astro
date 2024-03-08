@@ -1,37 +1,52 @@
 ---
-import { Image } from 'astro:assets';
 import Calculator from 'src/partials/Calculator.astro';
 import Layout from '../layouts/Layout.astro';
+import Contacts from '../partials/Contacts.astro';
 import Details from '../partials/Details.astro';
 import DontDoItYourself from '../partials/DonDoItYourself.astro';
 import Hero from '../partials/Hero.astro';
 import Quiz from '../partials/Quiz.astro';
 import Types from '../partials/Types.astro';
-import Contacts from '../partials/Contacts.astro'
 import WhatAwaits from '../partials/WhatAwaits.astro';
-import HoveringButton from '../shared/ui/HoveringButton.astro'
-import Modal from '../shared/ui/Modal.astro'
 import { reader } from '../reader';
+import HoveringButton from '../shared/ui/HoveringButton.astro';
+import Modal from '../shared/ui/Modal.astro';
 
 const heroData = await reader.singletons.hero.read();
 ---
 
 <Layout
+	description='Группа компаний "Центр дезинфекций" в Великом новгороде. Занимается дезинфекцией, дезинсекцией, дератизацией. Истребляем тараканов, клопов, грызунов, мышей, крыс, комаров и других вредителей.'
+	keywords={[
+		'клопы',
+		'тараканы',
+		'мыши',
+		'крысы',
+		'избавиться',
+		'травить',
+		'истребить',
+		'плесень',
+		'дезинсекция',
+		'дератизация',
+		'дезинфекция',
+	]}
 	phone={heroData?.phone}
 	icon={'/favicon.ico'}
-	title={heroData?.windowTitle || ''}>
+	title={heroData?.windowTitle || 'Центр дезинфекции'}>
 	<Hero />
 	<Quiz />
-	<Modal>
-		Modal
-	</Modal>
+	<Modal>Modal</Modal>
 	<DontDoItYourself />
 	<WhatAwaits />
 	<Calculator />
-	<Types/>
+	<Types />
 	<Details />
-	<Contacts/>
-	<HoveringButton url="/form" title="Перезвоните мне" className="" />
+	<Contacts />
+	<HoveringButton
+		url='/form'
+		title='Перезвоните мне'
+		className=''
+	/>
 </Layout>
 <style is:global>
 	@keyframes slide {
