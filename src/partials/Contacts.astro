@@ -1,6 +1,14 @@
 ---
 import { Image } from 'astro:assets';
-import { CalendarClock, Mail, MapPin } from 'lucide-preact';
+import {
+	CalendarClock,
+	FileAxis3DIcon,
+	FileDigit,
+	Home,
+	Mail,
+	MapPin,
+	UserRoundCog,
+} from 'lucide-preact';
 import { reader } from 'src/reader';
 import Container from '../shared/ui/Container.astro';
 import Section from '../shared/ui/Section.astro';
@@ -12,7 +20,7 @@ const collection = await reader.singletons.contacts.read();
 	<Container>
 		<div
 			class='flex flex-col w-full items-center md:flex-row gap-4 md:gap-8 lg:gap-12 justify-between shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
-			<div class='flex flex-col gap-4 md:gap-8 lg:gap-12 p-8 md:p-8 lg:p-12'>
+			<div class='flex flex-col gap-2 md:gap-4 lg:gap-6 p-8 md:p-8 lg:p-12'>
 				<h2 class='text-3xl md:text-4xl'>{collection?.titel}</h2>
 				<div class='flex w-full flex-col items-start justify-start gap-4 md:gap-8'>
 					{
@@ -50,7 +58,7 @@ const collection = await reader.singletons.contacts.read();
 						size={40}
 						client:load
 					/>
-					<p>{collection?.working}</p>
+					<p class='text-wrap flex'>{collection?.working}</p>
 				</div>
 				<div class='flex gap-4 w-full items-center justify-start'>
 					<MapPin
@@ -59,9 +67,51 @@ const collection = await reader.singletons.contacts.read();
 						size={40}
 						client:load
 					/>
-					<p>{collection?.address}</p>
+					<p class='text-wrap w-full'>{collection?.address}</p>
 				</div>
-				
+
+				<div class='flex gap-4 w-full items-center justify-start'>
+					<FileAxis3DIcon
+						className={'shrink-0'}
+						class:list={['shrink-0']}
+						size={40}
+						client:load
+					/>
+					<p>ИНН: {collection?.inn}</p>
+				</div>
+
+				<div class='flex gap-4 w-full items-center justify-start'>
+					<FileDigit
+						className={'shrink-0'}
+						class:list={['shrink-0']}
+						size={40}
+						client:load
+					/>
+					<p>ОГРН: {collection?.ogrn}</p>
+				</div>
+				<div class='flex gap-4 w-full items-center justify-start'>
+					<UserRoundCog
+						className={'shrink-0'}
+						class:list={['shrink-0']}
+						size={40}
+						client:load
+					/>
+					<div class='flex flex-col'>
+						<p>Ф.И.О. директора:</p>
+						<p>{collection?.director}</p>
+					</div>
+				</div>
+				<div class='flex gap-4 w-full items-center justify-start'>
+					<Home
+						className={'shrink-0'}
+						class:list={['shrink-0']}
+						size={40}
+						client:load
+					/>
+					<p class='text-wrap w-full'>
+						Полное наименование компании: {collection?.fullName}
+					</p>
+				</div>
 			</div>
 			<div class='md:w-[55%] h-full shrink-0 p-4 md:p-8 lg:p-12'>
 				<Image

@@ -168,14 +168,24 @@ export default config({
 				address: fields.text({ label: 'Адрес' }),
 				email: fields.text({ label: 'Email' }),
 				image: fields.text({ label: 'Картинка' }),
-				contacts: fields.array(fields.object({
-					titel: fields.text({ label: 'Название' }),
-					href: fields.text({ label: 'ссылка' }),
-					img: fields.text({ label: 'картинка' }),
-				},
-				{
-					label: 'Контакт',
-				}), {label: "Контакты"}),
+				ogrn: fields.text({ label: 'ОГРН' }),
+				inn: fields.text({ label: 'ИНН'}),
+				fullName: fields.text({ label: 'Полное наименование компании:' }),
+				shortName: fields.text({ label: 'Сокращенное наименование компании:' }),
+				director: fields.text({ label: 'Ф.И.О. директора:' }),
+				contacts: fields.array(
+					fields.object(
+						{
+							titel: fields.text({ label: 'Название' }),
+							href: fields.text({ label: 'ссылка' }),
+							img: fields.text({ label: 'картинка' }),
+						},
+						{
+							label: 'Контакт',
+						}
+					),
+					{ label: 'Контакты' }
+				),
 			},
 		}),
 	},
