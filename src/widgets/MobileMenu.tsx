@@ -1,4 +1,4 @@
-import { Menu, X } from 'lucide-preact';
+import { Menu, Phone, X } from 'lucide-preact';
 import { useState } from 'preact/hooks';
 import { navItems } from '../config/menu';
 
@@ -22,6 +22,14 @@ const MobileMenu = ({ className }: Props) => {
 					</div>
 				</>
 			))}
+			<div
+				className='border text-primary-text  transition-all border-accent text-2xl px-4 py-2 rounded-2xl hover:scale-105 hover:text-white hover:bg-accent'
+				onClick={() => setIsVisible(false)}>
+			<a href={'tel:+78162555009'} class="flex gap-4 items-center">
+					<Phone />
+					Позвонить
+				</a>
+			</div>
 			<div
 				onClick={() => setIsVisible(false)}
 				class={

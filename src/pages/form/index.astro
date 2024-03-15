@@ -5,14 +5,13 @@ import FormLayout from '../../layouts/FormLayout.astro';
 ---
 
 <FormLayout title='Отправить данные'>
-	<Flex  className='gform flex flex-col  w-full p-4 md:p-8 lg:p-12 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+	<Flex
+		className='gform flex flex-col  w-full p-4 md:p-8 lg:p-12 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
 		<form
-			class='gform max-w-[750px] flex flex-col w-full gap-8 md:gap-12 lg:gap-16 '
-			action='https://script.google.com/macros/s/AKfycbwDm0ZSGYA_YOgmgt1IlIw9ck2g46sUpCdR9EHQqo55Di1x8hwkp3xoTWF40Tw1liDs/exec'
+			class='gform max-w-[750px] flex flex-col w-full gap-8 md:gap-12 lg:gap-16'
+			action='https://script.google.com/macros/s/AKfycbzSqRMZuyRLagZAnX4DjMagNQczCD_KnmyQ5wuAe-N4vvf0JGdDGz3xol3MzrcXztPlJw/exec'
 			method='POST'>
-			<h1 class='text-2xl md:text-4xl'>
-				Отправьте номер телефона и мы с Вами связемся
-			</h1>
+			<h1 class='text-2xl md:text-4xl'>Отправьте номер телефона и мы с Вами связемся</h1>
 			<div class='flex flex-col'>
 				<label>{'Номер телефона'}</label>
 				<input
