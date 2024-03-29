@@ -1,5 +1,4 @@
 ---
-import videojs from 'video.js';
 import { clsx } from 'clsx';
 import 'video.js/dist/video-js.css';
 
@@ -16,7 +15,7 @@ const { videoSrc, controls, className }: Props = Astro.props;
 	id='my-video'
 	class={clsx('video-js', className)}
 	controls={controls || 'true'}
-	preload='auto'
+	preload='metadata'
 	muted
 	width='236'
 	height='420'
