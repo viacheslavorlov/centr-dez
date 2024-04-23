@@ -146,6 +146,7 @@ export default config({
 					fields.object({
 						lable: fields.text({ label: 'lable' }),
 						type: fields.text({ label: 'type' }),
+						form: fields.text({ label: 'картинка' }),
 						placeholder: fields.text({ label: 'placeholder' }),
 						options: fields.array(
 							fields.object({
@@ -169,7 +170,7 @@ export default config({
 				email: fields.text({ label: 'Email' }),
 				image: fields.text({ label: 'Картинка' }),
 				ogrn: fields.text({ label: 'ОГРН' }),
-				inn: fields.text({ label: 'ИНН'}),
+				inn: fields.text({ label: 'ИНН' }),
 				fullName: fields.text({ label: 'Полное наименование компании:' }),
 				shortName: fields.text({ label: 'Сокращенное наименование компании:' }),
 				director: fields.text({ label: 'Ф.И.О. директора:' }),

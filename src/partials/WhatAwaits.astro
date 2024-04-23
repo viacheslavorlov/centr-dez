@@ -7,10 +7,10 @@ import Section from '../shared/ui/Section.astro';
 const collectionData = await getCollection('whatawaits'); // change collection name
 const collection: CollectionEntry<'whatawaits'>['data'] = collectionData[0].data;
 
-const dots = collection?.features?.map(
-	(item, i) =>
-		`<div class='w-8 aspect-square rounded-full border border-secondary-bg relative z-30 bg-secondary-bg'></div>`
-);
+// const dots = collection?.features?.map(
+// 	(item, i) =>
+// 		`<div class='w-8 aspect-square rounded-full border border-secondary-bg relative z-30 bg-secondary-bg'></div>`
+// );
 ---
 
 <Section>

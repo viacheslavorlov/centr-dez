@@ -14,8 +14,9 @@ console.log(collection);
 		className='w-full gap-8 md:gap-12 lg:gap-16 p-4 md:p-8 lg:p-12 pb-0 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg relative overflow-hidden'>
 		<form
 			class='gform flex flex-col gap-8 w-full'
-			action='https://script.google.com/macros/s/AKfycbzSqRMZuyRLagZAnX4DjMagNQczCD_KnmyQ5wuAe-N4vvf0JGdDGz3xol3MzrcXztPlJw/exec'
-			method='POST'>
+			method='post'
+			enctype='application/x-www-form-urlencoded'
+			id='contactForm'>
 			<div class='space-y-4'>
 				<h1 class='text-3xl md:text-4xl'>
 					Возможно у вас завелись
@@ -34,7 +35,7 @@ console.log(collection);
 					class='p-4 md:p-5 rounded-2xl border border-accent-secondary'
 					type='text'
 					value=''
-					name='Номер телефона'
+					name='phone'
 					id='maskedInput'
 					required
 					placeholder='+7 (___)___-__-__'
@@ -42,11 +43,18 @@ console.log(collection);
 			</div>
 			<button
 				id='myButton'
-				onclick='disableButton()'
 				type='submit'
 				class='text-white button bg-accent rounded-full px-8 py-4 hover:bg-accent-secondary'>
 				{'Заказать звонок'}
 			</button>
+			<div
+				class='hidden'
+				id='thankyou_message'>
+				<h2 class='flex flex-col'>
+					<em class='text bold'>Спасибо что выбрали нас!</em> Наши сотрудники свяжутся с вами
+					в ближайшее время.
+				</h2>
+			</div>
 		</form>
 		<div
 			class='mx-auto justify-self-end self-end w-full relative -bottom-4 md:-bottom-8 lg:-bottom-12'>
@@ -78,9 +86,46 @@ console.log(collection);
 		</div>
 	</Flex>
 	<script is:inline>
-		function disableButton() {
-			document.getElementById('myButton').disable = true;
-		}
+		const responseContainer = document.getElementById('thankyou_message');
+		document.getElementById('contactForm').addEventListener('submit', function (e) {
+			e.preventDefault(); // Предотвращаем стандартную отправку формы
+
+			const formData = new FormData(this); // Собираем данные формы
+			console.log(formData);
+			// Находим кнопку отправки в форме
+			const submitButton = this.querySelector('button[type="submit"], input[type="submit"]');
+			// Отключаем кнопку, чтобы предотвратить повторную отправку
+			if (submitButton) {
+				submitButton.disabled = true;
+			}
+
+			// Отправляем данные формы асинхронно
+			fetch('../../sendmail.php', {
+				method: 'POST',
+				body: formData,
+			})
+				.then(() => (this.disabled = true))
+				.then(() => {
+					// Обрабатываем ответ от сервера
+					// responseContainer.textContent = 'Ваше сообщение отправлено!';
+					responseContainer.classList.remove('hidden');
+					responseContainer.style = 'color: green;';
+					// alert(data); // Можно заменить на более красивое отображение сообщения
+					this.reset();
+				})
+				.catch(error => {
+					console.error('Error:', error);
+					responseContainer.textContent =
+						'Произошла ошибка. Ваше сообщение не было отправлено! Рекомендуем позвонить нам по телефону.';
+					responseContainer.classList.remove('hidden');
+					responseContainer.style = 'color: red;';
+					alert('Произошла ошибка при отправке формы'); // Можно заменить на более красивое отображение сообщения об ошибке
+					// Включаем кнопку обратно, чтобы пользователь мог попробовать отправить форму снова
+					if (submitButton) {
+						submitButton.disabled = false;
+					}
+				});
+		});
 	</script>
 	<style>
 		button:disabled {

@@ -1,6 +1,7 @@
 titel: Рассчитайте стоимость прямо сейчас
 fields:
   - lable: Вид вредителя
+    form: pest
     type: select
     placeholder: Выбрать
     options:
@@ -22,6 +23,7 @@ fields:
         value: Блохи
   - lable: Вид помещения
     type: select
+    form: place
     placeholder: Выбрать
     options:
       - title: Квартира
@@ -31,10 +33,12 @@ fields:
       - title: Другое
         value: Другое
   - lable: Площадь помещения
+    form: s
     type: number
     placeholder: Например 35
     options: []
   - lable: Номер телефона
+    form: phone
     type: text
     placeholder: +7(999)-999-99-99
     options: []

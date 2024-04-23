@@ -6,18 +6,18 @@ import Section from '../shared/ui/Section.astro';
 
 const collection = await reader.singletons.form.read();
 
-if (Astro.request.method === 'POST') {
-	try {
-		const data = await Astro.request.formData();
+// if (Astro.request.method === 'POST') {
+// 	try {
+// 		const data = await Astro.request.formData();
 
-		const phone = data.get('phone');
-		// Do something with the data
-	} catch (error) {
-		if (error instanceof Error) {
-			console.error(error.message);
-		}
-	}
-}
+// 		const phone = data.get('phone');
+// 		// Do something with the data
+// 	} catch (error) {
+// 		if (error instanceof Error) {
+// 			console.error(error.message);
+// 		}
+// 	}
+// }
 ---
 
 {
@@ -26,8 +26,9 @@ if (Astro.request.method === 'POST') {
 			<Container className=' px-4 md:px-8 lg:px-12 items-center w-full max-w-[1400px]'>
 				<div class='w-full p-4 md:p-8 lg:p-12 flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
 					<form
-						action='https://script.google.com/macros/s/AKfycbzSqRMZuyRLagZAnX4DjMagNQczCD_KnmyQ5wuAe-N4vvf0JGdDGz3xol3MzrcXztPlJw/exec'
-						method='POST'
+						method='post'
+						enctype='application/x-www-form-urlencoded'
+						id='contactForm'
 						class='gform flex flex-col gap-8 md:gap-12 '>
 						<h2 class='text-3xl md:text-4xl'>{collection.titel}</h2>
 						<div class='flex flex-col gap-4 md:gap-8'>
@@ -41,7 +42,7 @@ if (Astro.request.method === 'POST') {
 													class=' p-4 md:p-5 rounded-2xl border border-accent-secondary'
 													type='text'
 													value=''
-													name={field.lable}
+													name={field.form}
 													id='maskedInput'
 													required
 													placeholder={field.placeholder}
@@ -54,7 +55,7 @@ if (Astro.request.method === 'POST') {
 												<label>{field.lable}</label>
 												<input
 													required
-													name={field.lable}
+													name={field.form}
 													class='appearance-none p-4 md:p-5 rounded-2xl border border-accent-secondary'
 													type='number'
 													value=''
@@ -68,7 +69,7 @@ if (Astro.request.method === 'POST') {
 												<label>{field.lable}</label>
 												<select
 													required
-													name={field.lable}
+													name={field.form}
 													class='bg-primary-bg appearance-none p-4 md:p-5 rounded-2xl border border-accent-secondary text-gray'>
 													<option
 														value=''
@@ -103,8 +104,8 @@ if (Astro.request.method === 'POST') {
 							{collection.buttonLable}
 						</button>
 						<div
-							style='display:none'
-							class='thankyou_message'>
+							class='hidden'
+							id='thankyou_message'>
 							<h2 class='flex flex-col'>
 								<em class='text bold'>Спасибо что выбрали нас!</em> Наши сотрудники
 								свяжутся с вами в ближайшее время.
@@ -125,6 +126,49 @@ if (Astro.request.method === 'POST') {
 		</Section>
 	)
 }
+
+<script is:inline>
+	const responseContainer = document.getElementById('thankyou_message');
+	document.getElementById('contactForm').addEventListener('submit', function (e) {
+		e.preventDefault(); // Предотвращаем стандартную отправку формы
+
+		const formData = new FormData(this); // Собираем данные формы
+		console.log(formData);
+		// Находим кнопку отправки в форме
+		const submitButton = this.querySelector('button[type="submit"], input[type="submit"]');
+		// Отключаем кнопку, чтобы предотвратить повторную отправку
+		if (submitButton) {
+			submitButton.disabled = true;
+		}
+
+		// Отправляем данные формы асинхронно
+		fetch('../sendmail.php', {
+			method: 'POST',
+			body: formData,
+		})
+			.then(() => (this.disabled = true))
+			.then(() => {
+				// Обрабатываем ответ от сервера
+				// responseContainer.textContent = 'Ваше сообщение отправлено!';
+				responseContainer.classList.remove('hidden');
+				responseContainer.style = 'color: green;';
+				// alert(data); // Можно заменить на более красивое отображение сообщения
+				this.reset();
+			})
+			.catch(error => {
+				console.error('Error:', error);
+				responseContainer.textContent =
+					'Произошла ошибка. Ваше сообщение не было отправлено! Рекомендуем позвонить нам по телефону.';
+				responseContainer.classList.remove('hidden');
+				responseContainer.style = 'color: red;';
+				alert('Произошла ошибка при отправке формы'); // Можно заменить на более красивое отображение сообщения об ошибке
+				// Включаем кнопку обратно, чтобы пользователь мог попробовать отправить форму снова
+				if (submitButton) {
+					submitButton.disabled = false;
+				}
+			});
+	});
+</script>
 <style>
 	select:required:invalid {
 		color: #9e9e9e;
