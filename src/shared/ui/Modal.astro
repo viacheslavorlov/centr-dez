@@ -13,11 +13,11 @@ const closeModal = () => isModal.set(false);
 <!-- Modal Structure -->
 <div class='modal'>
 	<!-- Trigger Button -->
-	<button class='modal-close'><X /></button>
+	<button class='modal-close'><X client:load /></button>
 
 	<!-- Modal Content -->
 	<div
-		
+
 		style={{ display: modalOpen ? 'block' : 'none' }}>
 		<div class='modal-content'>
 			<slot />

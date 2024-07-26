@@ -201,7 +201,7 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 			})();
 		</script> -->
 		<!-- Gudok -->
-		<script type='text/javascript'>
+		<script is:inline type='text/javascript'>
 			(function (window, document, n, project_ids) {
 				window.GudokData = n;
 				if (typeof project_ids !== 'object') {
@@ -243,7 +243,7 @@ const { title, phone, description, icon, keywords }: Props = Astro.props;
 			const mask = IMask(element, maskOptions);
 		</script>
 		<!-- Yandex.Metrika counter -->
-		<script type='text/javascript'>
+		<script is:inline type='text/javascript'>
 			(function (m, e, t, r, i, k, a) {
 				m[i] =
 					m[i] ||

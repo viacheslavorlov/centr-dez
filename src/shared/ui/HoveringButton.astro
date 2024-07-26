@@ -6,20 +6,22 @@ const { tel, url, className } = Astro.props;
 
 <>
 	<a
-		class={`lg:hidden right-4 bottom-4 md:right-8 lg:right-12 md:bottom-8 lg:bottom-12 fixed element drop-shadow-md px-3 py-3 
+		class={`lg:hidden right-4 bottom-4 md:right-8 lg:right-12 md:bottom-8 lg:bottom-12 fixed element drop-shadow-md px-3 py-3
    cursor-pointer rounded-full border active:border-transparent hover:underline text-white border-transparent  hover:border-accent p-0 text-center z-50 font-extrabold uppercase bg-accent-secondary ${className}`}
 		href={'tel:' + tel}>
 		<PhoneCall
+			client:load
 			size={40}
 			class={'w-10 h-10 md:w-14 md:h-14'}
 		/>
 	</a>
 
 	<a
-		class={`hidden lg:block fixed right-4 bottom-4 md:right-8 lg:right-12 md:bottom-8 lg:bottom-12 element drop-shadow-md px-3 py-3 
+		class={`hidden lg:block fixed right-4 bottom-4 md:right-8 lg:right-12 md:bottom-8 lg:bottom-12 element drop-shadow-md px-3 py-3
    cursor-pointer rounded-full border active:border-transparent hover:underline text-white border-transparent  hover:border-accent p-0 text-center z-50 font-extrabold uppercase bg-accent-secondary ${className}`}
 		href={'/form'}>
 		<PhoneCall
+			client:load
 			size={40}
 			class={'w-10 h-10 md:w-14 md:h-14'}
 		/>

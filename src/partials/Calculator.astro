@@ -6,25 +6,51 @@ import Section from '../shared/ui/Section.astro';
 
 const collection = await reader.singletons.form.read();
 
-// if (Astro.request.method === 'POST') {
-// 	try {
-// 		const data = await Astro.request.formData();
-
-// 		const phone = data.get('phone');
-// 		// Do something with the data
-// 	} catch (error) {
-// 		if (error instanceof Error) {
-// 			console.error(error.message);
-// 		}
-// 	}
-// }
 ---
 
 {
-	collection && (
-		<Section>
+	collection && <Section>
 			<Container className=' px-4 md:px-8 lg:px-12 items-center w-full max-w-[1400px]'>
 				<div class='w-full p-4 md:p-8 lg:p-12 flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 shadow-lg rounded-2xl bg-secondary-bg/15 border-2 border-secondary-bg'>
+					<div class='flex justify-center mx-auto w-full'>
+						{/* <div class="flex flex-col lg:justify-start justify-center items-center">
+							<h2 class='text-3xl md:text-4xl'>{collection.titel}</h2> */}
+
+							{/* <script is:inline>
+								!function(a,m,o,c,r,m)
+								{
+									((a[o + c] = a[o + c] || {
+										setMeta: function (p) {
+											this.params = (this.params || []).concat([p]);
+										},
+									}),
+									(a[o + r] =
+										a[o + r] ||
+										function (f) {
+											a[o + r].f = (a[o + r].f || []).concat([f]);
+										}),
+									a[o + r]({
+										id: '1358266',
+										hash: 'e4a32011af8c4c8c143a54ce3afbe377',
+										locale: 'ru',
+									}),
+									(a[o + m] =
+										a[o + m] ||
+										function (f, k) {
+											a[o + m].f = (a[o + m].f || []).concat([[f, k]]);
+										}))
+								}
+								(window,0,"amo_forms_","params","load","loaded");
+							</script> */}
+							{/* <script
+								is:inline
+								id='amoforms_script_1358266'
+								async='async'
+								charset='utf-8'
+								src='https://forms.amocrm.ru/forms/assets/js/amoforms.js?1718194538'
+							/> */}
+						{/* </div>
+					</div> */}
 					<form
 						method='post'
 						enctype='application/x-www-form-urlencoded'
@@ -112,7 +138,7 @@ const collection = await reader.singletons.form.read();
 							</h2>
 						</div>
 					</form>
-					<div class='w-full md:w-1/2 min-h-full shrink-0 relative'>
+					<div class='w-full shrink md:w-1/2 min-h-full relative'>
 						<Image
 							class='object-contain z-40 md:object-center h-[120%] w-[110%] -top-[15%] absolute'
 							src={collection.img}

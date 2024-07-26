@@ -8,13 +8,10 @@ import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [
-		markdoc(),
-		process.env.MODE === 'dev' ? keystatic() : [],
-		tailwind(),
-		process.env.MODE === 'dev' ? react({ include: ['**/keystatic'] }): [],
-		preact(),
-	],
-	output: process.env.MODE === 'dev' ? 'hybrid' : 'static',
-	// base: '/dist/'
+  integrations: [markdoc(), process.env.MODE === 'dev' ? keystatic() : [], tailwind(), process.env.MODE === 'dev' ? react({
+    include: ['**/keystatic']
+  }) : [], preact()],
+  output: process.env.MODE === 'dev' ? 'hybrid' : 'static',
+  outDir: '../htdocs'
+  // base: '/dist/'
 });
