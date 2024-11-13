@@ -1,0 +1,30 @@
+# Disable directory browsing
+Options -Indexes
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Protect against common attacks
+RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
+RewriteRule .* - [F]
+
+<FilesMatch "(\.(htaccess|htpasswd|ini|log|sh|inc|sql|env)|~)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "envLoader.php">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+<IfModule mod_headers.c>
+    #Запрещаем встраивать сайт во iframe
+    Header always append X-Frame-Options SAMEORIGIN
+    #Защищаем сайт от межсайтового скриптинга
+    Header set X-XSS-Protection "1; mode=block"
+    #Заголовок предотвращает атаки на основе mime
+    Header set X-Content-Type-Options nosniff
+    #Браузер отправляет полный URL на тот же сайт, и неполный (только название) на все остальные
+    Header set Referrer-Policy origin-when-cross-origin
+</IfModule>
